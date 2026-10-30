@@ -1,0 +1,37 @@
+{
+  "status": "NEEDS_SELECTOR_VERIFICATION",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [
+      "Tombol scan tidak ditemukan/tidak bisa diklik; mengandalkan pemindaian saat load.",
+      "Tabel jurnal tidak ditemukan dan tidak ada JSON jurnal tertangkap. Jalankan Discover."
+    ],
+    "stable": true,
+    "durationMs": 44338,
+    "meta": {
+      "live": {
+        "cards": 0,
+        "passed": 0,
+        "rejected": 0,
+        "summary": null
+      },
+      "summaryCount": null,
+      "totalCards": 0
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 0,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": null,
+      "tableSeen": false,
+      "tables": 0
+    }
+  },
+  "items": []
+}
