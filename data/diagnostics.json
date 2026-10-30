@@ -4284,6 +4284,255 @@
         "errors": []
       },
       "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-30T22:36:45.758Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 32,
+          "parsed": 32,
+          "added": 24,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8311,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": null,
+          "live": null,
+          "setup": {
+            "count": 32,
+            "stale": false,
+            "rejected": null
+          }
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 360,
+          "parsed": 360,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 286,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 161,
+              "selesai": 118,
+              "menunggu": 43,
+              "terisi": 95,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 184
+            },
+            "dibuat": "2026-10-30T21:15:21.837Z"
+          },
+          "trackingStarted": false,
+          "journal": null,
+          "live": {
+            "cards": 32,
+            "passed": 32,
+            "rejected": 0
+          },
+          "setup": {
+            "count": 32,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "tnv2": {
+          "status": "OK",
+          "cards": 363,
+          "parsed": 363,
+          "added": 0,
+          "errors": [],
+          "warnings": [
+            "JOURNAL_COUNT_DIFF: JSON 363 baris, tabel 360 baris (tabel bisa membatasi tampilan)."
+          ],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9142,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 363,
+            "domRows": 360,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/tnv2/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 32,
+            "passed": 1,
+            "rejected": 31,
+            "summary": "Selesai: 32 setup, 34 koin dipantau."
+          },
+          "setup": {
+            "count": 1,
+            "stale": false,
+            "rejected": 31
+          }
+        },
+        "tnv2c2": {
+          "status": "OK",
+          "cards": 306,
+          "parsed": 306,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 7675,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 306,
+            "domRows": 306,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/tnv2c2/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 1,
+            "passed": 1,
+            "rejected": 0,
+            "summary": "Selesai: 1 setup lolos, 34 koin dipantau, 6 koin dilewati karena data tidak valid."
+          },
+          "setup": {
+            "count": 1,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "dseek": {
+          "status": "OK_NO_SETUPS",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "NO_SETUPS",
+          "httpStatus": 200,
+          "durationMs": 7502,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 0,
+            "domRows": 0,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": null,
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 0,
+            "passed": 0,
+            "rejected": 0,
+            "summary": "Selesai: 0 setup, 34 koin dipantau."
+          },
+          "setup": {
+            "count": 0,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "grox": {
+          "status": "NEEDS_SELECTOR_VERIFICATION",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [
+            "Tombol scan tidak ditemukan/tidak bisa diklik; mengandalkan pemindaian saat load.",
+            "Tabel jurnal tidak ditemukan dan tidak ada JSON jurnal tertangkap. Jalankan Discover.",
+            "SETUP_STALE: daftar setup siap tidak terkonfirmasi pada scan ini; daftar lama dipertahankan."
+          ],
+          "emptyKind": "NEEDS_SELECTOR_VERIFICATION",
+          "httpStatus": 200,
+          "durationMs": 44313,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 0,
+            "domRows": 0,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": null,
+            "tableId": null,
+            "tableSeen": false,
+            "tables": 0
+          },
+          "live": {
+            "cards": 0,
+            "passed": 0,
+            "rejected": 0,
+            "summary": null
+          },
+          "setup": {
+            "count": 0,
+            "stale": true,
+            "rejected": 0
+          }
+        },
+        "chatgpt": {
+          "status": "OK",
+          "cards": 332,
+          "parsed": 332,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8449,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 332,
+            "domRows": 332,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/chatgpt/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 27,
+            "passed": 27,
+            "rejected": 0,
+            "summary": "Selesai: 27 setup, 34 koin dipantau."
+          },
+          "setup": {
+            "count": 27,
+            "stale": false,
+            "rejected": 0
+          }
+        }
+      },
+      "evaluation": {
+        "checked": 153,
+        "changed": 11,
+        "errors": []
+      },
+      "fatal": null
     }
   ]
 }
