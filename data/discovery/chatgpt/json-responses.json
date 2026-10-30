@@ -1,13 +1,13 @@
 [
   {
-    "url": "https://triasnugra.github.io/chatgpt/data/forward-report.json",
-    "status": 200,
-    "bodySample": "{\n \"dibuat\": \"2026-10-30T01:16:54.978Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 317,\n  \"head\": \"1a41ce32d079e0030957\",\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-14T00:39:16.289Z\",\n  \"engine\": \"0537067ed55fc5be\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 130,\n  \"selesai\": 104,\n  \"menunggu\": 26,\n  \"terisi\": 84,\n  \"minggu_berbeda\": 3,\n  \"diabaikan_mesin_lain\": 7,\n  \"dilewati_dedupe\": 160\n },\n \"progress\": {\n  \"trade_terisi\": [\n   84,\n   150\n  ],\n  \"minggu\": [\n   3,\n   20\n  ]\n }\n}"
-  },
-  {
     "url": "https://triasnugra.github.io/chatgpt/data/journal.json",
     "status": 200,
     "bodySample": "[\n {\n  \"id\": \"2026-10-04|Aturan Eliz|LINK\",\n  \"waktu\": \"2026-10-04 06:47 UTC\",\n  \"t\": 1791096469960,\n  \"due\": 1791701269960,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"LINK\",\n  \"arah\": \"SHORT\",\n  \"entry\": 14.017,\n  \"sl\": 15.856,\n  \"tp\": 10.339,\n  \"harga_awal\": 14.017,\n  \"keyakinan\": \"\",\n  \"alasan\": \"deviasi atas gagal bertahan, RSI divergence\",\n  \"alert\": \"penutupan weekly\",\n  \"hasil\": \"kedaluwarsa\",\n  \"R\": 0.61\n },\n {\n  \"id\": \"2026-10-04|Aturan Eliz|ICP\",\n  \"waktu\": \"2026-10-04 06:47 UTC\",\n  \"t\": 1791096469960,\n  \"due\": 1791701269960,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"ICP\",\n  \"arah\": \"LONG\",\n  \"en"
+  },
+  {
+    "url": "https://triasnugra.github.io/chatgpt/data/forward-report.json",
+    "status": 200,
+    "bodySample": "{\n \"dibuat\": \"2026-10-30T01:16:54.978Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 317,\n  \"head\": \"1a41ce32d079e0030957\",\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-14T00:39:16.289Z\",\n  \"engine\": \"0537067ed55fc5be\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 130,\n  \"selesai\": 104,\n  \"menunggu\": 26,\n  \"terisi\": 84,\n  \"minggu_berbeda\": 3,\n  \"diabaikan_mesin_lain\": 7,\n  \"dilewati_dedupe\": 160\n },\n \"progress\": {\n  \"trade_terisi\": [\n   84,\n   150\n  ],\n  \"minggu\": [\n   3,\n   20\n  ]\n }\n}"
   },
   {
     "url": "https://triasnugra.github.io/chatgpt/data/dominance.json",

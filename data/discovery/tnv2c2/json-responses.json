@@ -1,13 +1,13 @@
 [
   {
-    "url": "https://triasnugra.github.io/tnv2c2/data/journal.json",
-    "status": 200,
-    "bodySample": "[\n {\n  \"id\": \"2026-10-04|Aturan Eliz|LINK\",\n  \"waktu\": \"2026-10-04 06:47 UTC\",\n  \"t\": 1791096469960,\n  \"due\": 1791701269960,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"LINK\",\n  \"arah\": \"SHORT\",\n  \"entry\": 14.017,\n  \"sl\": 15.856,\n  \"tp\": 10.339,\n  \"harga_awal\": 14.017,\n  \"keyakinan\": \"\",\n  \"alasan\": \"deviasi atas gagal bertahan, RSI divergence\",\n  \"alert\": \"penutupan weekly\",\n  \"hasil\": \"kedaluwarsa\",\n  \"R\": 0.61\n },\n {\n  \"id\": \"2026-10-04|Aturan Eliz|ICP\",\n  \"waktu\": \"2026-10-04 06:47 UTC\",\n  \"t\": 1791096469960,\n  \"due\": 1791701269960,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"ICP\",\n  \"arah\": \"LONG\",\n  \"en"
-  },
-  {
     "url": "https://triasnugra.github.io/tnv2c2/data/forward-report.json",
     "status": 200,
     "bodySample": "{\n \"dibuat\": \"2026-10-30T01:52:21.705Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 291,\n  \"head\": \"5acac4f777339a178375\",\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-29T10:55:51.116Z\",\n  \"engine\": \"c7f151a420fb0701\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 1,\n  \"selesai\": 0,\n  \"menunggu\": 1,\n  \"terisi\": 0,\n  \"minggu_berbeda\": 0,\n  \"diabaikan_mesin_lain\": 0,\n  \"dilewati_dedupe\": 0\n },\n \"progress\": {\n  \"trade_terisi\": [\n   0,\n   150\n  ],\n  \"minggu\": [\n   0,\n   20\n  ]\n }\n}"
+  },
+  {
+    "url": "https://triasnugra.github.io/tnv2c2/data/journal.json",
+    "status": 200,
+    "bodySample": "[\n {\n  \"id\": \"2026-10-04|Aturan Eliz|LINK\",\n  \"waktu\": \"2026-10-04 06:47 UTC\",\n  \"t\": 1791096469960,\n  \"due\": 1791701269960,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"LINK\",\n  \"arah\": \"SHORT\",\n  \"entry\": 14.017,\n  \"sl\": 15.856,\n  \"tp\": 10.339,\n  \"harga_awal\": 14.017,\n  \"keyakinan\": \"\",\n  \"alasan\": \"deviasi atas gagal bertahan, RSI divergence\",\n  \"alert\": \"penutupan weekly\",\n  \"hasil\": \"kedaluwarsa\",\n  \"R\": 0.61\n },\n {\n  \"id\": \"2026-10-04|Aturan Eliz|ICP\",\n  \"waktu\": \"2026-10-04 06:47 UTC\",\n  \"t\": 1791096469960,\n  \"due\": 1791701269960,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"ICP\",\n  \"arah\": \"LONG\",\n  \"en"
   },
   {
     "url": "https://triasnugra.github.io/tnv2c2/data/dominance.json",

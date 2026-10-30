@@ -1,40 +1,37 @@
 {
   "engine": "tn",
   "flushReason": "engine-done",
-  "elapsedSec": 80.671,
+  "elapsedSec": 80.705,
   "steps": [
     {
       "name": "goto",
-      "ok": false,
-      "ms": 1,
-      "error": "STEP_TIMEOUT:tn:goto setelah NaNms"
+      "ok": true,
+      "ms": 176
     },
     {
       "name": "wait-initial",
-      "ok": false,
-      "ms": 201,
-      "error": "page.evaluate: Execution context was destroyed, most likely because of a navigation"
+      "ok": true,
+      "ms": 5004
     },
     {
       "name": "click-scan",
-      "ok": false,
-      "ms": 0,
-      "error": "Cannot read properties of undefined (reading 'unicode')"
+      "ok": true,
+      "ms": 86
     },
     {
       "name": "wait-scan",
       "ok": true,
-      "ms": 6008
+      "ms": 5752
     },
     {
       "name": "inspect",
       "ok": true,
-      "ms": 41
+      "ms": 26
     },
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 26
+      "ms": 12
     }
   ]
 }
