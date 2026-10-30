@@ -1,0 +1,30 @@
+name: Rebuild setups from raw
+# Manual saja. Memulihkan setup yang hilang dari data/raw/, lalu evaluasi ulang dan bangun dashboard.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: benchmark          # sama dengan collect.yml: tidak boleh jalan bersamaan
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm test
+      - name: Rebuild jurnal.json dari raw (tidak menghapus apa pun)
+        run: node scripts/rebuild-setups.mjs --write && rm -f data/jurnal.json.bak-* data/setups.json.bak-*
+      - name: Evaluasi setup yang belum final + bangun dashboard
+        run: node src/index.js evaluate && node src/index.js build
+      - name: Commit data
+        run: |
+          git config user.name "benchmark-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data site/data
+          git diff --cached --quiet && exit 0
+          git commit -m "data: rebuild setups from raw $(date -u +%FT%TZ)"
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push

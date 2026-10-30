@@ -1,0 +1,44 @@
+name: Discover (amati struktur situs sumber)
+on:
+  workflow_dispatch:
+    inputs:
+      engines:
+        description: 'Mesin yang diamati'
+        type: choice
+        options: [tnv2, tnv2c2, dseek, grox, chatgpt, crypto, tn, 'tnv2,tnv2c2,dseek,grox,chatgpt', 'crypto,tn,tnv2,tnv2c2,dseek,grox,chatgpt']
+        default: tnv2
+permissions: { contents: write }
+concurrency: { group: benchmark, cancel-in-progress: false }
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Discover
+        timeout-minutes: 35          # batas langkah; skrip juga punya watchdog sendiri
+        env:
+          DISCOVER_ENGINES: ${{ inputs.engines }}
+          DISCOVER_WATCHDOG_MS: '1800000'
+        run: node src/tools/discover.js
+      - name: Binance reachability dari runner
+        if: always()
+        run: |
+          mkdir -p data/discovery
+          : > data/discovery/binance-check.txt
+          for b in https://data-api.binance.vision https://api.binance.com; do
+            echo "$b -> $(curl -s -m 20 -o /dev/null -w '%{http_code}' "$b/api/v3/klines?symbol=SUIUSDT&interval=15m&limit=1")" | tee -a data/discovery/binance-check.txt
+          done
+      - name: Commit hasil (juga hasil parsial)
+        if: always()
+        run: |
+          git config user.name "benchmark-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data/discovery
+          git diff --cached --quiet && exit 0
+          git commit -m "discovery: snapshot"
+          for i in 1 2 3; do git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && exit 0; sleep $((i*5)); done
+          exit 1
