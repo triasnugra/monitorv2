@@ -1,0 +1,345 @@
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#242526">
+<title>asgracrypto 1</title>
+<style>
+:root{color-scheme:dark;--bg:#18191A;--s:#242526;--s2:#3A3B3C;--tx:#E4E6EB;--mut:#B0B3B8;--ln:#3E4042;--b:#4599FF;--bb:#0866FF;--r:#F3425F;--y:#F7B928;--g:#45BD62;--bl:rgba(45,136,255,.18);--gl:rgba(69,189,98,.16);--rl:rgba(243,66,95,.16);--yl:rgba(247,185,40,.16);--yt:#F7B928;--pad:max(16px,calc((100% - 760px)/2))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 "Segoe UI Historic","Segoe UI",Helvetica,Arial,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;z-index:20;height:56px;display:flex;align-items:center;gap:12px;padding:0 var(--pad);background:var(--s);border-bottom:1px solid var(--ln)}
+main{max-width:760px;margin:0 auto;padding:0 16px}
+h1{margin:0;font-size:22px;font-weight:700;letter-spacing:-.3px;display:flex;align-items:center;gap:10px;flex:none}
+.lg{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#0866FF,#00B2FF);display:grid;place-items:center}
+#sf{flex:1;max-width:340px;margin-left:auto}
+#q{width:100%;height:40px;border:0;border-radius:99px;padding:0 16px 0 42px;font:inherit;background:var(--s2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23B0B3B8' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4-4'/%3E%3C/svg%3E") 14px center no-repeat;color:var(--tx)}
+#q::placeholder{color:var(--mut)}
+nav{position:sticky;top:56px;z-index:19;background:var(--s);border-bottom:1px solid var(--ln);display:flex;justify-content:center;gap:4px;padding:0 var(--pad);overflow-x:auto;box-shadow:0 2px 4px rgba(0,0,0,.25)}
+nav button{display:flex;align-items:center;gap:8px;background:none;border:0;border-bottom:3px solid transparent;height:50px;padding:0 20px;font:inherit;font-weight:600;color:var(--mut);cursor:pointer;white-space:nowrap}
+nav button:hover{background:var(--s2);border-radius:8px 8px 0 0}
+nav button.on{color:var(--b);border-bottom-color:var(--b)}
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;background:none;border-radius:0}
+h2{font-size:20px;font-weight:700;margin:24px 0 10px}h3{font-size:17px;font-weight:600;margin:0}
+.al{padding:12px 16px;border-radius:12px;margin-top:12px;font-size:14px}.al small{display:block;color:var(--mut)}
+.al.r{background:var(--rl)}.al.y{background:var(--yl)}.al.g{background:var(--gl)}.al.b{background:var(--bl)}
+.c{background:var(--s);border-radius:12px;padding:16px;margin:12px 0;box-shadow:0 1px 2px rgba(0,0,0,.35)}
+.c[data-s]{cursor:pointer;transition:background .15s}.c[data-s]:hover{background:#2D2E30}
+.t{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.ch{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--s2);color:var(--mut);margin-left:4px}
+.ch.L,.ch.ok{background:var(--gl);color:var(--g)}.ch.S{background:var(--rl);color:var(--r)}.ch.wait{background:var(--yl);color:var(--yt)}.ch.b{background:var(--bl);color:var(--b)}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}.g4>div{background:var(--bg);border-radius:8px;padding:10px 12px;font-size:17px;font-weight:600;line-height:1.25}.g4 span{display:block;color:var(--mut);font-size:12px;font-weight:400;margin-bottom:2px}
+.m{color:var(--mut);font-size:13px}.w{color:var(--yt);font-size:13px}
+.sz{margin-top:8px;padding:10px 12px;background:var(--bg);border-radius:8px;font-size:13px}
+button.p{background:var(--bb);color:#fff;border:0;border-radius:8px;height:40px;padding:0 20px;font:inherit;font-weight:600;cursor:pointer;transition:filter .15s}button.p:hover{filter:brightness(1.12)}button.p:disabled{opacity:.45;cursor:default;filter:none}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin:14px 0 8px}
+.bar label{font-size:12px;color:var(--mut);display:flex;flex-direction:column;gap:4px}
+.bar input{width:104px;height:40px;border:0;border-radius:8px;padding:0 12px;font:inherit;background:var(--s2);color:var(--tx)}
+.fl button,.tf button{border:0;background:var(--s2);color:var(--tx);border-radius:99px;height:36px;padding:0 16px;font:inherit;font-weight:600;cursor:pointer;margin:0 6px 6px 0}
+.fl button:hover,.tf button:hover{background:#4E4F50}.fl button.on,.tf button.on{background:var(--bl);color:var(--b)}
+#pg{height:3px;background:var(--ln);border-radius:2px;overflow:hidden;margin:8px 0 4px}#pg i{display:block;height:100%;width:0;background:linear-gradient(90deg,#0866FF,#00B2FF);transition:width .3s}
+.sc{overflow-x:auto;background:var(--s);border-radius:12px;padding:4px 8px}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:12px 8px;border-bottom:1px solid var(--ln);text-align:left;white-space:nowrap}th{color:var(--mut);font-weight:600;font-size:13px}tr:last-child td{border-bottom:0}tr[data-s]{cursor:pointer}tr[data-s]:hover{background:var(--s2)}
+.tr{position:relative;width:90px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--g),var(--s2) 30%,var(--s2) 70%,var(--r))}.tr i{position:absolute;top:-3px;width:12px;height:12px;border-radius:50%;background:var(--tx);margin-left:-6px}
+dialog{width:min(720px,96vw);max-height:92vh;border:0;border-radius:16px;padding:20px;background:var(--s);color:var(--tx);box-shadow:0 12px 28px rgba(0,0,0,.6)}
+dialog::backdrop{background:rgba(0,0,0,.65)}
+.x{float:right;background:var(--s2);border:0;border-radius:50%;width:36px;height:36px;font-size:20px;cursor:pointer;color:var(--tx)}.x:hover{background:#4E4F50}
+.tf{margin:8px 0}
+svg:not(.ic){display:block;border-radius:8px;background:var(--bg)}svg text{font:10px "Segoe UI",Helvetica,Arial,system-ui,sans-serif}
+li{margin:8px 0}a{color:var(--b)}
+:focus-visible{outline:2px solid var(--b);outline-offset:2px}
+footer{max-width:760px;margin:30px auto;padding:0 16px;color:var(--mut);font-size:12px}
+@media(max-width:640px){
+ .g4{grid-template-columns:repeat(2,1fr)}h1 span.nm{display:none}#sf{max-width:none}
+ nav{position:fixed;top:auto;bottom:0;left:0;right:0;justify-content:space-around;gap:0;padding:0 0 env(safe-area-inset-bottom);border-bottom:0;border-top:1px solid var(--ln);box-shadow:0 -2px 6px rgba(0,0,0,.3)}
+ nav button{flex:1;flex-direction:column;gap:2px;height:58px;padding:6px 2px;font-size:11px;border-bottom:0;border-top:3px solid transparent;justify-content:center}
+ nav button:hover{border-radius:0}nav button.on{border-top-color:var(--b)}
+ body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<header><h1 id="wm" aria-label="asgracrypto"><span class="lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="stroke:#fff;stroke-width:3;width:20px;height:20px"><path d="M5 18v-6M12 18V6M19 18V9"></path></svg></span><span class="nm">asgracrypto</span></h1>
+<form id="sf"><input id="q" list="dl" placeholder="Cari koin, contoh: BTC atau SOL" autocomplete="off" enterkeyhint="search"><datalist id="dl"><option value="BTC"></option><option value="SOL"></option><option value="ZEC"></option><option value="XRP"></option><option value="BNB"></option><option value="ETH"></option><option value="PEPE"></option><option value="HYPE"></option><option value="NEAR"></option><option value="TRX"></option><option value="UNI"></option><option value="GOOGLB"></option><option value="ENA"></option><option value="SNDKB"></option><option value="DOGE"></option><option value="LINK"></option><option value="PUMP"></option><option value="WLD"></option><option value="SUI"></option><option value="SOXLB"></option><option value="SPCXB"></option><option value="PARTI"></option><option value="TAO"></option><option value="ADA"></option><option value="AAVE"></option><option value="CRCLB"></option><option value="MSTRB"></option><option value="INTCB"></option><option value="AVAX"></option><option value="ARB"></option><option value="LTC"></option><option value="SKHYB"></option><option value="XAUT"></option><option value="HBAR"></option><option value="ONDO"></option><option value="FET"></option><option value="ZRO"></option><option value="INJ"></option><option value="BCH"></option><option value="AI"></option></datalist></form></header>
+<nav id="tabs"><button data-t="home" class="on"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>Ringkasan</button><button data-t="setup"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle></svg>Setup</button><button data-t="watch"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>Pantauan</button><button data-t="rule"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H7a2 2 0 0 1-2-2z"></path><path d="M9 8h6M9 12h6"></path></svg>Strategi</button><button data-t="uji"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"></path></svg>Uji</button></nav>
+<main>
+<div id="al"></div>
+<div class="bar"><button class="p" id="go">Pindai ulang</button><span id="st" class="m">Selesai: 29 koin punya setup, 40 koin dipantau.</span></div><div id="pg"><i style="width: 100%;"></i></div>
+
+<section id="t-home">
+<h2>Gerbang BTC</h2><div id="btcc" class="c" data-s="BTC"><div class="g4"><div><span>Harga BTC</span>78152.0</div><div><span>Range 4H</span>79220.7 sampai 84898.0</div><div><span>Posisi di range</span>-19%</div><div><span>Struktur harian</span>datar</div></div><div>BTC dekat low range. Tunggu sweep lalu reclaim.</div><div class="m">Monday Range: 79368.7 sampai 80844.7</div><div class="m">Ketuk untuk grafik dan rencana.</div></div>
+<h2>Dominasi BTC dan musim altcoin</h2><div id="domc" class="c"><div class="g4"><div><span>Dominasi BTC</span>59.3%</div><div><span>Dominasi ETH</span>10.3%</div><div><span>ETH/BTC, 30 hari</span>-10.9%</div><div><span>Altcoin mengungguli BTC (30 hari)</span>18%</div></div><div>BTC dominan: altcoin tertinggal dari BTC. Pilih altcoin hanya dengan pemicu jelas.</div><div class="m">Kesimpulan ini tafsiran saya. Skenario Eliz: dominasi BTC ditolak di zona tinggi bersamaan BTC ditolak, lalu ETH naik, lalu altcoin.</div></div>
+<h2>Setup terkuat</h2><div id="top3"><article class="c" data-s="HYPE"><div class="t"><h3>HYPE</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>94.230</div><div><span>SL 2.7%</span>96.803</div><div><span>TP1</span>81.285</div><div><span>Rasio ke target akhir</span>7.7R</div></div>
+<div class="m">Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah. Harga 92.170, jarak ke entry 2.2%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 3.89 HYPE, nilai posisi $366</div></article><article class="c" data-s="CRCLB"><div class="t"><h3>CRCLB</h3><span><span class="ch L">Long</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>75.000</div><div><span>SL 2.0%</span>73.469</div><div><span>TP1</span>83.565</div><div><span>Rasio ke target akhir</span>11.2R</div></div>
+<div class="m">Three Tap: 2 sentuhan, lalu sweep dan reclaim. Harga 76.630, jarak ke entry 2.1%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 6.53 CRCLB, nilai posisi $490</div></article><article class="c" data-s="BCH"><div class="t"><h3>BCH</h3><span><span class="ch L">Long</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>273.9</div><div><span>SL 4.7%</span>261.0</div><div><span>TP1</span>280.5</div><div><span>Rasio ke target akhir</span>2.4R</div></div>
+<div class="m">Sweep Monday Low, lalu reclaim. Harga 285.2, jarak ke entry 4.0%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="w">Volume 24 jam rendah, risiko slip</div><div class="sz">Risiko $10: qty 0.774 BCH, nilai posisi $212</div></article></div>
+</section>
+
+<section id="t-setup" hidden="">
+<div class="bar"><label>Modal ($)<input id="cap" type="number" min="0"></label><label>Risiko per trade (%)<input id="rk" type="number" step=".1" min="0"></label></div>
+<div class="fl" id="flt"><button data-f="all" class="on">Semua</button><button data-f="1">Long</button><button data-f="-1">Short</button><button data-f="a">Aktif</button></div>
+<div id="setups"><article class="c" data-s="HYPE"><div class="t"><h3>HYPE</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>94.230</div><div><span>SL 2.7%</span>96.803</div><div><span>TP1</span>81.285</div><div><span>Rasio ke target akhir</span>7.7R</div></div>
+<div class="m">Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah. Harga 92.170, jarak ke entry 2.2%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 3.89 HYPE, nilai posisi $366</div></article><article class="c" data-s="CRCLB"><div class="t"><h3>CRCLB</h3><span><span class="ch L">Long</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>75.000</div><div><span>SL 2.0%</span>73.469</div><div><span>TP1</span>83.565</div><div><span>Rasio ke target akhir</span>11.2R</div></div>
+<div class="m">Three Tap: 2 sentuhan, lalu sweep dan reclaim. Harga 76.630, jarak ke entry 2.1%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 6.53 CRCLB, nilai posisi $490</div></article><article class="c" data-s="BCH"><div class="t"><h3>BCH</h3><span><span class="ch L">Long</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>273.9</div><div><span>SL 4.7%</span>261.0</div><div><span>TP1</span>280.5</div><div><span>Rasio ke target akhir</span>2.4R</div></div>
+<div class="m">Sweep Monday Low, lalu reclaim. Harga 285.2, jarak ke entry 4.0%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="w">Volume 24 jam rendah, risiko slip</div><div class="sz">Risiko $10: qty 0.774 BCH, nilai posisi $212</div></article><article class="c" data-s="SOL"><div class="t"><h3>SOL</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>102.7</div><div><span>SL 1.8%</span>104.6</div><div><span>TP2</span>98.620</div><div><span>Rasio ke target akhir</span>2.2R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 97.210, jarak ke entry 5.7%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 5.37 SOL, nilai posisi $552</div></article><article class="c" data-s="MSTRB"><div class="t"><h3>MSTRB</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>144.8</div><div><span>SL 2.4%</span>148.3</div><div><span>TP2</span>133.5</div><div><span>Rasio ke target akhir</span>3.2R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 136.2, jarak ke entry 6.3%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 2.84 MSTRB, nilai posisi $411</div></article><article class="c" data-s="UNI"><div class="t"><h3>UNI</h3><span><span class="ch S">Short</span><span class="ch">4H, swing</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>7.198</div><div><span>SL 5.5%</span>7.593</div><div><span>TP2</span>6.516</div><div><span>Rasio ke target akhir</span>1.7R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 6.733, jarak ke entry 6.9%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 25.3 UNI, nilai posisi $182</div></article><article class="c" data-s="SPCXB"><div class="t"><h3>SPCXB</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>150.5</div><div><span>SL 1.3%</span>152.4</div><div><span>TP2</span>140.4</div><div><span>Rasio ke target akhir</span>5.4R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 140.7, jarak ke entry 7.0%.</div><div class="m">Konfirmasi: <span class="ch wait" style="margin:0">Di sisi benar level, belum retest</span></div>
+<div class="sz">Risiko $10: qty 5.30 SPCXB, nilai posisi $798</div></article><article class="c" data-s="AVAX"><div class="t"><h3>AVAX</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>9.060</div><div><span>SL 2.4%</span>9.274</div><div><span>TP2</span>8.559</div><div><span>Rasio ke target akhir</span>2.3R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 8.459, jarak ke entry 7.1%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 46.8 AVAX, nilai posisi $424</div></article><article class="c" data-s="TAO"><div class="t"><h3>TAO</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>256.1</div><div><span>SL 3.3%</span>264.4</div><div><span>TP2</span>242.6</div><div><span>Rasio ke target akhir</span>1.6R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 236.8, jarak ke entry 8.2%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 1.20 TAO, nilai posisi $307</div></article><article class="c" data-s="ADA"><div class="t"><h3>ADA</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.208</div><div><span>SL 2.4%</span>0.213</div><div><span>TP2</span>0.196</div><div><span>Rasio ke target akhir</span>2.5R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.192, jarak ke entry 8.3%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 2016 ADA, nilai posisi $420</div></article><article class="c" data-s="ONDO"><div class="t"><h3>ONDO</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.424</div><div><span>SL 3.6%</span>0.440</div><div><span>TP2</span>0.397</div><div><span>Rasio ke target akhir</span>1.8R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.390, jarak ke entry 8.9%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 658 ONDO, nilai posisi $279</div></article><article class="c" data-s="NEAR"><div class="t"><h3>NEAR</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>4.665</div><div><span>SL 4.2%</span>4.862</div><div><span>TP2</span>4.250</div><div><span>Rasio ke target akhir</span>2.1R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 4.160, jarak ke entry 12.1%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 50.7 NEAR, nilai posisi $236</div></article><article class="c" data-s="ZRO"><div class="t"><h3>ZRO</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>1.771</div><div><span>SL 4.3%</span>1.846</div><div><span>TP2</span>1.597</div><div><span>Rasio ke target akhir</span>2.3R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 1.576, jarak ke entry 12.4%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 133 ZRO, nilai posisi $235</div></article><article class="c" data-s="AI"><div class="t"><h3>AI</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.0200</div><div><span>SL 2.4%</span>0.0205</div><div><span>TP2</span>0.0186</div><div><span>Rasio ke target akhir</span>3.0R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.0174, jarak ke entry 14.9%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="w">Volume 24 jam rendah, risiko slip</div><div class="sz">Risiko $10: qty 21084 AI, nilai posisi $422</div></article><article class="c" data-s="INTCB"><div class="t"><h3>INTCB</h3><span><span class="ch S">Short</span><span class="ch">4H, swing</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>92.170</div><div><span>SL 5.3%</span>97.073</div><div><span>TP2</span>84.030</div><div><span>Rasio ke target akhir</span>1.7R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 71.320, jarak ke entry 29.2%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 2.04 INTCB, nilai posisi $188</div></article><article class="c" data-s="PARTI"><div class="t"><h3>PARTI</h3><span><span class="ch L">Long</span><span class="ch">4H, swing</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.0324</div><div><span>SL 11.2%</span>0.0288</div><div><span>TP1</span>0.0346</div><div><span>Rasio ke target akhir</span>2.4R</div></div>
+<div class="m">Sweep Monday Low, lalu reclaim. Harga 0.0564, jarak ke entry 42.6%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 2747 PARTI, nilai posisi $89</div></article><article class="c" data-s="SUI"><div class="t"><h3>SUI</h3><span><span class="ch S">Short</span><span class="ch">4H, swing</span><span class="ch ok">Aktif</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.899</div><div><span>SL 7.9%</span>0.970</div><div><span>TP1</span>0.838</div><div><span>Rasio ke target akhir</span>1.7R</div></div>
+<div class="m">Breakdown, retest gagal (failed reclaim). Harga 0.886, jarak ke entry 1.5%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 141 SUI, nilai posisi $127</div></article><article class="c" data-s="BNB"><div class="t"><h3>BNB</h3><span><span class="ch L">Long</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>705.9</div><div><span>SL 4.3%</span>675.7</div><div><span>TP1</span>734.0</div><div><span>Rasio ke target akhir</span>1.9R</div></div>
+<div class="m">Three Tap: 2 sentuhan, lalu sweep dan reclaim. Harga 717.9, jarak ke entry 1.7%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 0.332 BNB, nilai posisi $234</div></article><article class="c" data-s="LTC"><div class="t"><h3>LTC</h3><span><span class="ch L">Long</span><span class="ch">4H, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>55.090</div><div><span>SL 4.8%</span>52.445</div><div><span>TP1</span>60.485</div><div><span>Rasio ke target akhir</span>4.1R</div></div>
+<div class="m">Three Tap: 2 sentuhan, lalu sweep dan reclaim. Harga 56.070, jarak ke entry 1.7%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 3.78 LTC, nilai posisi $208</div></article><article class="c" data-s="DOGE"><div class="t"><h3>DOGE</h3><span><span class="ch S">Short</span><span class="ch">1D, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.0795</div><div><span>SL 3.6%</span>0.0823</div><div><span>TP2</span>0.0677</div><div><span>Rasio ke target akhir</span>4.1R</div></div>
+<div class="m">Wolf bearish: breakout trendline gagal. Harga 0.0760, jarak ke entry 4.5%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 3480 DOGE, nilai posisi $277</div></article><article class="c" data-s="PEPE"><div class="t"><h3>PEPE</h3><span><span class="ch S">Short</span><span class="ch">4H, swing</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.00000523</div><div><span>SL 10.4%</span>0.00000577</div><div><span>TP1</span>0.00000450</div><div><span>Rasio ke target akhir</span>2.7R</div></div>
+<div class="m">Three Top: 2 sentuhan, lalu sweep dan reclaim. Harga 0.00000493, jarak ke entry 6.1%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 18414995 PEPE, nilai posisi $96</div></article><article class="c" data-s="ZEC"><div class="t"><h3>ZEC</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>1368.4</div><div><span>SL 3.4%</span>1414.6</div><div><span>TP1</span>1208.7</div><div><span>Rasio ke target akhir</span>6.9R</div></div>
+<div class="m">Three Top: 2 sentuhan, lalu sweep dan reclaim. Harga 1275.7, jarak ke entry 7.3%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 0.217 ZEC, nilai posisi $296</div></article><article class="c" data-s="ARB"><div class="t"><h3>ARB</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.174</div><div><span>SL 3.9%</span>0.180</div><div><span>TP2</span>0.163</div><div><span>Rasio ke target akhir</span>1.6R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.159, jarak ke entry 9.2%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 1491 ARB, nilai posisi $259</div></article><article class="c" data-s="PUMP"><div class="t"><h3>PUMP</h3><span><span class="ch S">Short</span><span class="ch">4H, swing</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.00442</div><div><span>SL 6.6%</span>0.00471</div><div><span>TP2</span>0.00383</div><div><span>Rasio ke target akhir</span>2.0R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.00404, jarak ke entry 9.4%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 34404 PUMP, nilai posisi $152</div></article><article class="c" data-s="INJ"><div class="t"><h3>INJ</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>8.089</div><div><span>SL 3.6%</span>8.377</div><div><span>TP2</span>6.836</div><div><span>Rasio ke target akhir</span>4.3R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 7.325, jarak ke entry 10.4%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 34.7 INJ, nilai posisi $281</div></article><article class="c" data-s="GOOGLB"><div class="t"><h3>GOOGLB</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>323.4</div><div><span>SL 1.8%</span>329.3</div><div><span>TP2</span>287.9</div><div><span>Rasio ke target akhir</span>6.0R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 282.4, jarak ke entry 14.5%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 1.69 GOOGLB, nilai posisi $546</div></article><article class="c" data-s="ENA"><div class="t"><h3>ENA</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.213</div><div><span>SL 4.6%</span>0.223</div><div><span>TP2</span>0.174</div><div><span>Rasio ke target akhir</span>3.9R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.185, jarak ke entry 14.9%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 1017 ENA, nilai posisi $217</div></article><article class="c" data-s="WLD"><div class="t"><h3>WLD</h3><span><span class="ch S">Short</span><span class="ch">4H, scalping</span><span class="ch ">Jauh</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.453</div><div><span>SL 3.4%</span>0.468</div><div><span>TP2</span>0.411</div><div><span>Rasio ke target akhir</span>2.7R</div></div>
+<div class="m">Sweep Monday High, lalu kembali masuk. Harga 0.388, jarak ke entry 16.6%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 651 WLD, nilai posisi $295</div></article><article class="c" data-s="TRX"><div class="t"><h3>TRX</h3><span><span class="ch L">Long</span><span class="ch">1D, scalping</span><span class="ch wait">Menunggu retest</span></span></div>
+<div class="g4"><div><span>Entry limit</span>0.328</div><div><span>SL 1.3%</span>0.324</div><div><span>TP1</span>0.333</div><div><span>Rasio ke target akhir</span>5.0R</div></div>
+<div class="m">Wolf bullish: breakdown trendline gagal. Harga 0.343, jarak ke entry 4.4%.</div><div class="m">Konfirmasi: <span class="ch ok" style="margin:0">Retest tertahan di 4H</span></div>
+<div class="sz">Risiko $10: qty 2306 TRX, nilai posisi $757</div></article></div>
+</section>
+
+<section id="t-watch" hidden="">
+<p class="m">Ketuk koin untuk melihat grafik dan rencana jika-maka.</p>
+<div class="sc"><table id="wt"><tbody><tr><th>Koin</th><th>Posisi di range</th><th>Pola</th><th>Status</th></tr><tr data-s="PARTI"><td>PARTI</td><td><div class="tr" title="220%"><i style="left:100%"></i></div></td><td>Sweep Monday Low, Wolf</td><td>Setup aktif</td></tr><tr data-s="TRX"><td>TRX</td><td><div class="tr" title="161%"><i style="left:100%"></i></div></td><td>Sweep Monday Low, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="INTCB"><td>INTCB</td><td><div class="tr" title="-50%"><i style="left:0%"></i></div></td><td>Sweep Monday High</td><td>Setup aktif</td></tr><tr data-s="HYPE"><td>HYPE</td><td><div class="tr" title="130%"><i style="left:100%"></i></div></td><td>Double Deviation</td><td>Setup aktif</td></tr><tr data-s="AI"><td>AI</td><td><div class="tr" title="-26%"><i style="left:0%"></i></div></td><td>Sweep Monday High</td><td>Setup aktif</td></tr><tr data-s="BTC"><td>BTC</td><td><div class="tr" title="-19%"><i style="left:0%"></i></div></td><td>Sweep Monday High</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="ETH"><td>ETH</td><td><div class="tr" title="-16%"><i style="left:0%"></i></div></td><td>Sweep Monday High</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="FET"><td>FET</td><td><div class="tr" title="-13%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Wolf (1D)</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="WLD"><td>WLD</td><td><div class="tr" title="-12%"><i style="left:0%"></i></div></td><td>Sweep Monday High</td><td>Setup aktif</td></tr><tr data-s="HBAR"><td>HBAR</td><td><div class="tr" title="-10%"><i style="left:0%"></i></div></td><td>-</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="ARB"><td>ARB</td><td><div class="tr" title="-10%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Setup aktif</td></tr><tr data-s="AAVE"><td>AAVE</td><td><div class="tr" title="-10%"><i style="left:0%"></i></div></td><td>-</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="TAO"><td>TAO</td><td><div class="tr" title="-10%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Setup aktif</td></tr><tr data-s="LINK"><td>LINK</td><td><div class="tr" title="-10%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="SOL"><td>SOL</td><td><div class="tr" title="-10%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Setup aktif</td></tr><tr data-s="GOOGLB"><td>GOOGLB</td><td><div class="tr" title="-8%"><i style="left:0%"></i></div></td><td>Sweep Monday High</td><td>Setup aktif</td></tr><tr data-s="SUI"><td>SUI</td><td><div class="tr" title="-5%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="ADA"><td>ADA</td><td><div class="tr" title="-5%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="ONDO"><td>ONDO</td><td><div class="tr" title="-5%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="NEAR"><td>NEAR</td><td><div class="tr" title="-5%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Setup aktif</td></tr><tr data-s="AVAX"><td>AVAX</td><td><div class="tr" title="-4%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Setup aktif</td></tr><tr data-s="ZRO"><td>ZRO</td><td><div class="tr" title="-2%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Wolf, Breakout retest</td><td>Setup aktif</td></tr><tr data-s="XRP"><td>XRP</td><td><div class="tr" title="-2%"><i style="left:0%"></i></div></td><td>Sweep Monday High, Breakout retest</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="SPCXB"><td>SPCXB</td><td><div class="tr" title="1%"><i style="left:1.0267693436010317%"></i></div></td><td>Three Tap, Sweep Monday High</td><td>Setup aktif</td></tr><tr data-s="XAUT"><td>XAUT</td><td><div class="tr" title="8%"><i style="left:8.052036391463341%"></i></div></td><td>Sweep Monday High</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="LTC"><td>LTC</td><td><div class="tr" title="9%"><i style="left:9.08248378127894%"></i></div></td><td>Three Tap, Sweep Monday Low, Sweep Monday High, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="DOGE"><td>DOGE</td><td><div class="tr" title="9%"><i style="left:9.43113772455088%"></i></div></td><td>Sweep bawah, Sweep Monday Low, Sweep Monday High, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="PUMP"><td>PUMP</td><td><div class="tr" title="9%"><i style="left:9.457013574660653%"></i></div></td><td>Sweep bawah, Sweep Monday High, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="CRCLB"><td>CRCLB</td><td><div class="tr" title="10%"><i style="left:9.515469935785148%"></i></div></td><td>Three Tap, Wolf</td><td>Setup aktif</td></tr><tr data-s="MSTRB"><td>MSTRB</td><td><div class="tr" title="11%"><i style="left:10.634982469809081%"></i></div></td><td>Three Tap, Sweep Monday High</td><td>Setup aktif</td></tr><tr data-s="SOXLB"><td>SOXLB</td><td><div class="tr" title="11%"><i style="left:11.444550538807805%"></i></div></td><td>Sweep Monday High</td><td>Dekat low: tunggu sweep dan reclaim</td></tr><tr data-s="ENA"><td>ENA</td><td><div class="tr" title="15%"><i style="left:14.931506849315056%"></i></div></td><td>Sweep bawah, Sweep Monday High, Wolf, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="UNI"><td>UNI</td><td><div class="tr" title="16%"><i style="left:15.667870036101059%"></i></div></td><td>Three Tap, Sweep Monday High, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="INJ"><td>INJ</td><td><div class="tr" title="19%"><i style="left:18.946144905075553%"></i></div></td><td>Sweep Monday High, Wolf</td><td>Setup aktif</td></tr><tr data-s="PEPE"><td>PEPE</td><td><div class="tr" title="80%"><i style="left:79.5918367346939%"></i></div></td><td>Three Top, Sweep atas (1D)</td><td>Setup aktif</td></tr><tr data-s="BNB"><td>BNB</td><td><div class="tr" title="21%"><i style="left:21.317003904863302%"></i></div></td><td>Three Tap, Sweep Monday High, Wolf (1D)</td><td>Setup aktif</td></tr><tr data-s="SNDKB"><td>SNDKB</td><td><div class="tr" title="26%"><i style="left:25.90565661489377%"></i></div></td><td>-</td><td>Belum ada pemicu</td></tr><tr data-s="ZEC"><td>ZEC</td><td><div class="tr" title="71%"><i style="left:70.96652994771283%"></i></div></td><td>Three Top, Wolf</td><td>Setup aktif</td></tr><tr data-s="BCH"><td>BCH</td><td><div class="tr" title="60%"><i style="left:59.67078189300409%"></i></div></td><td>Sweep Monday Low, Wolf</td><td>Setup aktif</td></tr><tr data-s="SKHYB"><td>SKHYB</td><td><div class="tr" title="54%"><i style="left:54.316012725344606%"></i></div></td><td>-</td><td>Tengah range: tanpa trade</td></tr></tbody></table></div>
+</section>
+
+<section id="t-rule" hidden="">
+<p class="m"><span class="ch ok">Dari Eliz</span> disebut langsung di materi. <span class="ch wait">Tafsiran</span> angka atau rumus pilihan saya.</p>
+<ul id="rl" style="padding-left:18px"><li><span class="ch ok">Dari Eliz</span> Tanpa pemicu, tanpa trade. Tengah range adalah zona tanpa trade, dan tidak mengejar harga.</li><li><span class="ch ok">Dari Eliz</span> Pemicu: sweep di luar range, reclaim, lalu entry di retest. SL di wick sweep.</li><li><span class="ch ok">Dari Eliz</span> Level berupa kotak di tepi range, bukan garis. Range taktis 4H (21 hari) dan range swing 1D (120 hari).</li><li><span class="ch wait">Tafsiran</span> Angka 21 hari, 120 hari, dan tebal kotak 0,5 ATR adalah pilihan saya.</li><li><span class="ch ok">Dari Eliz</span> Monday Range: tunggu close Senin. Sweep Monday Low atau High lalu reclaim adalah pemicu.</li><li><span class="ch ok">Dari Eliz</span> Double Deviation: sweep pertama lebih dalam, sweep kedua lebih dangkal, keduanya reclaim.</li><li><span class="ch ok">Dari Eliz</span> Three Tap atau Three Top: 2 sentuhan di tepi range, lalu sweep dan reclaim.</li><li><span class="ch ok">Dari Eliz</span> Wolf: breakout trendline yang gagal. Versi bullish adalah tafsiran saya.</li><li><span class="ch ok">Dari Eliz</span> Breakout butuh acceptance, lalu retest. Breakdown yang gagal di-retest (failed reclaim) menjadi short.</li><li><span class="ch wait">Tafsiran</span> Acceptance saya definisikan 2 close atau lebih.</li><li><span class="ch wait">Tafsiran</span> Arah dari struktur harian (HH dan HL naik, LH dan LL turun). Sweep boleh melawan struktur, breakout dan retest zona tidak.</li><li><span class="ch wait">Tafsiran</span> Target: garis tengah, tepi range, lalu box HTF. Breakout memakai ukuran range.</li><li><span class="ch wait">Tafsiran</span> Konfirmasi 4H (retest tertahan). Batal bila close 12H melewati SL.</li><li><span class="ch ok">Dari Eliz</span> SL ketat: scalping 3 sampai 5 persen, swing 10 sampai 15 persen.</li><li><span class="ch wait">Tafsiran</span> Spot dengan SL lebar (maksimal 30 persen) hanya bila target minimal 3 kali jarak SL, seperti contoh SUI dan NEAR.</li><li><span class="ch ok">Dari Eliz</span> Ambil profit bertahap: sekitar 60 sampai 80 persen di target, sisakan sekitar 20 persen dengan stop di profit.</li><li><span class="ch ok">Dari Eliz</span> Indikator hanya pelengkap (sekitar 5 persen), jadi tidak dipakai menyaring. Supertrend, Volume Profile, dan order book tidak dikodekan.</li><li><span class="ch ok">Dari Eliz</span> Berita (FOMC) dianggap noise. Alert hanya peringatan. Libur dan volume tipis tetap diwaspadai.</li></ul>
+</section>
+<section id="t-uji" hidden="">
+<p class="m">Menguji engine pada waktu asli post Eliz. Engine hanya diberi data sampai detik post. Dataset berisi post pilihan Eliz sendiri, jadi ini mengukur apakah engine melihat yang dia lihat, bukan membuktikan profit. Pembanding acak mengukur apakah tanggal Eliz lebih baik dari tanggal sembarang.</p>
+<div class="bar"><button class="p" id="ujgo">Jalankan uji dataset</button><button class="p" id="ujbl">Uji pembanding acak</button><button class="p" id="ujcp" disabled="">Salin hasil</button></div>
+<div id="ujst" class="m"></div><div id="ujsum"></div><div id="ujlist"></div>
+</section>
+</main>
+<footer>Alat bantu riset, bukan saran finansial. Level dan rencana dihitung otomatis dari data Binance dan tidak menggantikan penilaian sendiri. Hasil trader lain tidak menjamin hasil kamu.</footer>
+<dialog id="dg"></dialog>
+
+<script type="module">
+import {bj,kl,NOT,fmt as f,analyze,alertList} from './engine.mjs';
+import {runDataset,runBaseline,summarize,bl2} from './validate.mjs';
+import * as VALNS from './validate.mjs'; // hanya untuk menampilkan versi; aman bila file lama
+const $=s=>document.querySelector(s),SD=['turun','datar','naik'];
+const ld=k=>{try{return localStorage.getItem(k)}catch(e){return null}},sv=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+let all=[],btc=null,flt='all',extra=[],cur=null,tfv='4h';
+$('#wm').innerHTML='<span class="lg"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="stroke:#fff;stroke-width:3;width:20px;height:20px"><path d="M5 18v-6M12 18V6M19 18V9"/></svg></span><span class="nm">asgracrypto</span>';
+$('#cap').value=ld('cap')||1000;$('#rk').value=ld('rk')||1;
+
+const RULES=[['ok','Tanpa pemicu, tanpa trade. Tengah range adalah zona tanpa trade, dan tidak mengejar harga.'],
+['ok','Pemicu: sweep di luar range, reclaim, lalu entry di retest. SL di wick sweep.'],
+['ok','Level berupa kotak di tepi range, bukan garis. Range taktis 4H (21 hari) dan range swing 1D (120 hari).'],
+['wait','Angka 21 hari, 120 hari, dan tebal kotak 0,5 ATR adalah pilihan saya.'],
+['ok','Monday Range: tunggu close Senin. Sweep Monday Low atau High lalu reclaim adalah pemicu.'],
+['ok','Double Deviation: sweep pertama lebih dalam, sweep kedua lebih dangkal, keduanya reclaim.'],
+['ok','Three Tap atau Three Top: 2 sentuhan di tepi range, lalu sweep dan reclaim.'],
+['ok','Wolf: breakout trendline yang gagal. Versi bullish adalah tafsiran saya.'],
+['ok','Breakout butuh acceptance, lalu retest. Breakdown yang gagal di-retest (failed reclaim) menjadi short.'],
+['wait','Acceptance saya definisikan 2 close atau lebih.'],
+['wait','Arah dari struktur harian (HH dan HL naik, LH dan LL turun). Sweep boleh melawan struktur, breakout dan retest zona tidak.'],
+['wait','Target: garis tengah, tepi range, lalu box HTF. Breakout memakai ukuran range.'],
+['wait','Konfirmasi 4H (retest tertahan). Batal bila close 12H melewati SL.'],
+['ok','SL ketat: scalping 3 sampai 5 persen, swing 10 sampai 15 persen.'],
+['wait','Spot dengan SL lebar (maksimal 30 persen) hanya bila target minimal 3 kali jarak SL, seperti contoh SUI dan NEAR.'],
+['ok','Ambil profit bertahap: sekitar 60 sampai 80 persen di target, sisakan sekitar 20 persen dengan stop di profit.'],
+['ok','Indikator hanya pelengkap (sekitar 5 persen), jadi tidak dipakai menyaring. Supertrend, Volume Profile, dan order book tidak dikodekan.'],
+['ok','Berita (FOMC) dianggap noise. Alert hanya peringatan. Libur dan volume tipis tetap diwaspadai.']];
+$('#rl').innerHTML=RULES.map(r=>`<li><span class="ch ${r[0]}">${r[0]=='ok'?'Dari Eliz':'Tafsiran'}</span> ${r[1]}</li>`).join('');
+
+$('#tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;[...$('#tabs').children].forEach(x=>x.classList.toggle('on',x==b));for(const s of document.querySelectorAll('section'))s.hidden=s.id!=='t-'+b.dataset.t};
+function showAl(){const A=[...alertList(),...extra];$('#al').innerHTML=A.map(a=>`<div class="al ${a[0]}">${a[1]}<small>${a[2]||''}</small></div>`).join('')}
+
+function chart(r,tf){const k4=tf=='4h',B=k4?r.ch4:r.ch1,fr=k4?r.f4:r.f1,off=k4?r.off4:r.off1;if(!fr)return'<p class="m">Data kurang untuk timeframe ini.</p>';
+ const W=640,Hh=250,n=B.length,bw=W/n,P=14,s=r.best&&r.best.tf===(k4?'4H':'1D')?r.best:null,Ls=[[fr.H,'range high','var(--mut)'],[fr.L,'range low','var(--mut)']];
+ if(fr.mon)Ls.push([fr.mon.h,'Monday high','#F7B928'],[fr.mon.l,'Monday low','#F7B928']);
+ if(s){Ls.push([s.entry,'entry','#4599FF'],[s.sl,'SL','#F3425F']);s.tg.forEach(t=>Ls.push([t.v,t.l.split(' ')[0],'#45BD62']))}
+ const vs=[...B.map(q=>q.h),...B.map(q=>q.l),...Ls.map(a=>a[0])],mx=Math.max(...vs),mn=Math.min(...vs),y=v=>+(P+(mx-v)/(mx-mn)*(Hh-2*P)).toFixed(1);
+ let o=`<svg viewBox="0 0 ${W} ${Hh}" width="100%" role="img" aria-label="Grafik ${r.s} ${fr.tf}">`;
+ o+=`<rect x="0" y="${y(fr.H)}" width="${W}" height="${Math.max(2,y(fr.H-fr.bd)-y(fr.H))}" fill="#F3425F" opacity=".16"/><rect x="0" y="${y(fr.L+fr.bd)}" width="${W}" height="${Math.max(2,y(fr.L)-y(fr.L+fr.bd))}" fill="#45BD62" opacity=".16"/>`;
+ o+=`<line x1="0" x2="${W}" y1="${y(fr.M)}" y2="${y(fr.M)}" stroke="var(--mut)" stroke-dasharray="2 4"/>`;
+ B.forEach((q,i)=>{const x=(i*bw+bw/2).toFixed(1),c=q.c>=q.o?'#45BD62':'#F3425F';o+=`<line x1="${x}" x2="${x}" y1="${y(q.h)}" y2="${y(q.l)}" stroke="${c}"/><rect x="${(x-bw*.35).toFixed(1)}" y="${y(Math.max(q.o,q.c))}" width="${(bw*.7).toFixed(1)}" height="${Math.max(1,Math.abs(y(q.o)-y(q.c)))}" fill="${c}"/>`});
+ if(fr.tl){const T=fr.tl,a=Math.max(T.a,off),v=i=>T.av+T.sl*(i-T.a);o+=`<line x1="${((a-off+.5)*bw).toFixed(1)}" y1="${y(v(a))}" x2="${((T.e-off+.5)*bw).toFixed(1)}" y2="${y(v(T.e))}" stroke="#F7B928" stroke-width="2"/>`}
+ for(const[v,t,c]of Ls)o+=`<line x1="0" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="5 3" opacity=".8"/><text x="4" y="${y(v)-3}" fill="${c}">${t} ${f(v)}</text>`;
+ return o+'</svg>'}
+
+function card(r){const s=r.best,cap=+$('#cap').value||0,rs=cap*(+$('#rk').value||0)/100,q=rs/s.risk,nt=q*s.entry,lev=cap?nt/cap:0;
+ const st=s.cf[0]=='ok'&&s.dist<=1.5?['Aktif','ok']:s.dist<=6?['Menunggu retest','wait']:['Jauh',''];
+ return `<article class="c" data-s="${r.s}"><div class="t"><h3>${r.s}</h3><span><span class="ch ${s.side==1?'L':'S'}">${s.side==1?'Long':'Short'}</span><span class="ch">${s.tf}, ${s.type}</span><span class="ch ${st[1]}">${st[0]}</span></span></div>
+<div class="g4"><div><span>Entry limit</span>${f(s.entry)}</div><div><span>SL ${s.slp.toFixed(1)}%</span>${f(s.sl)}</div><div><span>${s.tg[0].l.split(' ')[0]}</span>${f(s.tg[0].v)}</div><div><span>Rasio ke target akhir</span>${s.rr.toFixed(1)}R</div></div>
+<div class="m">${s.why}. Harga ${f(r.px)}, jarak ke entry ${s.dist.toFixed(1)}%.</div><div class="m">Konfirmasi: <span class="ch ${s.cf[0]}" style="margin:0">${s.cf[1]}</span></div>
+${s.w.length?`<div class="w">${s.w.join('. ')}</div>`:''}<div class="sz">Risiko $${rs.toFixed(0)}: qty ${q>=100?q.toFixed(0):q.toPrecision(3)} ${r.s}, nilai posisi $${nt.toFixed(0)}${lev>1.05?`, leverage setara ${lev.toFixed(1)}x`:''}</div></article>`}
+
+function renderSetups(){const L=all.filter(r=>r.best).filter(r=>flt=='all'||(flt=='a'?r.best.cf[0]=='ok'&&r.best.dist<=1.5:r.best.side==flt));
+ L.sort((a,b)=>b.best.sc-a.best.sc||a.best.dist-b.best.dist);
+ $('#setups').innerHTML=L.map(card).join('')||'<div class="c m">Belum ada setup yang lolos aturan. Diam juga posisi.</div>';
+ $('#top3').innerHTML=all.filter(r=>r.best).sort((a,b)=>b.best.sc-a.best.sc||a.best.dist-b.best.dist).slice(0,3).map(card).join('')||'<div class="c m">Belum ada setup. Tunggu pemicu di tepi range.</div>'}
+
+function renderHome(){const b=btc,fr=b.f4||b.f1;
+ const msg=fr.mid?'BTC di tengah range. Diam di BTC dan cari setup altcoin yang punya pemicu.':b.best?'BTC punya setup. Buka rencananya.':fr.pos<.2?'BTC dekat low range. Tunggu sweep lalu reclaim.':fr.pos>.8?'BTC dekat high range. Tunggu sweep atas, atau breakout dan retest.':'BTC belum memberi pemicu.';
+ $('#btcc').className='c';$('#btcc').dataset.s='BTC';
+ $('#btcc').innerHTML=`<div class="g4"><div><span>Harga BTC</span>${f(b.px)}</div><div><span>Range ${fr.tf}</span>${f(fr.L)} sampai ${f(fr.H)}</div><div><span>Posisi di range</span>${Math.round(fr.pos*100)}%</div><div><span>Struktur harian</span>${SD[b.bias+1]}</div></div><div>${msg}</div>${fr.mon?`<div class="m">Monday Range: ${f(fr.mon.l)} sampai ${f(fr.mon.h)}${fr.mon.done?'':' (belum selesai)'}</div>`:''}<div class="m">Ketuk untuk grafik dan rencana.</div>`}
+
+function renderWatch(){const A=[...all].sort((a,b)=>{const p=r=>{const fr=r.f4||r.f1;return Math.min(fr.pos,1-fr.pos)};return p(a)-p(b)});
+ $('#wt').innerHTML='<tr><th>Koin</th><th>Posisi di range</th><th>Pola</th><th>Status</th></tr>'+A.map(r=>{const fr=r.f4||r.f1,tg=[...(r.f4?.tags||[]),...(r.f1?.tags||[]).map(t=>t+' (1D)')];
+  return`<tr data-s="${r.s}"><td>${r.s}</td><td><div class="tr" title="${Math.round(fr.pos*100)}%"><i style="left:${Math.max(0,Math.min(100,fr.pos*100))}%"></i></div></td><td>${tg.join(', ')||'-'}</td><td>${r.st}</td></tr>`}).join('');
+ $('#dl').innerHTML=all.map(r=>`<option value="${r.s}">`).join('')}
+
+async function dom(){let g=null,eb=null;
+ try{g=(await (await fetch('https://api.coingecko.com/api/v3/global',{signal:AbortSignal.timeout(10000)})).json()).data.market_cap_percentage}catch(e){}
+ try{const c=(await kl('ETHBTC','1d',200)).map(q=>q.c);eb={r30:c.at(-1)/c.at(-31)-1}}catch(e){}
+ const al=all.filter(r=>r.s!=='BTC'&&r.s!=='ETH'),br=al.length?Math.round(al.filter(r=>r.ret30>btc.ret30).length/al.length*100):null;
+ const v=eb&&br!=null?(eb.r30>0&&br>=50?'Mengarah ke musim altcoin: ETH/BTC naik dan mayoritas altcoin mengungguli BTC.':eb.r30<0&&br<40?'BTC dominan: altcoin tertinggal dari BTC. Pilih altcoin hanya dengan pemicu jelas.':'Campuran: belum musim altcoin penuh.'):'Data belum lengkap.';
+ $('#domc').className='c';$('#domc').innerHTML=`<div class="g4"><div><span>Dominasi BTC</span>${g?g.btc.toFixed(1)+'%':'n/a'}</div><div><span>Dominasi ETH</span>${g?g.eth.toFixed(1)+'%':'n/a'}</div><div><span>ETH/BTC, 30 hari</span>${eb?(eb.r30*100).toFixed(1)+'%':'n/a'}</div><div><span>Altcoin mengungguli BTC (30 hari)</span>${br==null?'n/a':br+'%'}</div></div><div>${v}</div><div class="m">Kesimpulan ini tafsiran saya. Skenario Eliz: dominasi BTC ditolak di zona tinggi bersamaan BTC ditolak, lalu ETH naik, lalu altcoin.</div>`}
+
+const scen=r=>{const fr=r.f4||r.f1,A=fr.A,tf=fr.tf;return[
+ ['L','Sweep bawah, lalu long',`Jika harga menembus di bawah ${f(fr.L)} lalu close ${tf} kembali di atasnya, pasang limit di ${f(fr.L)}. SL di bawah wick sweep (kira-kira ${f(fr.L-1.25*A)}). Target: garis tengah ${f(fr.M)}, lalu ${f(fr.H)}.`],
+ ['S','Sweep atas, lalu short',`Jika harga menembus di atas ${f(fr.H)} lalu masuk lagi ke range, pasang limit di ${f(fr.H)}. SL di atas wick (kira-kira ${f(fr.H+1.25*A)}). Target: ${f(fr.M)}, lalu ${f(fr.L)}.`],
+ ['b','Breakout, retest, lalu long',`Jika 2 close ${tf} atau lebih di atas ${f(fr.H)} dan harga me-retest ${f(fr.H)} lalu bertahan, long di retest dengan SL di bawah retest. Tanpa itu, tidak ada trade.`]]};
+
+function open(r){cur=r;const s=r.best;
+ $('#dg').innerHTML=`<button class="x" aria-label="Tutup" onclick="document.querySelector('#dg').close()">×</button><h3>${r.s} <span class="ch">${r.st}</span></h3><div class="m">Harga ${f(r.px)}, struktur harian ${SD[r.bias+1]}</div>
+<div class="tf" id="tf"><button data-tf="4h" class="${tfv=='4h'?'on':''}">4H</button><button data-tf="1d" class="${tfv=='1d'?'on':''}">1D</button></div><div id="chw">${chart(r,tfv)}</div>
+<div class="m" style="margin-top:6px">Kotak hijau demand, kotak merah supply, garis putus-putus tengah range${(r.f4||{}).mon?', kuning Monday Range':''}.</div>
+${s?`<h2>Setup saat ini</h2>${card(r)}${r.setups.length>1?`<div class="m">Setup lain: ${r.setups.slice(1).map(x=>`${x.side==1?'long':'short'} ${x.tf} (${x.why})`).join('; ')}</div>`:''}`:''}
+<h2>Rencana jika-maka</h2>${scen(r).map(c=>`<div class="c"><span class="ch ${c[0]}">${c[1]}</span><div style="margin-top:6px">${c[2]}</div></div>`).join('')}`;
+ $('#dg').showModal()}
+$('#dg').onclick=e=>{const b=e.target.closest('button[data-tf]');if(b&&cur){tfv=b.dataset.tf;[...$('#tf').children].forEach(x=>x.classList.toggle('on',x==b));$('#chw').innerHTML=chart(cur,tfv)}else if(e.target===$('#dg'))$('#dg').close()};
+const pick=e=>{const t=e.target.closest('[data-s]');if(!t)return;const r=all.find(x=>x.s===t.dataset.s);if(r)open(r)};
+for(const id of['#btcc','#top3','#setups','#wt'])$(id).addEventListener('click',pick);
+$('#flt').onclick=e=>{const b=e.target.closest('button');if(!b)return;flt=b.dataset.f;[...$('#flt').children].forEach(x=>x.classList.toggle('on',x==b));renderSetups()};
+['cap','rk'].forEach(id=>$('#'+id).oninput=e=>{sv(id,e.target.value);renderSetups()});
+$('#sf').onsubmit=async e=>{e.preventDefault();const s=$('#q').value.trim().toUpperCase().replace(/USDT$/,'');if(!s)return;let r=all.find(x=>x.s===s);
+ if(!r){$('#st').textContent='Menganalisis '+s;try{const[d,h]=await Promise.all([kl(s+'USDT','1d',500),kl(s+'USDT','4h',300)]);r=analyze(s,d,h,{btcBias:btc?btc.bias:0,qv:1e9});$('#st').textContent=''}catch(x){$('#st').textContent='Koin '+s+' tidak ditemukan di Binance (USDT) atau datanya kurang.';return}}
+ open(r)};
+
+async function scan(){const b=$('#go');b.disabled=true;all=[];extra=[];$('#pg i').style.width='4%';$('#st').textContent='Mengambil daftar koin';
+ try{const t=await bj('ticker/24hr'),top=t.filter(x=>x.symbol.endsWith('USDT')&&!NOT.test(x.symbol.slice(0,-4))).sort((a,b)=>b.quoteVolume-a.quoteVolume).slice(0,40);
+  const get=async s=>{const[d,h]=await Promise.all([kl(s+'USDT','1d',500),kl(s+'USDT','4h',300)]);return{d,h}};
+  const bg=await get('BTC');btc=analyze('BTC',bg.d,bg.h,{qv:1e9});all.push(btc);
+  const v=bg.d.slice(-22,-2).map(q=>q.v),avg=v.reduce((a,b)=>a+b,0)/v.length;
+  if(bg.d.at(-2).v<.6*avg)extra.push(['y','Volume BTC kemarin di bawah 60% rata-rata 20 hari.','Volume tipis']);
+  if((btc.f4||btc.f1).mid)extra.push(['b','BTC di tengah range. Diam di BTC, cari altcoin yang punya pemicu.','Sikap Eliz: tanpa pemicu, tidak ada trade di BTC']);
+  showAl();renderHome();
+  const rest=top.filter(x=>x.symbol!=='BTCUSDT');
+  for(let i=0;i<rest.length;i+=6){$('#st').textContent=`Memindai ${Math.min(i+6,rest.length)} dari ${rest.length} koin`;$('#pg i').style.width=(10+Math.min(i+6,rest.length)/rest.length*90)+'%';
+   await Promise.all(rest.slice(i,i+6).map(async x=>{const s=x.symbol.slice(0,-4);try{const g=await get(s);all.push(analyze(s,g.d,g.h,{btcBias:btc.bias,qv:+x.quoteVolume}))}catch(e){}}))}
+  renderSetups();renderWatch();await dom();
+  $('#st').textContent=`Selesai: ${all.filter(r=>r.best).length} koin punya setup, ${all.length} koin dipantau.`;
+ }catch(e){$('#st').textContent='Semua server Binance gagal dijangkau ('+(e&&e.name==='TimeoutError'?'timeout':e&&e.message)+'). Coba ganti jaringan atau VPN.'}
+ $('#pg i').style.width='100%';b.disabled=false}
+// Tab Uji: engine vs post Eliz (lihat validate.mjs dan eliz-dataset.json)
+let uj=null,ds0=null,ujBl=null;
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const VC={sama:'ok',sebagian:'wait',beda:'S',berlawanan:'S','tidak terdeteksi':'S',dilewati:''};
+const nn=x=>x==null?'n/a':x;
+const sm=x=>!x?'-':x.st==='masih terbuka'?`masih terbuka, ${x.R.toFixed(2)}R (belum terealisasi)`:`${x.st}, ${x.R.toFixed(2)}R`;
+const qp=k=>new URLSearchParams(location.search).get(k);
+const ujCard=x=>{if(x.error)return`<div class="c"><div class="t"><h3>${x.id}</h3><span class="ch wait">${x.optional?'tidak tersedia':'error'}</span></div><div class="m">${esc(x.error)}</div></div>`;
+ const b=x.engine.best,cl=(x.claims||[]).map(c=>`<div class="m">Klaim${c.info?' (info)':c.conditional?' (bersyarat)':''}: ${esc(c.text)}: <b>${c.verdict}</b>${c.at?' pada '+c.at.slice(0,10):''}${c.ach!=null?', capaian maks '+c.ach+'% dari '+f(c.base)+(c.basis==='chart'?' (harga chart)':c.basis==='binance'?' (harga Binance)':''):''}</div>`).join(''),
+ fl=[...x.flags,...(x.tsEst?[`Jam analisis diestimasi dari harga chart: ${x.tsEst.slice(0,16).replace('T',' ')} UTC (selisih harga ${x.tsEstDiff}%)`]:[]),...(x.tsSuspect?[`Harga chart ${x.pxShown} vs Binance ${f(x.px)} (${x.pxDiff}%): waktu atau sumber mungkin salah`]:[]),...(x.result&&x.result.tsSuspect?[`Harga di post hasil ${x.result.pxShown} vs Binance ${f(x.result.pxActual)} (${x.result.pxDiff}%): waktu post hasil mungkin salah${x.result.altDiff!=null?`; terhadap tanggal di chart selisih ${x.result.altDiff}%`:''}`]:[])];
+ return`<article class="c"><div class="t"><h3>${x.id}</h3><span><span class="ch">${x.cls}${x.dir?x.dir>0?' long':' short':''}</span><span class="ch ${VC[x.grade.verdict]}">${x.grade.verdict}</span></span></div>
+<div class="m">Eliz: ${esc(x.note)}</div><div class="m">Engine: ${b?`${b.side>0?'long':'short'} ${b.tf}, ${esc(b.why)}, entry ${f(b.entry)}, SL ${f(b.sl)}, ${b.rr.toFixed(1)}R`:esc(x.engine.st)}. ${esc(x.grade.note)}.</div>
+${x.levels&&x.levels.total?`<div class="m">Level cocok: ${x.levels.hit} dari ${x.levels.total}${x.levels.miss.length?'. Meleset: '+esc(x.levels.miss.join('; ')):''}</div>`:''}${cl}
+${x.sim?`<div class="m">Simulasi plan v1 (stop wick): ${sm(x.sim)}. Eksperimen: close ${sm(x.v4&&x.v4.sim)}; close+2R ${sm(x.v5&&x.v5.sim)}; close+3R ${sm(x.v6&&x.v6.sim)}</div>`:''}${fl.map(t=>`<div class="w">${esc(t)}</div>`).join('')}</article>`};
+const sl=(s,t)=>`${t}: skor ${s.skor==null?'n/a':s.skor+'%'} (sama ${s.sama}, sebagian ${s.sebagian}, beda ${s.beda}), level ${s.levelHit} dari ${s.levelTotal}.`;
+const ss=(x,t)=>`${t}: ${x.setup} setup, ${x.terisi} terisi = ${x.tertutup} tertutup + ${x.terbuka} terbuka. Tertutup: ${x.win} menang, ${x.sl} kena SL, rata-rata ${nn(x.avgR)}R, median ${nn(x.medR)}R, tanpa trade terbaik ${nn(x.tanpaTerbaik)}R, terburuk ${nn(x.minR)}R. Terbuka (belum terealisasi): ${x.bukaPos} dari ${x.terbuka} sedang positif, rata-rata ${nn(x.bukaR)}R. Total (tertutup + terbuka pada harga terakhir): ${nn(x.avgTotal)}R.`;
+const NM={v1:'v1 (stop wick)',v4:'v4 eksperimen (stop close)',v5:'v5 eksperimen (close + batas rugi 2R)',v6:'v6 eksperimen (close + batas rugi 3R)'};
+const klTxt=(c,t,lab)=>c&&c.klaster?`${t}: ${c.trade} trade menjadi ${c.klaster} klaster independen. Selisih rata-rata ${lab||'R total (tertutup + terbuka pada harga terakhir)'} per klaster terhadap v1: ${c.selisih>0?'+':''}${c.selisih} (selang 95%: ${c.ci[0]} sampai ${c.ci[1]}); lebih baik di ${c.lebihBaik} klaster, lebih buruk di ${c.lebihBuruk}. ${c.ci[0]>0?'Positif secara statistik.':c.ci[1]<0?'Negatif secara statistik.':'Selang mencakup nol: belum terbukti berbeda dari v1.'}`:`${t}: tidak ada data`;
+const ujSum=()=>{const s=summarize(uj.res),b=ujBl,pc=v=>v==null?'n/a':v+'%',E=['v4','v5','v6'],seed=qp('seed')||7,days=qp('days')||7;
+$('#ujsum').innerHTML=`<div class="c"><div class="g4"><div><span>Skor kecocokan (engine v1)</span>${pc(s.skor)}</div><div><span>Level cocok</span>${s.levelHit} dari ${s.levelTotal}</div><div><span>v1: trade tertutup / terbuka</span>${s.sim.tertutup} / ${s.sim.terbuka}</div><div><span>v1: R rata-rata total</span>${nn(s.sim.avgTotal)}</div></div>
+<div class="m">${sl(s,'Dataset Eliz')}</div><div class="m">${ss(s.sim,NM.v1+' di dataset')}</div>
+${b?`<div class="m">Pembanding acak, ${b.n} sampel, seed ${seed}, jendela uji ${days} hari (jam sembarang, koin yang sama). ${ss(b.v1,NM.v1)}</div>`:''}
+<div class="m">Cara membaca: tertutup = sudah kena SL atau target. Terbuka = belum selesai di akhir jendela uji; R-nya hanya nilai pada harga terakhir dan belum terealisasi. Rata-rata tertutup saja condong ke bawah (stop cepat selesai, keuntungan sering masih berjalan), jadi lihat juga totalnya. Tambahkan ?days=21 ke alamat agar lebih banyak posisi sempat selesai.</div>
+<details><summary class="m"><b>Eksperimen v4 sampai v6</b> (belum lulus uji; default situs tetap v1)</summary>
+<div class="w">Catatan hasil uji lepas: pada seed 7 dan seed 8 (200 sampel masing-masing), selang 95% selisih total per klaster terhadap v1 mencakup nol untuk v4, v5, dan v6. Aturan keputusan tidak terpenuhi, jadi ketiganya hanya eksperimen dan tidak dipakai di pemindai.</div>
+${E.map(k=>`<div class="m">${ss(s[k].sim,NM[k]+' di dataset')}</div>`).join('')}
+${b?E.map(k=>`<div class="m">${ss(b[k],NM[k]+' di sampel acak')}</div>`).join('')+E.map(k=>`<div class="m">${b.par[k].slJadiTerbuka} dari ${b.par[k].n} trade terisi: stop v1 menjadi posisi terbuka di ${NM[k]}.</div>`).join('')+'<div class="m">Sampel acak yang berdekatan sering trade yang sama, jadi perbandingan dihitung per klaster dengan bootstrap:</div>'+E.map(k=>`<div class="m">${klTxt(b.kl[k],NM[k])}</div>`).join('')+'<div class="m">Pembanding kedua (hanya trade yang tertutup di v1 maupun di varian) hampir pasti negatif untuk varian karena konstruksinya: bila stop kena di kedua versi, keluaran varian di harga close selalu sama atau lebih buruk dari -1R, sedangkan stop v1 yang selamat di varian tidak ikut dihitung. Angka ini bukan bukti varian lebih buruk. Jangan dibaca sendirian; pegangan utama tetap selisih total per klaster di atas.</div>'+E.map(k=>`<div class="m">${klTxt(b.klT[k],NM[k],'R pada trade tertutup di kedua versi')}</div>`).join(''):'<div class="m">Jalankan uji pembanding acak untuk melihat perbandingannya.</div>'}
+</details>
+<div class="m">Terpasang: harness ${VALNS.VERSION||'LAMA (perbarui validate.mjs)'}, dataset v${ds0&&ds0.meta?ds0.meta.versi:'?'} dengan ${ds0?ds0.entries.length:'?'} entri. Dataset terbaru: v4, 24 entri.</div>
+<div class="m">Satu trade besar menggeser rata-rata. Lihat median, "tanpa trade terbaik", kerugian terburuk, dan selang kepercayaan.</div>
+${s.waktuMencurigakan.length?`<div class="w">Harga chart tidak cocok dengan Binance pada: ${s.waktuMencurigakan.join(', ')}</div>`:''}</div>`};
+const ujLoad=async()=>ds0||(ds0=await (await fetch('./eliz-dataset.json')).json());
+$('#ujgo').onclick=async()=>{const b=$('#ujgo');b.disabled=true;$('#ujlist').innerHTML='';
+ try{const ds=await ujLoad(),res=await runDataset(ds,{onProgress:(i,n,id)=>$('#ujst').textContent=`Menguji ${i} dari ${n}: ${id}`});uj={res,summary:summarize(res)};ujBl=null;ujSum();$('#ujlist').innerHTML=res.map(ujCard).join('');$('#ujst').textContent='Selesai.';$('#ujcp').disabled=false}
+ catch(x){$('#ujst').textContent='Gagal: '+x.message}b.disabled=false};
+$('#ujbl').onclick=async()=>{if(!uj){$('#ujst').textContent='Jalankan uji dataset dulu.';return}const b=$('#ujbl');b.disabled=true;
+ try{const bl=await runBaseline(await ujLoad(),{n:200,seed:+(qp('seed')||7),days:+(qp('days')||7),onProgress:(i,n)=>$('#ujst').textContent=`Pembanding acak ${i} dari ${n}`});ujBl=bl2(bl);uj.baseline=bl;ujSum();$('#ujst').textContent='Selesai.'}
+ catch(x){$('#ujst').textContent='Gagal: '+x.message}b.disabled=false};
+$('#ujcp').onclick=async()=>{const t=JSON.stringify(uj);try{await navigator.clipboard.writeText(t)}catch(x){const a=document.createElement('textarea');a.value=t;document.body.append(a);a.select();document.execCommand('copy');a.remove()}$('#ujst').textContent='Hasil disalin.'};
+
+$('#go').onclick=scan;showAl();scan();
+</script>
+</body></html>

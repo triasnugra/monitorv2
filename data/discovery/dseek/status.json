@@ -1,0 +1,42 @@
+{
+  "engine": "dseek",
+  "flushReason": "engine-done",
+  "elapsedSec": 80.673,
+  "steps": [
+    {
+      "name": "goto",
+      "ok": true,
+      "ms": 339
+    },
+    {
+      "name": "wait-initial",
+      "ok": true,
+      "ms": 5505
+    },
+    {
+      "name": "click-scan",
+      "ok": true,
+      "ms": 55
+    },
+    {
+      "name": "wait-scan",
+      "ok": true,
+      "ms": 5502
+    },
+    {
+      "name": "inspect",
+      "ok": true,
+      "ms": 7
+    },
+    {
+      "name": "journal-tables",
+      "ok": true,
+      "ms": 3
+    },
+    {
+      "name": "gate-extract",
+      "ok": true,
+      "ms": 2
+    }
+  ]
+}

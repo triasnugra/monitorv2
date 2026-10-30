@@ -1,0 +1,43 @@
+{
+  "engine": "grox",
+  "flushReason": "engine-done",
+  "elapsedSec": 80.673,
+  "steps": [
+    {
+      "name": "goto",
+      "ok": true,
+      "ms": 293
+    },
+    {
+      "name": "wait-initial",
+      "ok": true,
+      "ms": 3269
+    },
+    {
+      "name": "click-scan",
+      "ok": false,
+      "ms": 8000,
+      "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for getByText('Scan ulang', { exact: true }).first()\n"
+    },
+    {
+      "name": "wait-scan",
+      "ok": true,
+      "ms": 4002
+    },
+    {
+      "name": "inspect",
+      "ok": true,
+      "ms": 5
+    },
+    {
+      "name": "journal-tables",
+      "ok": true,
+      "ms": 1
+    },
+    {
+      "name": "gate-extract",
+      "ok": true,
+      "ms": 2
+    }
+  ]
+}

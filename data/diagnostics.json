@@ -1,0 +1,3277 @@
+{
+  "runs": [
+    {
+      "runAtUtc": "2026-10-16T09:14:58.078Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 33,
+          "parsed": 33,
+          "added": 33,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 13648,
+          "forward": null,
+          "trackingStarted": true
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 81,
+          "parsed": 81,
+          "added": 81,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 214,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 49,
+              "selesai": 22,
+              "menunggu": 27,
+              "terisi": 22,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 17
+            },
+            "dibuat": "2026-10-16T05:17:37.768Z"
+          },
+          "trackingStarted": true
+        }
+      },
+      "evaluation": {
+        "checked": 114,
+        "changed": 92,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-16T13:54:23.866Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 30,
+          "parsed": 30,
+          "added": 18,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8285,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 81,
+          "parsed": 81,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 267,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 49,
+              "selesai": 23,
+              "menunggu": 26,
+              "terisi": 23,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 17
+            },
+            "dibuat": "2026-10-16T12:14:20.453Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 40,
+        "changed": 0,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-16T17:51:50.365Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 21,
+          "parsed": 21,
+          "added": 14,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9033,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 81,
+          "parsed": 81,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 260,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 49,
+              "selesai": 23,
+              "menunggu": 26,
+              "terisi": 23,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 17
+            },
+            "dibuat": "2026-10-16T14:40:14.682Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 54,
+        "changed": 7,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-16T20:41:18.289Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 26,
+          "parsed": 26,
+          "added": 15,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9805,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 81,
+          "parsed": 81,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 219,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 49,
+              "selesai": 24,
+              "menunggu": 25,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 17
+            },
+            "dibuat": "2026-10-16T18:32:17.574Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 62,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-16T23:19:51.366Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 24,
+          "parsed": 24,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8295,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 81,
+          "parsed": 81,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 267,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 49,
+              "selesai": 24,
+              "menunggu": 25,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 17
+            },
+            "dibuat": "2026-10-16T21:50:44.504Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 60,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T01:27:08.952Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 23,
+          "parsed": 23,
+          "added": 16,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 10041,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 81,
+          "parsed": 81,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 168,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 49,
+              "selesai": 24,
+              "menunggu": 25,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 17
+            },
+            "dibuat": "2026-10-17T00:04:01.045Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 74,
+        "changed": 0,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T06:03:02.737Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 23,
+          "parsed": 23,
+          "added": 12,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9718,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 16,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 177,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 24,
+              "menunggu": 29,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T03:46:20.505Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 102,
+        "changed": 13,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T11:04:41.183Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 21,
+          "parsed": 21,
+          "added": 11,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 10092,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 243,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 24,
+              "menunggu": 29,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T08:24:53.435Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 100,
+        "changed": 3,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T14:20:30.780Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 20,
+          "parsed": 20,
+          "added": 13,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9048,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 290,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 24,
+              "menunggu": 29,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T13:32:24.363Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 110,
+        "changed": 4,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T17:28:21.573Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 12,
+          "parsed": 12,
+          "added": 4,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8818,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 340,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 24,
+              "menunggu": 29,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T16:55:38.619Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 110,
+        "changed": 8,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T19:40:00.351Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 14,
+          "parsed": 14,
+          "added": 2,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 11443,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 158,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 24,
+              "menunggu": 29,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T16:55:38.619Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 104,
+        "changed": 1,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-17T22:01:56.312Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 13,
+          "parsed": 13,
+          "added": 6,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9824,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 190,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 24,
+              "menunggu": 29,
+              "terisi": 24,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T20:22:15.877Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 109,
+        "changed": 17,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T00:11:25.888Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 23,
+          "parsed": 23,
+          "added": 20,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8319,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 97,
+          "parsed": 97,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 285,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 53,
+              "selesai": 25,
+              "menunggu": 28,
+              "terisi": 25,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 29
+            },
+            "dibuat": "2026-10-17T23:53:21.538Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 112,
+        "changed": 4,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T04:59:05.308Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 24,
+          "parsed": 24,
+          "added": 16,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9111,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 10,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 304,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 25,
+              "menunggu": 32,
+              "terisi": 25,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T03:52:47.341Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 134,
+        "changed": 7,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T09:28:50.707Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 24,
+          "parsed": 24,
+          "added": 15,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 10129,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 203,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 25,
+              "menunggu": 32,
+              "terisi": 25,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T08:44:10.022Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 142,
+        "changed": 3,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T13:30:28.530Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 22,
+          "parsed": 22,
+          "added": 11,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9847,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 199,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 25,
+              "menunggu": 32,
+              "terisi": 25,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T08:44:10.022Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 150,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T16:50:00.153Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 14,
+          "parsed": 14,
+          "added": 8,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 11159,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 272,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 25,
+              "menunggu": 32,
+              "terisi": 25,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T13:52:00.839Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 156,
+        "changed": 15,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T19:18:36.141Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 14,
+          "parsed": 14,
+          "added": 1,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9039,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 233,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 26,
+              "menunggu": 31,
+              "terisi": 26,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T17:11:24.099Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 142,
+        "changed": 6,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T21:43:13.720Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 18,
+          "parsed": 18,
+          "added": 12,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9185,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 252,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 31,
+              "menunggu": 26,
+              "terisi": 31,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T20:22:23.472Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 148,
+        "changed": 42,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-18T23:59:37.737Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 12,
+          "parsed": 12,
+          "added": 2,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9012,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 107,
+          "parsed": 107,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 272,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 57,
+              "selesai": 31,
+              "menunggu": 26,
+              "terisi": 31,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 35
+            },
+            "dibuat": "2026-10-18T20:22:23.472Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 108,
+        "changed": 5,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-19T04:28:40.977Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 28,
+          "parsed": 28,
+          "added": 28,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8615,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 118,
+          "parsed": 118,
+          "added": 11,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 396,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 59,
+              "selesai": 32,
+              "menunggu": 27,
+              "terisi": 32,
+              "minggu_berbeda": 0,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 44
+            },
+            "dibuat": "2026-10-19T02:27:09.296Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 142,
+        "changed": 13,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-19T10:12:49.870Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 27,
+          "parsed": 27,
+          "added": 17,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8386,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 118,
+          "parsed": 118,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 320,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 59,
+              "selesai": 34,
+              "menunggu": 25,
+              "terisi": 34,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 44
+            },
+            "dibuat": "2026-10-19T08:00:21.495Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 146,
+        "changed": 5,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-19T17:06:14.519Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 26,
+          "parsed": 26,
+          "added": 20,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 10006,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 118,
+          "parsed": 118,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 244,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 59,
+              "selesai": 34,
+              "menunggu": 25,
+              "terisi": 34,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 44
+            },
+            "dibuat": "2026-10-19T15:21:47.562Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 161,
+        "changed": 3,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-19T21:41:30.988Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 16,
+          "parsed": 16,
+          "added": 14,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9502,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 118,
+          "parsed": 118,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 559,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 59,
+              "selesai": 34,
+              "menunggu": 25,
+              "terisi": 34,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 44
+            },
+            "dibuat": "2026-10-19T20:40:07.451Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 172,
+        "changed": 3,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T00:57:53.712Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 11,
+          "parsed": 11,
+          "added": 8,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9331,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 118,
+          "parsed": 118,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 307,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 59,
+              "selesai": 35,
+              "menunggu": 24,
+              "terisi": 35,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 44
+            },
+            "dibuat": "2026-10-20T00:03:25.001Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 177,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T05:53:10.948Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 23,
+          "parsed": 23,
+          "added": 19,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9866,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 7,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 139,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-20T05:04:35.377Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 201,
+        "changed": 11,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T11:08:49.155Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 21,
+          "parsed": 21,
+          "added": 14,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8260,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 281,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-20T10:14:50.410Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 204,
+        "changed": 9,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T15:47:37.096Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4331,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 611,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-20T15:14:53.867Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 195,
+        "changed": 15,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T19:54:43.324Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4616,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 534,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-20T19:26:35.192Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 180,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T22:19:48.517Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 5160,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 280,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-20T19:26:35.192Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 178,
+        "changed": 0,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-20T23:01:33.278Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4311,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 318,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-20T22:29:54.443Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 178,
+        "changed": 8,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-21T01:52:28.131Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4355,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 125,
+          "parsed": 125,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 238,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 60,
+              "selesai": 37,
+              "menunggu": 23,
+              "terisi": 37,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 50
+            },
+            "dibuat": "2026-10-21T00:47:25.482Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 170,
+        "changed": 5,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-21T07:16:32.584Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4226,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 150,
+          "parsed": 150,
+          "added": 25,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 193,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 83,
+              "selesai": 46,
+              "menunggu": 37,
+              "terisi": 39,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 52
+            },
+            "dibuat": "2026-10-21T05:33:45.155Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 190,
+        "changed": 9,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-21T13:05:59.162Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4418,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 150,
+          "parsed": 150,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 311,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 83,
+              "selesai": 47,
+              "menunggu": 36,
+              "terisi": 39,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 52
+            },
+            "dibuat": "2026-10-21T10:51:20.855Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 181,
+        "changed": 8,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-21T18:10:58.184Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4398,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 150,
+          "parsed": 150,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 487,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 83,
+              "selesai": 48,
+              "menunggu": 35,
+              "terisi": 40,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 52
+            },
+            "dibuat": "2026-10-21T15:45:36.546Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 173,
+        "changed": 22,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-21T21:54:26.330Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4211,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 150,
+          "parsed": 150,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 208,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 83,
+              "selesai": 50,
+              "menunggu": 33,
+              "terisi": 42,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 52
+            },
+            "dibuat": "2026-10-21T19:47:55.130Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 151,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-22T00:29:39.621Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4340,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 150,
+          "parsed": 150,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 282,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 83,
+              "selesai": 50,
+              "menunggu": 33,
+              "terisi": 42,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 52
+            },
+            "dibuat": "2026-10-21T22:54:47.528Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 149,
+        "changed": 2,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-22T05:17:19.152Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4634,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 174,
+          "parsed": 174,
+          "added": 24,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 377,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 89,
+              "selesai": 50,
+              "menunggu": 39,
+              "terisi": 42,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 70
+            },
+            "dibuat": "2026-10-22T01:06:19.716Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 171,
+        "changed": 29,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-22T10:36:56.974Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4657,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 174,
+          "parsed": 174,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 437,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 89,
+              "selesai": 51,
+              "menunggu": 38,
+              "terisi": 42,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 70
+            },
+            "dibuat": "2026-10-22T06:17:15.835Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 142,
+        "changed": 18,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-22T15:33:59.321Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 5050,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 174,
+          "parsed": 174,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 267,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 89,
+              "selesai": 51,
+              "menunggu": 38,
+              "terisi": 42,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 70
+            },
+            "dibuat": "2026-10-22T12:11:55.298Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 124,
+        "changed": 18,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-22T19:51:10.916Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4373,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 174,
+          "parsed": 174,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 367,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 89,
+              "selesai": 52,
+              "menunggu": 37,
+              "terisi": 43,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 70
+            },
+            "dibuat": "2026-10-22T17:26:27.006Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 106,
+        "changed": 22,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-22T23:07:27.246Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4320,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 174,
+          "parsed": 174,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 318,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 89,
+              "selesai": 53,
+              "menunggu": 36,
+              "terisi": 44,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 70
+            },
+            "dibuat": "2026-10-22T20:41:40.945Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 84,
+        "changed": 3,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-23T01:47:09.804Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4545,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 174,
+          "parsed": 174,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 315,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 89,
+              "selesai": 53,
+              "menunggu": 36,
+              "terisi": 44,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 70
+            },
+            "dibuat": "2026-10-22T23:47:32.929Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 81,
+        "changed": 7,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-23T07:12:43.104Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4696,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 206,
+          "parsed": 206,
+          "added": 32,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 608,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 97,
+              "selesai": 53,
+              "menunggu": 44,
+              "terisi": 44,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 94
+            },
+            "dibuat": "2026-10-23T02:35:54.505Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 106,
+        "changed": 9,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-23T12:46:40.711Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4274,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 206,
+          "parsed": 206,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 290,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 97,
+              "selesai": 56,
+              "menunggu": 41,
+              "terisi": 46,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 94
+            },
+            "dibuat": "2026-10-23T08:06:37.700Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 97,
+        "changed": 4,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-23T17:46:51.732Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4373,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 206,
+          "parsed": 206,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 217,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 97,
+              "selesai": 56,
+              "menunggu": 41,
+              "terisi": 46,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 94
+            },
+            "dibuat": "2026-10-23T13:40:12.258Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 93,
+        "changed": 5,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-23T21:09:47.841Z",
+      "engines": {
+        "crypto": {
+          "status": "ZERO_CARDS_UNCONFIRMED",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "ZERO_CARDS_UNCONFIRMED",
+          "httpStatus": 200,
+          "durationMs": 4323,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 206,
+          "parsed": 206,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 301,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 97,
+              "selesai": 57,
+              "menunggu": 40,
+              "terisi": 47,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 94
+            },
+            "dibuat": "2026-10-23T18:02:16.680Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 88,
+        "changed": 0,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-23T23:56:00.091Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 31,
+          "parsed": 31,
+          "added": 31,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 10379,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 206,
+          "parsed": 206,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 389,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 97,
+              "selesai": 57,
+              "menunggu": 40,
+              "terisi": 47,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 94
+            },
+            "dibuat": "2026-10-23T21:33:56.393Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 119,
+        "changed": 19,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-24T03:59:36.091Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 27,
+          "parsed": 27,
+          "added": 18,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9738,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 206,
+          "parsed": 206,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 216,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 97,
+              "selesai": 63,
+              "menunggu": 34,
+              "terisi": 53,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 94
+            },
+            "dibuat": "2026-10-24T00:09:38.636Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 118,
+        "changed": 13,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-24T08:49:25.855Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 25,
+          "parsed": 25,
+          "added": 15,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9807,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 237,
+          "parsed": 237,
+          "added": 31,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 295,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 108,
+              "selesai": 65,
+              "menunggu": 43,
+              "terisi": 54,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 114
+            },
+            "dibuat": "2026-10-24T04:00:31.957Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 151,
+        "changed": 22,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-24T13:11:10.400Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 25,
+          "parsed": 25,
+          "added": 17,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8580,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 237,
+          "parsed": 237,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 407,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 108,
+              "selesai": 66,
+              "menunggu": 42,
+              "terisi": 55,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 114
+            },
+            "dibuat": "2026-10-24T08:49:54.216Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 146,
+        "changed": 20,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-24T16:50:57.800Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 28,
+          "parsed": 28,
+          "added": 18,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8921,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 237,
+          "parsed": 237,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 300,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 108,
+              "selesai": 67,
+              "menunggu": 41,
+              "terisi": 56,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 114
+            },
+            "dibuat": "2026-10-24T13:54:54.262Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 144,
+        "changed": 63,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-24T19:19:10.790Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 29,
+          "parsed": 29,
+          "added": 1,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9744,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 237,
+          "parsed": 237,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 190,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 108,
+              "selesai": 73,
+              "menunggu": 35,
+              "terisi": 62,
+              "minggu_berbeda": 2,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 114
+            },
+            "dibuat": "2026-10-24T17:17:28.427Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 82,
+        "changed": 8,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T00:32:57.297Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 24,
+          "parsed": 24,
+          "added": 24,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9831,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 269,
+          "parsed": 269,
+          "added": 32,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 168,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 120,
+              "selesai": 79,
+              "menunggu": 41,
+              "terisi": 65,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 134
+            },
+            "dibuat": "2026-10-26T23:58:15.807Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 130,
+        "changed": 33,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T00:57:48.236Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 25,
+          "parsed": 25,
+          "added": 3,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8328,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 269,
+          "parsed": 269,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 302,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 120,
+              "selesai": 79,
+              "menunggu": 41,
+              "terisi": 65,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 134
+            },
+            "dibuat": "2026-10-26T23:58:15.807Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 100,
+        "changed": 1,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:14:14.186Z",
+      "engines": {},
+      "evaluation": {
+        "checked": 206,
+        "changed": 23,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:15:23.709Z",
+      "engines": {},
+      "evaluation": null,
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:25:26.367Z",
+      "engines": {},
+      "evaluation": {
+        "checked": 206,
+        "changed": 23,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:26:21.299Z",
+      "engines": {},
+      "evaluation": null,
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:29:23.903Z",
+      "engines": {},
+      "evaluation": {
+        "checked": 183,
+        "changed": 0,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:30:31.868Z",
+      "engines": {},
+      "evaluation": null,
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T05:43:26.517Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 21,
+          "parsed": 21,
+          "added": 16,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9228,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 279,
+          "parsed": 279,
+          "added": 10,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 301,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 123,
+              "selesai": 79,
+              "menunggu": 44,
+              "terisi": 65,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 141
+            },
+            "dibuat": "2026-10-27T03:42:37.776Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 209,
+        "changed": 4,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T10:54:26.690Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 23,
+          "parsed": 23,
+          "added": 17,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9049,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 279,
+          "parsed": 279,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 215,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 123,
+              "selesai": 79,
+              "menunggu": 44,
+              "terisi": 65,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 141
+            },
+            "dibuat": "2026-10-27T09:27:47.219Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 222,
+        "changed": 21,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T16:20:01.046Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 21,
+          "parsed": 21,
+          "added": 18,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 11426,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 279,
+          "parsed": 279,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 330,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 123,
+              "selesai": 81,
+              "menunggu": 42,
+              "terisi": 67,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 141
+            },
+            "dibuat": "2026-10-27T15:29:39.741Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 219,
+        "changed": 16,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-27T20:53:53.747Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 22,
+          "parsed": 22,
+          "added": 17,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8932,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 279,
+          "parsed": 279,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 344,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 123,
+              "selesai": 82,
+              "menunggu": 41,
+              "terisi": 68,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 141
+            },
+            "dibuat": "2026-10-27T20:12:20.396Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 220,
+        "changed": 5,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-28T00:22:51.281Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 25,
+          "parsed": 25,
+          "added": 18,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9081,
+          "forward": null,
+          "trackingStarted": false
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 279,
+          "parsed": 279,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 248,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 123,
+              "selesai": 82,
+              "menunggu": 41,
+              "terisi": 68,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 141
+            },
+            "dibuat": "2026-10-27T23:53:42.993Z"
+          },
+          "trackingStarted": false
+        }
+      },
+      "evaluation": {
+        "checked": 233,
+        "changed": 7,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-30T03:15:11.385Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 28,
+          "parsed": 28,
+          "added": 28,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8849,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": null,
+          "live": null
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 327,
+          "parsed": 327,
+          "added": 48,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 307,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 139,
+              "selesai": 110,
+              "menunggu": 29,
+              "terisi": 90,
+              "minggu_berbeda": 3,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 173
+            },
+            "dibuat": "2026-10-29T23:48:13.583Z"
+          },
+          "trackingStarted": false,
+          "journal": null,
+          "live": null
+        },
+        "tnv2": {
+          "status": "OK",
+          "cards": 329,
+          "parsed": 329,
+          "added": 327,
+          "errors": [],
+          "warnings": [
+            "JOURNAL_COUNT_DIFF: JSON 329 baris, tabel 327 baris (tabel bisa membatasi tampilan)."
+          ],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9168,
+          "forward": null,
+          "trackingStarted": true,
+          "journal": {
+            "jsonRows": 329,
+            "domRows": 327,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/tnv2/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 33,
+            "passed": 1,
+            "rejected": 32,
+            "summary": "Selesai: 33 setup, 36 koin dipantau."
+          }
+        },
+        "tnv2c2": {
+          "status": "OK",
+          "cards": 306,
+          "parsed": 306,
+          "added": 306,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 7923,
+          "forward": null,
+          "trackingStarted": true,
+          "journal": {
+            "jsonRows": 306,
+            "domRows": 306,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/tnv2c2/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 1,
+            "passed": 1,
+            "rejected": 0,
+            "summary": "Selesai: 1 setup lolos, 36 koin dipantau, 4 koin dilewati karena data tidak valid."
+          }
+        },
+        "dseek": {
+          "status": "OK_NO_SETUPS",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "NO_SETUPS",
+          "httpStatus": 200,
+          "durationMs": 8189,
+          "forward": null,
+          "trackingStarted": true,
+          "journal": {
+            "jsonRows": 0,
+            "domRows": 0,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": null,
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 0,
+            "passed": 0,
+            "rejected": 0,
+            "summary": "Selesai: 0 setup, 36 koin dipantau."
+          }
+        },
+        "grox": {
+          "status": "NEEDS_SELECTOR_VERIFICATION",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [
+            "Tombol scan tidak ditemukan/tidak bisa diklik; mengandalkan pemindaian saat load.",
+            "Tabel jurnal tidak ditemukan dan tidak ada JSON jurnal tertangkap. Jalankan Discover."
+          ],
+          "emptyKind": "NEEDS_SELECTOR_VERIFICATION",
+          "httpStatus": 200,
+          "durationMs": 44288,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 0,
+            "domRows": 0,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": null,
+            "tableId": null,
+            "tableSeen": false,
+            "tables": 0
+          },
+          "live": {
+            "cards": 0,
+            "passed": 0,
+            "rejected": 0,
+            "summary": null
+          }
+        },
+        "chatgpt": {
+          "status": "OK",
+          "cards": 332,
+          "parsed": 332,
+          "added": 332,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8349,
+          "forward": null,
+          "trackingStarted": true,
+          "journal": {
+            "jsonRows": 332,
+            "domRows": 332,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/chatgpt/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 27,
+            "passed": 27,
+            "rejected": 0,
+            "summary": "Selesai: 27 setup, 36 koin dipantau."
+          }
+        }
+      },
+      "evaluation": {
+        "checked": 1267,
+        "changed": 1172,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-30T04:18:16.143Z",
+      "engines": {},
+      "evaluation": {
+        "checked": 95,
+        "changed": 22,
+        "errors": []
+      },
+      "fatal": null
+    },
+    {
+      "runAtUtc": "2026-10-30T04:18:33.881Z",
+      "engines": {},
+      "evaluation": null,
+      "fatal": null
+    }
+  ]
+}

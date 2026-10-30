@@ -1,0 +1,83 @@
+[
+  {
+    "id": "jt",
+    "headers": [
+      "waktu",
+      "aset",
+      "arah",
+      "entry",
+      "sl",
+      "tp",
+      "hasil",
+      "R",
+      "alasan"
+    ],
+    "rowCount": 332,
+    "parsedEntries": 332,
+    "firstRows": [
+      [
+        "2026-10-30 01:16 UTC",
+        "INJ",
+        "SHORT",
+        "8.089",
+        "8.3385",
+        "7.59",
+        "NO_TRADE",
+        "",
+        "sweep Monday High lalu reclaim, RSI divergence | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan"
+      ],
+      [
+        "2026-10-30 01:16 UTC",
+        "FET",
+        "SHORT",
+        "0.1783",
+        "0.18924",
+        "0.15642",
+        "NO_TRADE",
+        "",
+        "sweep Monday High lalu reclaim, searah tren | FILTER: Entry 9.19% dari harga; setup terlalu jauh/stale"
+      ],
+      [
+        "2026-10-30 01:16 UTC",
+        "BCH",
+        "SHORT",
+        "284.7",
+        "306.32",
+        "241.45",
+        "menunggu",
+        "",
+        "sweep Monday High lalu reclaim, searah tren"
+      ],
+      [
+        "2026-10-30 01:16 UTC",
+        "XAUT",
+        "SHORT",
+        "4030",
+        "4150.9",
+        "3788.2",
+        "menunggu",
+        "",
+        "sweep Monday High lalu reclaim, searah tren"
+      ],
+      [
+        "2026-10-30 01:16 UTC",
+        "ARB",
+        "SHORT",
+        "0.1737",
+        "0.17949",
+        "0.16211",
+        "NO_TRADE",
+        "",
+        "sweep Monday High lalu reclaim, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan"
+      ]
+    ],
+    "hasilCounts": {
+      "NO_TRADE": 20,
+      "menunggu": 86,
+      "SL": 106,
+      "TP": 41,
+      "tidak terisi": 50,
+      "kedaluwarsa": 29
+    }
+  }
+]
