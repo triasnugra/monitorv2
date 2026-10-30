@@ -1,0 +1,32 @@
+name: Audit setup (jejak candle)
+on:
+  workflow_dispatch:
+    inputs:
+      ticker: { description: 'Koin, mis. WLD (kosongkan jika pakai setupId)', required: false, default: '' }
+      engine: { description: 'Mesin', type: choice, options: [any, crypto, tn, tnv2, tnv2c2, dseek, grox, chatgpt], default: any }
+      result: { description: 'Filter hasil evaluator', type: choice, options: [any, EXPIRED, SL, TP, PENDING, AMBIGUOUS], default: EXPIRED }
+      max: { description: 'Jumlah setup (terbaru dulu)', required: false, default: '3' }
+      setup_id: { description: 'ATAU setupId persis (mengabaikan filter lain)', required: false, default: '' }
+permissions: { contents: read }
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Struktur data
+        run: |
+          { echo '```'; echo '== isi data/ =='; ls -la data 2>/dev/null | head -25; echo '== data/setups =='; ls data/setups 2>/dev/null | head -20; echo '```'; } | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Audit
+        env:
+          IN_TICKER: ${{ inputs.ticker }}
+          IN_ENGINE: ${{ inputs.engine }}
+          IN_RESULT: ${{ inputs.result }}
+          IN_MAX: ${{ inputs.max }}
+          IN_ID: ${{ inputs.setup_id }}
+        run: |
+          if [ -n "$IN_ID" ]; then ARGS="$IN_ID"; else ARGS="--ticker=$IN_TICKER --engine=$IN_ENGINE --result=$IN_RESULT --max=$IN_MAX"; fi
+          { echo '```'; node scripts/audit-setup.mjs $ARGS; echo '```'; } | tee -a "$GITHUB_STEP_SUMMARY"
