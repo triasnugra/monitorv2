@@ -1,0 +1,110 @@
+{
+  "_note": "crypto: kartu DOM (= daftar Setup sekaligus riwayat jurnal). tn: JURNAL dari journal.json + daftar SETUP dari kartu halaman. tnv2/tnv2c2/dseek/grox/chatgpt: JURNAL = tabel+JSON yang dimuat halaman, SETUP = kartu Sinyal setup yang lolos gerbang. Lihat docs/VERIFIED.md.",
+  "crypto": {
+    "label": "crypto",
+    "url": "https://triasnugra.github.io/crypto/",
+    "scanButtonText": "Pindai ulang",
+    "cardSelector": "#setups > article.c",
+    "noSetupMarkerText": null,
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 120000,
+    "quietMs": 4000
+  },
+  "tn": {
+    "label": "tn",
+    "url": "https://triasnugra.github.io/tn/",
+    "journalUrl": "https://triasnugra.github.io/tn/data/journal.json",
+    "forwardReportUrl": "https://triasnugra.github.io/tn/data/forward-report.json",
+    "fetchTimeoutMs": 30000,
+    "retries": 3,
+    "scanButtonText": "Scan ulang",
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 90000,
+    "quietMs": 4000,
+    "gate": {
+      "cardSelector": "#out .c, #out article.c, #setups > article.c",
+      "rejectPattern": "tolak|reject",
+      "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
+      "requirePassText": null
+    }
+  },
+  "tnv2": {
+    "label": "tnv2 (gerbang v2)",
+    "url": "https://triasnugra.github.io/tnv2/",
+    "scanButtonText": "Scan ulang",
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 90000,
+    "quietMs": 4000,
+    "journalWaitMs": 30000,
+    "gate": {
+      "cardSelector": "#out .c, #out article.c, #setups > article.c",
+      "rejectPattern": "tolak|reject",
+      "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
+      "requirePassText": null
+    }
+  },
+  "tnv2c2": {
+    "label": "tnv2c2",
+    "url": "https://triasnugra.github.io/tnv2c2/",
+    "scanButtonText": "Scan ulang",
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 90000,
+    "quietMs": 4000,
+    "journalWaitMs": 30000,
+    "gate": {
+      "cardSelector": "#out .c, #out article.c, #setups > article.c",
+      "rejectPattern": "tolak|reject",
+      "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
+      "requirePassText": null
+    }
+  },
+  "dseek": {
+    "label": "dseek",
+    "url": "https://triasnugra.github.io/dseek/",
+    "scanButtonText": "Scan ulang",
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 90000,
+    "quietMs": 4000,
+    "journalWaitMs": 30000,
+    "gate": {
+      "cardSelector": "#out .c, #out article.c, #setups > article.c",
+      "rejectPattern": "tolak|reject",
+      "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
+      "requirePassText": null
+    }
+  },
+  "grox": {
+    "label": "grox",
+    "url": "https://triasnugra.github.io/grox/",
+    "scanButtonText": "Scan ulang",
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 90000,
+    "quietMs": 4000,
+    "journalWaitMs": 30000,
+    "gate": {
+      "cardSelector": "#out .c, #out article.c, #setups > article.c",
+      "rejectPattern": "tolak|reject",
+      "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
+      "requirePassText": null
+    }
+  },
+  "chatgpt": {
+    "label": "chatgpt",
+    "url": "https://triasnugra.github.io/chatgpt/",
+    "scanButtonText": "Scan ulang",
+    "gotoTimeoutMs": 45000,
+    "scanTimeoutMs": 90000,
+    "quietMs": 4000,
+    "journalWaitMs": 30000,
+    "gate": {
+      "cardSelector": "#out .c, #out article.c, #setups > article.c",
+      "rejectPattern": "tolak|reject",
+      "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
+      "requirePassText": null
+    }
+  },
+  "view": {
+    "url": "https://triasnugra.github.io/view/",
+    "note": "Dashboard harga; tidak dipakai sebagai sumber candle."
+  }
+}

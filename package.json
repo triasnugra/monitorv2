@@ -1,0 +1,23 @@
+{
+  "name": "crypto-engine-benchmark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "collect": "node src/index.js collect",
+    "evaluate": "node src/index.js evaluate",
+    "build": "node src/index.js build",
+    "all": "node src/index.js all",
+    "discover": "node src/tools/discover.js"
+  },
+  "dependencies": {
+    "playwright": "1.49.1"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.5"
+  }
+}

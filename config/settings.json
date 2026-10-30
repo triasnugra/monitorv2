@@ -1,0 +1,12 @@
+{
+  "entryTtlHours": 72,
+  "maxHoldDays": 30,
+  "sanityMaxDeviation": 0.5,
+  "minSamplePerEngine": 30,
+  "bootstrapIterations": 5000,
+  "pairWindowMinutes": 120,
+  "cluster": { "windowHours": 24, "entryTolerance": 0.01 },
+  "cancelPatterns": ["batal", "cancel", "dibatalkan", "invalidated"],
+  "rawRetentionPerEngine": 100,
+  "binanceBaseUrls": ["https://data-api.binance.vision", "https://api.binance.com"]
+}
