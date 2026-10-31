@@ -1,0 +1,62 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [
+      "https://api.coingecko.com/api/v3/global",
+      "https://api.coingecko.com/api/v3/global"
+    ],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 8205,
+    "meta": {
+      "live": {
+        "cards": 0,
+        "passed": 0,
+        "rejected": 0,
+        "summary": "Selesai: 0 setup, 36 koin dipantau."
+      },
+      "summaryCount": null,
+      "totalCards": 1
+    },
+    "journal": {
+      "jsonRows": 1,
+      "domRows": 1,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": "https://triasnugra.github.io/dseek/data/journal.json",
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-31|Aturan Eliz|MUB",
+      "waktu": "2026-10-31 03:18 UTC",
+      "t": 1793416709240,
+      "due": 1794021509240,
+      "agen": "Aturan Eliz",
+      "aset": "MUB",
+      "arah": "LONG",
+      "entry": 870.85,
+      "sl": 844.72,
+      "tp": 923.1,
+      "harga_awal": 890.93,
+      "keyakinan": "",
+      "alasan": "sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence, RSI divergence",
+      "alert": "Hari terakhir bulan. Penutupan bulanan 00:00 UTC.",
+      "hasil": "menunggu",
+      "R": "",
+      "engine": "1eea4198621d8ad0",
+      "fwd": 1,
+      "seq": 1,
+      "prev": "GENESIS",
+      "h": "0247f1a477573ec9d577",
+      "_src": "json+dom"
+    }
+  ]
+}
