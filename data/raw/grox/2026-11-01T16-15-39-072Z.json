@@ -1,0 +1,91 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5843,
+    "meta": {
+      "live": {
+        "cards": 4,
+        "passed": 4,
+        "rejected": 0,
+        "summary": "Selesai: 4 koin punya setup · 35 koin dipindai, 5 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 4
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 4,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-01 16:16 UTC",
+      "t": 1793549760000,
+      "aset": "XAUT",
+      "arah": "SHORT",
+      "entry": 3976.19,
+      "sl": 4098.47,
+      "tp": 3731.629,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-01 16:16 UTC",
+      "t": 1793549760000,
+      "aset": "TRUMP",
+      "arah": "SHORT",
+      "entry": 1.618,
+      "sl": 1.76478,
+      "tp": 1.32444,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-01 16:16 UTC",
+      "t": 1793549760000,
+      "aset": "SOL",
+      "arah": "SHORT",
+      "entry": 95.82,
+      "sl": 104.3692,
+      "tp": 78.7215,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-01 16:16 UTC",
+      "t": 1793549760000,
+      "aset": "ETH",
+      "arah": "SHORT",
+      "entry": 2282.46,
+      "sl": 2403.508,
+      "tp": 2040.365,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
