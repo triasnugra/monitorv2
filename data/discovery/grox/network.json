@@ -12,31 +12,25 @@
     "contentType": "text/css; charset=utf-8"
   },
   {
-    "url": "https://grok.com/grok-app-builder/extensions.js",
-    "status": 200,
-    "type": "script",
-    "contentType": "application/javascript; charset=UTF-8"
-  },
-  {
     "url": "https://triasnugra.github.io/grox/assets/index-DqKli1Vz.js",
     "status": 200,
     "type": "script",
     "contentType": "application/javascript; charset=utf-8"
   },
   {
-    "url": "https://triasnugra.github.io/grox/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+    "url": "https://grok.com/grok-app-builder/extensions.js",
     "status": 200,
-    "type": "font",
-    "contentType": "font/woff2"
-  },
-  {
-    "url": "https://triasnugra.github.io/grox/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-    "status": 200,
-    "type": "font",
-    "contentType": "font/woff2"
+    "type": "script",
+    "contentType": "application/javascript; charset=UTF-8"
   },
   {
     "url": "https://triasnugra.github.io/grox/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+    "status": 200,
+    "type": "font",
+    "contentType": "font/woff2"
+  },
+  {
+    "url": "https://triasnugra.github.io/grox/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
     "status": 200,
     "type": "font",
     "contentType": "font/woff2"
@@ -48,25 +42,31 @@
     "contentType": "font/woff2"
   },
   {
+    "url": "https://triasnugra.github.io/grox/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "status": 200,
+    "type": "font",
+    "contentType": "font/woff2"
+  },
+  {
     "url": "https://data-api.binance.vision/api/v3/ticker/24hr",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=NEARUSDT&interval=1d&limit=1000",
-    "status": 200,
-    "type": "fetch",
-    "contentType": "application/json;charset=UTF-8"
-  },
-  {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&limit=1000",
+    "status": 200,
+    "type": "fetch",
+    "contentType": "application/json;charset=UTF-8"
+  },
+  {
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=NEARUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -84,13 +84,7 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=ZECUSDT&interval=1d&limit=1000",
-    "status": 200,
-    "type": "fetch",
-    "contentType": "application/json;charset=UTF-8"
-  },
-  {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=LSKUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -102,7 +96,13 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=UNIUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=LSKUSDT&interval=1d&limit=1000",
+    "status": 200,
+    "type": "fetch",
+    "contentType": "application/json;charset=UTF-8"
+  },
+  {
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -120,7 +120,7 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=XRPUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=UNIUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -138,25 +138,25 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=BEAMXUSDT&interval=1d&limit=1000",
-    "status": 200,
-    "type": "fetch",
-    "contentType": "application/json;charset=UTF-8"
-  },
-  {
     "url": "https://data-api.binance.vision/api/v3/klines?symbol=AVAXUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=AAVEUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=ENAUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=ENAUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=BEAMXUSDT&interval=1d&limit=1000",
+    "status": 200,
+    "type": "fetch",
+    "contentType": "application/json;charset=UTF-8"
+  },
+  {
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=AAVEUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -174,13 +174,13 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=QNTUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=CELOUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=CELOUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=SUIUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -192,7 +192,7 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=SUIUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=QNTUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -216,13 +216,13 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=TONUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=STXUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=STXUSDT&interval=1d&limit=1000",
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=TONUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
@@ -246,25 +246,25 @@
     "contentType": "application/json;charset=UTF-8"
   },
   {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=INJUSDT&interval=1d&limit=1000",
-    "status": 200,
-    "type": "fetch",
-    "contentType": "application/json;charset=UTF-8"
-  },
-  {
-    "url": "https://data-api.binance.vision/api/v3/klines?symbol=FETUSDT&interval=1d&limit=1000",
-    "status": 200,
-    "type": "fetch",
-    "contentType": "application/json;charset=UTF-8"
-  },
-  {
     "url": "https://data-api.binance.vision/api/v3/klines?symbol=LTCUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
   },
   {
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=INJUSDT&interval=1d&limit=1000",
+    "status": 200,
+    "type": "fetch",
+    "contentType": "application/json;charset=UTF-8"
+  },
+  {
     "url": "https://data-api.binance.vision/api/v3/klines?symbol=ADAUSDT&interval=1d&limit=1000",
+    "status": 200,
+    "type": "fetch",
+    "contentType": "application/json;charset=UTF-8"
+  },
+  {
+    "url": "https://data-api.binance.vision/api/v3/klines?symbol=FETUSDT&interval=1d&limit=1000",
     "status": 200,
     "type": "fetch",
     "contentType": "application/json;charset=UTF-8"
