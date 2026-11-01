@@ -1,22 +1,22 @@
 {
   "engine": "tnv2",
   "flushReason": "engine-done",
-  "elapsedSec": 80.705,
+  "elapsedSec": 73.472,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 146
+      "ms": 257
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 4754
+      "ms": 4761
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 74
+      "ms": 90
     },
     {
       "name": "wait-scan",
@@ -26,17 +26,17 @@
     {
       "name": "inspect",
       "ok": true,
-      "ms": 33
+      "ms": 55
     },
     {
       "name": "journal-tables",
       "ok": true,
-      "ms": 18
+      "ms": 27
     },
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 6
+      "ms": 8
     }
   ]
 }

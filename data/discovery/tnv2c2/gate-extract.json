@@ -1,13 +1,58 @@
 {
   "meta": {
-    "summaryText": "Selesai: 0 setup lolos, 35 koin dipantau, 5 koin dilewati karena data tidak valid.",
-    "summaryCount": 0,
-    "totalCards": 0,
-    "passedCount": 0,
+    "summaryText": "Selesai: 2 setup lolos, 35 koin dipantau, 5 koin dilewati karena data tidak valid.",
+    "summaryCount": 2,
+    "totalCards": 2,
+    "passedCount": 2,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
-    "confirmedEmpty": true
+    "confirmedEmpty": false
   },
-  "passed": []
+  "passed": [
+    {
+      "ticker": "UNI",
+      "direction": "LONG",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "6.780"
+        },
+        {
+          "label": "SL 8.2%",
+          "value": "6.223"
+        },
+        {
+          "label": "TP 2R",
+          "value": "7.895"
+        },
+        {
+          "label": "Target range",
+          "value": "10.942"
+        }
+      ]
+    },
+    {
+      "ticker": "SUI",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "0.931"
+        },
+        {
+          "label": "SL 5.8%",
+          "value": "0.985"
+        },
+        {
+          "label": "TP 2R",
+          "value": "0.823"
+        },
+        {
+          "label": "Target range",
+          "value": "0.673"
+        }
+      ]
+    }
+  ]
 }

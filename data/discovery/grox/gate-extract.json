@@ -1,13 +1,80 @@
 {
   "meta": {
-    "summaryText": null,
-    "summaryCount": null,
-    "totalCards": 0,
-    "passedCount": 0,
+    "summaryText": "Selesai: 3 koin punya setup · 35 koin dipindai, 5 dilewati (riwayat kurang dari 120 hari).",
+    "summaryCount": 3,
+    "totalCards": 3,
+    "passedCount": 3,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
     "confirmedEmpty": false
   },
-  "passed": []
+  "passed": [
+    {
+      "ticker": "SOL",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "95.82"
+        },
+        {
+          "label": "SL 8.9%",
+          "value": "104.3692"
+        },
+        {
+          "label": "TP 2R",
+          "value": "78.7215"
+        },
+        {
+          "label": "Jarak",
+          "value": "0.3%"
+        }
+      ]
+    },
+    {
+      "ticker": "ETH",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "2282.46"
+        },
+        {
+          "label": "SL 5.3%",
+          "value": "2403.508"
+        },
+        {
+          "label": "TP 2R",
+          "value": "2040.365"
+        },
+        {
+          "label": "Jarak",
+          "value": "1.2%"
+        }
+      ]
+    },
+    {
+      "ticker": "XAUT",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "3976.19"
+        },
+        {
+          "label": "SL 3.1%",
+          "value": "4098.47"
+        },
+        {
+          "label": "TP 2R",
+          "value": "3731.629"
+        },
+        {
+          "label": "Jarak",
+          "value": "2.5%"
+        }
+      ]
+    }
+  ]
 }

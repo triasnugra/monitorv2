@@ -1,9 +1,18 @@
 [
   {
     "selectorPath": "div.c > div",
-    "count": 1,
+    "count": 2,
     "samples": [
-      "range high 87395.7\nrange low 74968.0\nMonday low 79368.7\nMonday high 80844.7\nentry 80844.7\nSL 83270.0\nTP 75994.0"
+      "range high 87395.7\nrange low 74968.0\nMonday low 79368.7\nMonday high 80844.7\nentry 80844.7\nSL 83270.0\nTP 75994.0",
+      "harga terlalu jauh dari entry\n22\nharga sudah mencapai TP sejak pemicu\n13\nskor kualitas di bawah minimum\n13\nlikuiditas terlalu rendah\n12\ntidak ada pemicu\n7\ndata kline tidak valid\n5\nruang menuju target range sempit\n4\nSL melebihi batas\n1\npemicu sudah terlalu lama\n1"
+    ]
+  },
+  {
+    "selectorPath": "div > div.c > div.g4",
+    "count": 2,
+    "samples": [
+      "Entry limit\n6.780\nSL 8.2%\n6.223\nTP 2R\n7.895\nTarget range\n10.942",
+      "Entry limit\n0.931\nSL 5.8%\n0.985\nTP 2R\n0.823\nTarget range\n0.673"
     ]
   }
 ]

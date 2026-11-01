@@ -1,42 +1,42 @@
 {
   "engine": "dseek",
   "flushReason": "engine-done",
-  "elapsedSec": 80.706,
+  "elapsedSec": 73.472,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 160
+      "ms": 236
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 4504
+      "ms": 4256
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 35
+      "ms": 40
     },
     {
       "name": "wait-scan",
       "ok": true,
-      "ms": 5501
+      "ms": 5252
     },
     {
       "name": "inspect",
       "ok": true,
-      "ms": 5
+      "ms": 8
     },
     {
       "name": "journal-tables",
       "ok": true,
-      "ms": 1
+      "ms": 4
     },
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 1
+      "ms": 2
     }
   ]
 }

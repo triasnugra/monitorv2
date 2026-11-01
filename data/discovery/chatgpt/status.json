@@ -1,42 +1,42 @@
 {
   "engine": "chatgpt",
   "flushReason": "engine-done",
-  "elapsedSec": 80.707,
+  "elapsedSec": 73.473,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 169
+      "ms": 333
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 4754
+      "ms": 4755
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 83
+      "ms": 88
     },
     {
       "name": "wait-scan",
       "ok": true,
-      "ms": 5751
+      "ms": 5502
     },
     {
       "name": "inspect",
       "ok": true,
-      "ms": 22
+      "ms": 38
     },
     {
       "name": "journal-tables",
       "ok": true,
-      "ms": 18
+      "ms": 35
     },
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 8
+      "ms": 12
     }
   ]
 }

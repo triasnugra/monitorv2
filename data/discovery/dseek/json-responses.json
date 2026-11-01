@@ -2,21 +2,21 @@
   {
     "url": "https://triasnugra.github.io/dseek/data/forward-report.json",
     "status": 200,
-    "bodySample": "{\n \"dibuat\": \"2026-10-30T01:52:01.736Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 0,\n  \"head\": null,\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-29T10:29:21.715Z\",\n  \"engine\": \"1eea4198621d8ad0\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 0,\n  \"selesai\": 0,\n  \"menunggu\": 0,\n  \"terisi\": 0,\n  \"minggu_berbeda\": 0,\n  \"diabaikan_mesin_lain\": 0,\n  \"dilewati_dedupe\": 0\n },\n \"progress\": {\n  \"trade_terisi\": [\n   0,\n   150\n  ],\n  \"minggu\": [\n   0,\n   20\n  ]\n }\n}"
+    "bodySample": "{\n \"dibuat\": \"2026-11-01T00:33:08.657Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 1,\n  \"head\": \"0247f1a477573ec9d577\",\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-29T10:29:21.715Z\",\n  \"engine\": \"1eea4198621d8ad0\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 1,\n  \"selesai\": 0,\n  \"menunggu\": 1,\n  \"terisi\": 0,\n  \"minggu_berbeda\": 0,\n  \"diabaikan_mesin_lain\": 0,\n  \"dilewati_dedupe\": 0\n },\n \"progress\": {\n  \"trade_terisi\": [\n   0,\n   150\n  ],\n  \"minggu\": [\n   0,\n   20\n  ]\n }\n}"
   },
   {
     "url": "https://triasnugra.github.io/dseek/data/journal.json",
     "status": 200,
-    "bodySample": "[]"
+    "bodySample": "[\n {\n  \"id\": \"2026-10-31|Aturan Eliz|MUB\",\n  \"waktu\": \"2026-10-31 03:18 UTC\",\n  \"t\": 1793416709240,\n  \"due\": 1794021509240,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"MUB\",\n  \"arah\": \"LONG\",\n  \"entry\": 870.85,\n  \"sl\": 844.72,\n  \"tp\": 923.1,\n  \"harga_awal\": 890.93,\n  \"keyakinan\": \"\",\n  \"alasan\": \"sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence, RSI divergence\",\n  \"alert\": \"Hari terakhir bulan. Penutupan bulanan 00:00 UTC.\",\n  \"hasil\": \"menunggu\",\n  \"R\": \"\",\n  \"engine\": \"1eea4198621d8ad0\",\n  \"fwd\": 1,\n  \"seq\": 1,\n  \"prev\": \"GENESIS\",\n  \"h\": \"0247f1a477573ec9d577\"\n"
   },
   {
     "url": "https://triasnugra.github.io/dseek/data/dominance.json",
     "status": 200,
-    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3}]"
+    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3},{\"d\":\"2026-10-31\",\"btc\":59.18,\"eth\":10.4},{\"d\":\"2026-11-01\",\"btc\":59.23,\"eth\":10.46}]"
   },
   {
     "url": "https://triasnugra.github.io/dseek/data/dominance.json",
     "status": 200,
-    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3}]"
+    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3},{\"d\":\"2026-10-31\",\"btc\":59.18,\"eth\":10.4},{\"d\":\"2026-11-01\",\"btc\":59.23,\"eth\":10.46}]"
   }
 ]

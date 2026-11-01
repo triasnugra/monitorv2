@@ -5,16 +5,17 @@ Sinyal
 Pantauan
 Jurnal
 Strategi
-Tidak ada alert tanggal hari ini.
+Menjelang penutupan weekly (Senin 00:00 UTC).
+Volume BTC kemarin di bawah 60% rata-rata 20 hari. Volume tipis
 BTC door
 Harga BTC
-77991.9
+77582.0
 Tren weekly
 turun
 Tren daily
 netral
 Posisi range
-24%
+21%
 Tren turun: utamakan short atau diam, long hanya dengan deviasi.
 Level weekly (26 minggu): support 57800.2 · resistance 87395.7. Eliz: selama BTC bertahan di atas support weekly, koreksi dilihat sebagai peluang beli, dan invalidasi hanya bila breakdown ber-close di bawahnya. Fokus ke level, bukan sentimen. (Level ini hitungan otomatis, bukan garis manual Eliz.)
 range high 87395.7
@@ -32,7 +33,7 @@ n/a
 ETH/BTC (W / D)
 turun / turun
 Altcoin > BTC (30 hari)
-15%
+27%
 BTC dominan: altcoin tertinggal dari BTC. Pilih altcoin hanya dengan setup kuat. (kesimpulan ini interpretasi)
 Riwayat dominasi terkumpul harian lewat GitHub Actions. Skenario Eliz: dominasi BTC ditolak di zona tinggi (ia menyebut 57–58% pada 2024) bersamaan BTC ditolak, lalu ETH naik, lalu altcoin.
 Sinyal setup
@@ -43,39 +44,8 @@ Long
 Short
 Scan ulang
 
-Selesai: 25 setup, 35 koin dipantau.
+Selesai: 27 setup, 35 koin dipantau.
 
-TRX
-LONG JAUH
-Entry limit
-0.329
-SL 3.0%
-0.320
-TP 2R
-0.349
-Target range
-0.349
-Harga 0.352 · jarak ke entry 6.5% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W naik · D netral · sweep Monday Low lalu reclaim · breakout ber-close, retest · Wolf bullish: breakdown trendline gagal · searah tren
-melawan tren BTC
-Risiko $10: qty 1012 TRX (≈$333)
-Grafik 90 hari
-DOGE
-SHORT MENUNGGU RETEST
-Entry limit
-0.0782
-SL 4.7%
-0.0819
-TP 2R
-0.0709
-Target range
-0.0748
-Harga 0.0753 · jarak ke entry 3.9% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
-Risiko $10: qty 2734 DOGE (≈$214)
-Grafik 90 hari
 ETH
 SHORT MENUNGGU RETEST
 Entry limit
@@ -86,10 +56,56 @@ TP 2R
 2204.0
 Target range
 2282.5
-Harga 2253.1 · jarak ke entry 4.1% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · breakdown ber-close, retest · searah tren
+Harga 2255.7 · jarak ke entry 3.9% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · breakdown ber-close, retest · Wolf: breakout trendline gagal · searah tren
 Risiko $10: qty 0.142 ETH (≈$333)
+Grafik 90 hari
+UNI
+LONG MENUNGGU RETEST
+Entry limit
+6.780
+SL 8.2%
+6.223
+TP 2R
+7.895
+Target range
+10.942
+Harga 7.102 · jarak ke entry 4.5% · swing
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 4 · Tren W naik · D netral · sweep Monday Low lalu reclaim · Fib 0.75 tren naik · OBV divergence · searah tren
+melawan tren BTC
+Risiko $10: qty 17.9 UNI (≈$122)
+Grafik 90 hari
+SOL
+SHORT JAUH
+Entry limit
+102.7
+SL 3.0%
+105.8
+TP 2R
+96.566
+Target range
+95.820
+Harga 95.540 · jarak ke entry 7.5% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · breakdown ber-close, retest · Wolf: breakout trendline gagal · searah tren
+Risiko $10: qty 3.24 SOL (≈$333)
+Grafik 90 hari
+TRX
+SHORT JAUH
+Entry limit
+0.349
+SL 5.1%
+0.367
+TP 2R
+0.313
+Target range
+0.322
+Harga 0.304 · jarak ke entry 15.0% · swing
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W netral · D turun · Three Top: 2 sentuhan lalu manipulasi di atas · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · OBV divergence
+Risiko $10: qty 558 TRX (≈$195)
 Grafik 90 hari
 LTC
 SHORT MENUNGGU RETEST
@@ -101,43 +117,46 @@ TP 2R
 51.542
 Target range
 47.410
-Harga 54.950 · jarak ke entry 4.2% · swing
-4H/12H: Retest tertahan di 4H
+Harga 55.780 · jarak ke entry 2.7% · swing
+4H/12H: Di sisi benar level, belum retest
 Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
 Risiko $10: qty 3.49 LTC (≈$200)
 Grafik 90 hari
-XRP
-SHORT JAUH
+ZAMA
+LONG MENUNGGU RETEST
 Entry limit
-1.312
-SL 3.0%
-1.352
+0.0676
+SL 13.1%
+0.0587
 TP 2R
-1.233
+0.0853
 Target range
-1.247
-Harga 1.238 · jarak ke entry 6.0% · scalping
+0.108
+Harga 0.0695 · jarak ke entry 2.8% · swing
 4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · breakdown ber-close, retest · searah tren
-Risiko $10: qty 254 XRP (≈$333)
+Skor konfirmasi 3 · Tren W n/a · D netral · sweep Monday Low lalu reclaim · Wolf bullish: breakdown trendline gagal · RSI divergence
+volume tipis, OBV tidak andal · melawan tren BTC
+Risiko $10: qty 1128 ZAMA (≈$76)
 Grafik 90 hari
-BNB
-SHORT JAUH
+DOGE
+SHORT MENUNGGU RETEST
 Entry limit
-747.5
-SL 3.0%
-769.9
+0.0782
+SL 4.7%
+0.0819
 TP 2R
-702.6
+0.0709
 Target range
-674.6
-Harga 698.5 · jarak ke entry 7.0% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
-Risiko $10: qty 0.446 BNB (≈$333)
+0.0748
+Harga 0.0756 · jarak ke entry 3.5% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
+Risiko $10: qty 2734 DOGE (≈$214)
 Grafik 90 hari
 SUI
-SHORT JAUH
+SHORT MENUNGGU RETEST
 Entry limit
 0.931
 SL 4.1%
@@ -146,10 +165,59 @@ TP 2R
 0.854
 Target range
 0.673
-Harga 0.870 · jarak ke entry 7.1% · scalping
-4H/12H: Retest tertahan di 4H
+Harga 0.899 · jarak ke entry 3.5% · scalping
+4H/12H: Di sisi benar level, belum retest
 Skor konfirmasi 3 · Tren W turun · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
 Risiko $10: qty 259 SUI (≈$241)
+Grafik 90 hari
+XAUT
+SHORT MENUNGGU RETEST
+Entry limit
+4030.0
+SL 3.0%
+4150.9
+TP 2R
+3788.2
+Target range
+3976.2
+Harga 3879.7 · jarak ke entry 3.9% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W n/a · D turun · sweep Monday High lalu reclaim · breakdown ber-close, retest · searah tren
+volume tipis, OBV tidak andal
+Risiko $10: qty 0.0827 XAUT (≈$333)
+Grafik 90 hari
+AVAX
+SHORT MENUNGGU RETEST
+Entry limit
+9.060
+SL 3.0%
+9.332
+TP 2R
+8.516
+Target range
+7.011
+Harga 8.578 · jarak ke entry 5.6% · scalping
+4H/12H: Retest tertahan di 4H
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
+Risiko $10: qty 36.8 AVAX (≈$333)
+Grafik 90 hari
+CELO
+SHORT JAUH
+Entry limit
+0.0808
+SL 4.8%
+0.0847
+TP 2R
+0.0731
+Target range
+0.0709
+Harga 0.0749 · jarak ke entry 7.9% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
+Risiko $10: qty 2597 CELO (≈$210)
 Grafik 90 hari
 ADA
 SHORT JAUH
@@ -161,148 +229,11 @@ TP 2R
 0.196
 Target range
 0.189
-Harga 0.190 · jarak ke entry 9.3% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
-Risiko $10: qty 1601 ADA (≈$333)
-Grafik 90 hari
-ONDO
-SHORT JAUH
-Entry limit
-0.424
-SL 3.2%
-0.438
-TP 2R
-0.397
-Target range
-0.323
-Harga 0.381 · jarak ke entry 11.5% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
-volume tipis, OBV tidak andal
-Risiko $10: qty 731 ONDO (≈$310)
-Grafik 90 hari
-ENA
-SHORT JAUH
-Entry limit
-0.213
-SL 3.0%
-0.219
-TP 2R
-0.200
-Target range
-0.135
-Harga 0.175 · jarak ke entry 21.4% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W turun · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
-Risiko $10: qty 1565 ENA (≈$333)
-Grafik 90 hari
-INTCB
-SHORT JAUH
-Entry limit
-92.170
-SL 4.9%
-96.711
-TP 2R
-83.088
-Target range
-84.030
-Harga 71.130 · jarak ke entry 29.6% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 3 · Tren W n/a · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
-Risiko $10: qty 2.20 INTCB (≈$203)
-Grafik 90 hari
-SNDKB
-SHORT AKTIF
-Entry limit
-1288.6
-SL 10.7%
-1426.2
-TP 2R
-1013.3
-Target range
-1197.4
-Harga 1283.0 · jarak ke entry 0.4% · swing
-4H/12H: Tunggu close 4H di bawah level
-Skor konfirmasi 2 · Tren W n/a · D turun · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 0.0726 SNDKB (≈$94)
-Grafik 90 hari
-XAUT
-SHORT AKTIF
-Entry limit
-4030.0
-SL 3.0%
-4150.9
-TP 2R
-3788.2
-Target range
-3976.2
-Harga 4007.1 · jarak ke entry 0.6% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W n/a · D turun · sweep Monday High lalu reclaim · searah tren
-volume tipis, OBV tidak andal
-Risiko $10: qty 0.0827 XAUT (≈$333)
-Grafik 90 hari
-BTC
-SHORT MENUNGGU RETEST
-Entry limit
-80844.7
-SL 3.0%
-83270.0
-TP 2R
-75994.0
-Target range
-74968.0
-Harga 77991.9 · jarak ke entry 3.7% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W turun · D netral · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 0.00412 BTC (≈$333)
-Grafik 90 hari
-SPCXB
-SHORT JAUH
-Entry limit
-150.5
-SL 3.0%
-155.1
-TP 2R
-141.5
-Target range
-135.2
-Harga 140.7 · jarak ke entry 7.0% · scalping
+Harga 0.193 · jarak ke entry 7.9% · scalping
 4H/12H: Di sisi benar level, belum retest
-Skor konfirmasi 2 · Tren W n/a · D turun · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 2.21 SPCXB (≈$333)
-Grafik 90 hari
-SOL
-SHORT JAUH
-Entry limit
-102.7
-SL 3.0%
-105.8
-TP 2R
-96.566
-Target range
-94.950
-Harga 95.650 · jarak ke entry 7.4% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W turun · D turun · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 3.24 SOL (≈$333)
-Grafik 90 hari
-FET
-SHORT JAUH
-Entry limit
-0.178
-SL 6.1%
-0.189
-TP 2R
-0.156
-Target range
-0.145
-Harga 0.163 · jarak ke entry 9.2% · swing
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W turun · D turun · sweep Monday High lalu reclaim · searah tren
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
 volume tipis, OBV tidak andal
-Risiko $10: qty 914 FET (≈$163)
+Risiko $10: qty 1601 ADA (≈$333)
 Grafik 90 hari
 TAO
 SHORT JAUH
@@ -314,40 +245,184 @@ TP 2R
 240.7
 Target range
 213.4
-Harga 234.2 · jarak ke entry 9.4% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W turun · D turun · sweep Monday High lalu reclaim · searah tren
+Harga 236.9 · jarak ke entry 8.1% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W turun · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
 Risiko $10: qty 1.30 TAO (≈$333)
 Grafik 90 hari
-AVAX
+ENA
 SHORT JAUH
 Entry limit
-9.060
+0.213
 SL 3.0%
-9.332
+0.219
 TP 2R
-8.516
+0.200
 Target range
-7.011
-Harga 8.281 · jarak ke entry 9.4% · scalping
-4H/12H: Retest tertahan di 4H
+0.135
+Harga 0.189 · jarak ke entry 12.7% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W turun · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal · searah tren
+volume tipis, OBV tidak andal
+Risiko $10: qty 1565 ENA (≈$333)
+Grafik 90 hari
+MORPHO
+LONG JAUH
+Entry limit
+2.000
+SL 3.0%
+1.940
+TP 2R
+2.120
+Target range
+2.981
+Harga 2.377 · jarak ke entry 15.9% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 3 · Tren W naik · D netral · deviasi bawah lalu recovery · sweep Monday Low lalu reclaim · searah tren
+volume tipis, OBV tidak andal · melawan tren BTC
+Risiko $10: qty 167 MORPHO (≈$333)
+Grafik 90 hari
+BTC
+SHORT MENUNGGU RETEST
+Entry limit
+80844.7
+SL 3.0%
+83270.0
+TP 2R
+75994.0
+Target range
+74968.0
+Harga 77582.0 · jarak ke entry 4.2% · scalping
+4H/12H: Di sisi benar level, belum retest
 Skor konfirmasi 2 · Tren W turun · D netral · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 36.8 AVAX (≈$333)
+Risiko $10: qty 0.00412 BTC (≈$333)
+Grafik 90 hari
+XRP
+SHORT MENUNGGU RETEST
+Entry limit
+1.312
+SL 3.0%
+1.352
+TP 2R
+1.233
+Target range
+1.247
+Harga 1.252 · jarak ke entry 4.8% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W turun · D turun · sweep Monday High lalu reclaim · searah tren
+Risiko $10: qty 254 XRP (≈$333)
+Grafik 90 hari
+PROM
+LONG MENUNGGU RETEST
+Entry limit
+5.359
+SL 10.5%
+4.798
+TP 2R
+6.481
+Target range
+7.890
+Harga 5.646 · jarak ke entry 5.1% · swing
+4H/12H: Retest tertahan di 4H
+Skor konfirmasi 2 · Tren W naik · D naik · sweep Monday Low lalu reclaim · searah tren
+volume tipis, OBV tidak andal · melawan tren BTC
+Risiko $10: qty 17.8 PROM (≈$96)
+Grafik 90 hari
+PUMP
+SHORT MENUNGGU RETEST
+Entry limit
+0.00442
+SL 5.9%
+0.00468
+TP 2R
+0.00390
+Target range
+0.00339
+Harga 0.00421 · jarak ke entry 5.1% · swing
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W naik · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal
+volume tipis, OBV tidak andal
+Risiko $10: qty 38568 PUMP (≈$170)
+Grafik 90 hari
+NEAR
+SHORT MENUNGGU RETEST
+Entry limit
+4.665
+SL 3.6%
+4.834
+TP 2R
+4.327
+Target range
+1.779
+Harga 4.435 · jarak ke entry 5.2% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W naik · D naik · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal
+Risiko $10: qty 59.2 NEAR (≈$276)
+Grafik 90 hari
+QNT
+LONG JAUH
+Entry limit
+187.8
+SL 7.2%
+174.3
+TP 2R
+214.8
+Target range
+373.0
+Harga 201.0 · jarak ke entry 6.6% · swing
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W naik · D naik · sweep Monday Low lalu reclaim · searah tren
+volume tipis, OBV tidak andal · melawan tren BTC
+Risiko $10: qty 0.740 QNT (≈$139)
+Grafik 90 hari
+STX
+LONG JAUH
+Entry limit
+0.299
+SL 10.7%
+0.267
+TP 2R
+0.363
+Target range
+0.465
+Harga 0.325 · jarak ke entry 8.1% · swing
+4H/12H: Retest tertahan di 4H
+Skor konfirmasi 2 · Tren W turun · D naik · sweep Monday Low lalu reclaim · OBV divergence
+volume tipis, OBV tidak andal · melawan tren BTC
+Risiko $10: qty 312 STX (≈$93)
 Grafik 90 hari
 LINK
+LONG JAUH
+Entry limit
+10.617
+SL 3.7%
+10.222
+TP 2R
+11.408
+Target range
+15.777
+Harga 11.669 · jarak ke entry 9.0% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W netral · D turun · deviasi bawah lalu recovery · sweep Monday Low lalu reclaim
+melawan tren BTC
+Risiko $10: qty 25.3 LINK (≈$269)
+Grafik 90 hari
+FET
 SHORT JAUH
 Entry limit
-11.629
-SL 3.8%
-12.076
+0.178
+SL 6.1%
+0.189
 TP 2R
-10.735
+0.156
 Target range
-10.617
-Harga 10.621 · jarak ke entry 9.5% · scalping
-4H/12H: Retest tertahan di 4H
+0.145
+Harga 0.160 · jarak ke entry 11.8% · swing
+4H/12H: Di sisi benar level, belum retest
 Skor konfirmasi 2 · Tren W turun · D turun · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 22.4 LINK (≈$260)
+volume tipis, OBV tidak andal
+Risiko $10: qty 914 FET (≈$163)
 Grafik 90 hari
 INJ
 SHORT JAUH
@@ -359,129 +434,129 @@ TP 2R
 7.590
 Target range
 4.654
-Harga 7.339 · jarak ke entry 10.2% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W netral · D netral · sweep Monday High lalu reclaim · RSI divergence
+Harga 7.227 · jarak ke entry 11.9% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W netral · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal
 volume tipis, OBV tidak andal
 Risiko $10: qty 40.1 INJ (≈$324)
 Grafik 90 hari
-UNI
-SHORT JAUH
+XPL
+LONG JAUH
 Entry limit
-7.198
-SL 5.0%
-7.559
+0.0707
+SL 5.2%
+0.0670
 TP 2R
-6.477
+0.0780
 Target range
-4.145
-Harga 6.469 · jarak ke entry 11.3% · swing
+0.126
+Harga 0.0813 · jarak ke entry 13.1% · swing
 4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W naik · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal
-Risiko $10: qty 27.7 UNI (≈$200)
-Grafik 90 hari
-PUMP
-SHORT JAUH
-Entry limit
-0.00442
-SL 5.9%
-0.00468
-TP 2R
-0.00390
-Target range
-0.00339
-Harga 0.00395 · jarak ke entry 11.9% · swing
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W naik · D netral · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal
-Risiko $10: qty 38568 PUMP (≈$170)
-Grafik 90 hari
-ARB
-SHORT JAUH
-Entry limit
-0.174
-SL 3.3%
-0.179
-TP 2R
-0.162
-Target range
-0.0831
-Harga 0.154 · jarak ke entry 12.6% · scalping
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W turun · D netral · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 1726 ARB (≈$300)
+Skor konfirmasi 2 · Tren W turun · D turun · deviasi bawah lalu recovery · sweep Monday Low lalu reclaim
+volume tipis, OBV tidak andal · melawan tren BTC
+Risiko $10: qty 2720 XPL (≈$192)
 Grafik 90 hari
 WLD
 SHORT JAUH
 Entry limit
 0.453
-SL 5.0%
-0.476
+SL 3.0%
+0.466
 TP 2R
-0.408
+0.426
 Target range
 0.353
-Harga 0.382 · jarak ke entry 18.6% · swing
-4H/12H: Retest tertahan di 4H
-Skor konfirmasi 2 · Tren W turun · D netral · sweep Monday High lalu reclaim · searah tren
-Risiko $10: qty 441 WLD (≈$200)
+Harga 0.399 · jarak ke entry 13.6% · scalping
+4H/12H: Di sisi benar level, belum retest
+Skor konfirmasi 2 · Tren W turun · D turun · sweep Monday High lalu reclaim · searah tren
+volume tipis, OBV tidak andal
+Risiko $10: qty 736 WLD (≈$333)
 Grafik 90 hari
 Pantauan 40 koin
 Koin	Weekly	Daily	Range	Pola	Status
-PARTI	turun	naik	192%	Sweep Monday Low	filter kualitas: konfirmasi kurang
-INTCB	n/a	turun	-28%	Sweep Monday High, Wolf bearish	SETUP
-TRX	naik	netral	111%	Breakout-retest, Sweep Monday Low, Wolf bullish	SETUP
-ETH	turun	turun	-6%	Breakout-retest, Sweep Monday High	SETUP
-HBAR	turun	turun	-5%	-	dekat range low: tunggu deviasi/retest
-XRP	turun	turun	-2%	Breakout-retest, Sweep Monday High	SETUP
-LINK	turun	turun	0%	Deviasi bawah, Sweep Monday High	SETUP
-ADA	turun	turun	1%	Three Tap, Sweep Monday High, Wolf bearish	SETUP
-DOGE	turun	turun	2%	Three Tap, Sweep Monday High, Wolf bearish	SETUP
-CRCLB	n/a	turun	2%	-	dekat range low: tunggu deviasi/retest
-SOL	turun	turun	2%	Sweep Monday High	SETUP
-XAUT	n/a	turun	5%	Sweep Monday High	SETUP
-AAVE	turun	netral	8%	-	dekat range low: tunggu deviasi/retest
-WLD	turun	netral	11%	Sweep Monday High	SETUP
-SNDKB	n/a	turun	12%	Sweep Monday High	SETUP
-SPCXB	n/a	turun	13%	Sweep Monday High	SETUP
-FET	turun	turun	14%	Sweep Monday High	SETUP
-TAO	turun	turun	16%	Sweep Monday High	SETUP
-PUMP	naik	netral	16%	Sweep Monday High, Wolf bearish	SETUP
-BNB	turun	netral	18%	Sweep Monday High, Wolf bearish	SETUP
-ONDO	turun	turun	20%	Sweep Monday High, Wolf bearish	SETUP
-BTC	turun	netral	24%	Sweep Monday High	SETUP
-MSTRB	n/a	netral	25%	Sweep Monday High	filter kualitas: konfirmasi kurang
-ENA	turun	netral	25%	Sweep Monday High, Wolf bearish	SETUP
-AVAX	turun	netral	25%	Sweep Monday High	SETUP
-LTC	turun	turun	27%	Sweep Monday High, Wolf bearish	SETUP
-SUI	turun	netral	32%	Sweep Monday High, Wolf bearish	SETUP
-UNI	naik	netral	34%	Sweep Monday High, Wolf bearish	SETUP
-PEPE	netral	naik	62%	Deviasi atas, Wolf bullish	filter kualitas: konfirmasi kurang
-ZRO	netral	netral	39%	Sweep Monday High	filter kualitas: konfirmasi kurang
-QNT	naik	naik	40%	-	mid-range, hindari
-ARB	turun	netral	41%	Sweep Monday High	SETUP
-INJ	netral	netral	56%	Sweep Monday High	SETUP
-NEAR	naik	netral	54%	Sweep Monday High	filter kualitas: konfirmasi kurang
-ZEC	naik	naik	49%	Sweep Monday High	filter kualitas: konfirmasi kurang
+BEAMX	netral	naik	178%	-	dekat range high: tunggu breakout-retest/deviasi
+TRX	netral	turun	-65%	Three Top, Sweep Monday High, Wolf bearish	SETUP
+XAUT	n/a	turun	-15%	Breakout-retest, Sweep Monday High	SETUP
+ETH	turun	turun	-5%	Breakout-retest, Sweep Monday High, Wolf bearish	SETUP
+SOL	turun	turun	-1%	Breakout-retest, Sweep Monday High, Wolf bearish	SETUP
+XRP	turun	turun	1%	Three Tap, Sweep Monday High	SETUP
+DOGE	turun	turun	3%	Three Tap, Sweep Monday High, Wolf bearish	SETUP
+ADA	turun	turun	4%	Three Tap, Sweep Monday High, Wolf bearish	SETUP
+LSK	netral	netral	8%	-	dekat range low: tunggu deviasi/retest
+CELO	turun	turun	8%	Deviasi bawah, Sweep Monday High, Wolf bearish	SETUP
+FET	turun	turun	11%	Sweep Monday High	SETUP
+COW	turun	turun	11%	Deviasi bawah, Sweep Monday High, Wolf bearish	SL lebih dari 15%, ditolak
+PEPE	netral	naik	83%	Deviasi atas, Wolf bullish	filter kualitas: konfirmasi kurang
+WLD	turun	turun	17%	Sweep Monday High	SETUP
+TAO	turun	turun	18%	Sweep Monday High, Wolf bearish	SETUP
+XPL	turun	turun	19%	Deviasi bawah, Sweep Monday Low	SETUP
+LINK	netral	turun	20%	Deviasi bawah, Sweep Monday Low	SETUP
+BTC	turun	netral	21%	Sweep Monday High	SETUP
+BNB	netral	netral	22%	Sweep Monday High	filter kualitas: konfirmasi kurang
+PUMP	naik	turun	24%	Sweep Monday Low, Sweep Monday High, Wolf bearish	SETUP
+AAVE	turun	turun	28%	Sweep Monday Low	filter kualitas: konfirmasi kurang
+LTC	turun	turun	30%	Sweep Monday High, Wolf bearish	SETUP
+AVAX	turun	turun	31%	Sweep Monday High, Wolf bearish	SETUP
+ENA	turun	netral	34%	Sweep Monday High, Wolf bearish	SETUP
+SUI	turun	netral	36%	Sweep Monday High, Wolf bearish	SETUP
+NEAR	naik	naik	63%	Sweep Monday Low, Sweep Monday High, Wolf bearish	SETUP
+PROM	naik	naik	38%	Sweep Monday Low	SETUP
+MORPHO	naik	netral	38%	Deviasi bawah, Sweep Monday Low	SETUP
+ZAMA	n/a	netral	39%	Sweep Monday Low, Sweep Monday High, Wolf bullish	SETUP
+ZRO	netral	naik	60%	Sweep Monday Low	filter kualitas: konfirmasi kurang
+STX	turun	naik	41%	Sweep Monday Low	SETUP
+UNI	naik	netral	42%	Sweep Monday Low, Sweep Monday High	SETUP
+QNT	naik	naik	45%	Sweep Monday Low	SETUP
+INJ	netral	netral	54%	Sweep Monday High, Wolf bearish	SETUP
+ZEC	naik	naik	52%	Sweep Monday High, Wolf bullish	filter kualitas: konfirmasi kurang
 
 Ketuk baris koin untuk melihat grafiknya.
 
 Jurnal sinyal Asgra
 Sinyal
 
-332
+360
 Win rate
 
-28%
+27%
 Rata-rata R
 
--0.05
+-0.04
 Total R
 
--9.6
+-8.5
 Forward test (uji bersih, mulai 2026-10-14)
-Trade terisi 84/150 · minggu 3/20 · menunggu 26
+Trade terisi 87/150 · minggu 3/20 · menunggu 13
 Angka kinerja forward test disembunyikan sampai syarat terpenuhi, agar aturan tidak diubah di tengah jalan.
 waktu	aset	arah	entry	sl	tp	hasil	R	alasan
+2026-10-31 02:34 UTC	FET	SHORT	0.1783	0.18924	0.15642	NO_TRADE		sweep Monday High lalu reclaim, searah tren | FILTER: Entry 7.02% dari harga; setup terlalu jauh/stale
+2026-10-31 02:34 UTC	QNT	LONG	187.79	174.27	214.82	menunggu		sweep Monday Low lalu reclaim, searah tren
+2026-10-31 02:34 UTC	PUMP	SHORT	0.00442	0.0046793	0.0039014	NO_TRADE		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal | FILTER: Entry 5.89% dari harga; setup terlalu jauh/stale
+2026-10-31 02:34 UTC	XPL	LONG	0.07067	0.066993	0.078023	NO_TRADE		deviasi bawah lalu recovery, sweep Monday Low lalu reclaim | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	TAO	SHORT	256.1	263.78	240.73	NO_TRADE		sweep Monday High lalu reclaim, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	AVAX	SHORT	9.06	9.3318	8.5164	NO_TRADE		sweep Monday High lalu reclaim, searah tren | FILTER: Entry 5.93% dari harga; setup terlalu jauh/stale
+2026-10-31 02:34 UTC	ONDO	SHORT	0.4243	0.43798	0.39694	menunggu		sweep Monday High lalu reclaim, searah tren
+2026-10-31 02:34 UTC	WLD	SHORT	0.4529	0.46649	0.42573	NO_TRADE		sweep Monday High lalu reclaim, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	CRCLB	SHORT	75	85.475	54.05	menunggu		breakdown ber-close, retest, searah tren
+2026-10-31 02:34 UTC	LINK	LONG	10.617	10.222	11.408	NO_TRADE		deviasi bawah lalu recovery, sweep Monday Low lalu reclaim | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	XRP	SHORT	1.3122	1.3516	1.2335	menunggu		sweep Monday High lalu reclaim, searah tren
+2026-10-31 02:34 UTC	SOL	SHORT	102.73	105.81	96.566	NO_TRADE		sweep Monday High lalu reclaim, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	BNB	SHORT	747.47	769.89	702.62	NO_TRADE		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal | FILTER: Entry 6.11% dari harga; setup terlalu jauh/stale
+2026-10-31 02:34 UTC	BTC	SHORT	80845	83270	75994	menunggu		sweep Monday High lalu reclaim, searah tren
+2026-10-31 02:34 UTC	ADA	SHORT	0.2082	0.21445	0.19571	NO_TRADE		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	LTC	SHORT	57.28	60.149	51.542	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
+2026-10-31 02:34 UTC	DOGE	SHORT	0.07823	0.081887	0.070915	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
+2026-10-31 02:34 UTC	SUI	SHORT	0.9312	0.96982	0.85395	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
+2026-10-31 02:34 UTC	ENA	SHORT	0.213	0.21939	0.20022	NO_TRADE		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	XAUT	SHORT	4030	4150.9	3788.2	menunggu		sweep Monday High lalu reclaim, breakdown ber-close, retest, searah tren
+2026-10-31 02:34 UTC	INTCB	SHORT	92.17	96.711	83.088	NO_TRADE		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	SNDKB	SHORT	1288.6	1426.2	1013.3	NO_TRADE		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren | FILTER: Entry 11.20% dari harga; setup terlalu jauh/stale
+2026-10-31 02:34 UTC	ETH	SHORT	2344.7	2415.1	2204	menunggu		sweep Monday High lalu reclaim, breakdown ber-close, retest, searah tren
+2026-10-31 02:34 UTC	QQQB	SHORT	716	737.48	673.04	menunggu		sweep Monday High lalu reclaim, breakdown ber-close, retest, Wolf: breakout trendline gagal, searah tren
+2026-10-31 02:34 UTC	MUB	LONG	870.85	844.72	923.1	menunggu		sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence, RSI divergence
+2026-10-31 02:34 UTC	NVDAB	SHORT	217.98	224.52	204.9	NO_TRADE		sweep Monday High lalu reclaim, breakdown ber-close, retest, Wolf: breakout trendline gagal, searah tren | FILTER: Entry 6.06% dari harga; setup terlalu jauh/stale
+2026-10-31 02:34 UTC	SPCXB	SHORT	150.54	155.06	141.51	NO_TRADE		sweep Monday High lalu reclaim, breakdown ber-close, retest, Wolf: breakout trendline gagal, searah tren | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
+2026-10-31 02:34 UTC	TRX	SHORT	0.3493	0.36723	0.31345	NO_TRADE		Three Top: 2 sentuhan lalu manipulasi di atas, sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, OBV divergence | FILTER: Entry 6.79% dari harga; setup terlalu jauh/stale
 2026-10-30 01:16 UTC	INJ	SHORT	8.089	8.3385	7.59	NO_TRADE		sweep Monday High lalu reclaim, RSI divergence | FILTER: Target sudah tercapai sebelum entry; setup basi, jangan diterbitkan
 2026-10-30 01:16 UTC	FET	SHORT	0.1783	0.18924	0.15642	NO_TRADE		sweep Monday High lalu reclaim, searah tren | FILTER: Entry 9.19% dari harga; setup terlalu jauh/stale
 2026-10-30 01:16 UTC	BCH	SHORT	284.7	306.32	241.45	menunggu		sweep Monday High lalu reclaim, searah tren
@@ -518,8 +593,8 @@ waktu	aset	arah	entry	sl	tp	hasil	R	alasan
 2026-10-28 03:06 UTC	WLD	LONG	0.4325	0.41952	0.45845	SL	-1	sweep Monday Low lalu reclaim
 2026-10-28 03:06 UTC	DOGE	LONG	0.07607	0.073788	0.080634	SL	-1	deviasi bawah lalu recovery
 2026-10-28 03:06 UTC	PEPE	SHORT	0.00000499	0.0000051397	0.0000046906	SL	-1	Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah
-2026-10-28 03:06 UTC	XAUT	LONG	4024.3	3903.6	4265.7	menunggu		Three Tap: 2 sentuhan lalu manipulasi di bawah
-2026-10-28 03:06 UTC	SNDKB	LONG	1214.3	1177.9	1287.2	menunggu		deviasi bawah lalu recovery
+2026-10-28 03:06 UTC	XAUT	LONG	4024.3	3903.6	4265.7	SL	-1	Three Tap: 2 sentuhan lalu manipulasi di bawah
+2026-10-28 03:06 UTC	SNDKB	LONG	1214.3	1177.9	1287.2	SL	-1	deviasi bawah lalu recovery
 2026-10-28 03:06 UTC	BNB	SHORT	747.47	769.89	702.62	TP	2	sweep Monday High lalu reclaim
 2026-10-28 03:06 UTC	ETH	LONG	2318	2248.5	2457.1	SL	-1	Three Tap: 2 sentuhan lalu manipulasi di bawah
 2026-10-28 03:06 UTC	LTC	SHORT	57.28	60.159	51.521	menunggu		sweep Monday High lalu reclaim, searah tren
@@ -539,7 +614,7 @@ waktu	aset	arah	entry	sl	tp	hasil	R	alasan
 2026-10-27 03:42 UTC	DOGE	LONG	0.07607	0.073788	0.080634	SL	-1	deviasi bawah lalu recovery
 2026-10-27 03:42 UTC	HUMA	LONG	0.01876	0.017442	0.021395	menunggu		deviasi bawah lalu recovery
 2026-10-27 03:42 UTC	PUMP	SHORT	0.0046787	0.0052381	0.0035599	menunggu		Wolf: breakout trendline gagal
-2026-10-27 03:42 UTC	SNDKB	LONG	1214.3	1177.9	1287.2	menunggu		deviasi bawah lalu recovery
+2026-10-27 03:42 UTC	SNDKB	LONG	1214.3	1177.9	1287.2	SL	-1	deviasi bawah lalu recovery
 2026-10-27 03:42 UTC	ETH	LONG	2318	2248.5	2457.1	SL	-1	Three Tap: 2 sentuhan lalu manipulasi di bawah
 2026-10-27 03:42 UTC	KAT	SHORT	0.00631	0.0064993	0.0059314	menunggu		Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, searah tren
 2026-10-27 03:42 UTC	XAUT	SHORT	4075.4	4197.7	3830.9	menunggu		breakdown ber-close, retest, searah tren
@@ -576,69 +651,69 @@ waktu	aset	arah	entry	sl	tp	hasil	R	alasan
 2026-10-26 02:21 UTC	AI	SHORT	0.0213	0.021939	0.020022	menunggu		Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, sweep Monday High lalu reclaim, searah tren
 2026-10-26 02:21 UTC	BABY	SHORT	0.01465	0.015145	0.013659	SL	-1	deviasi atas gagal bertahan, Wolf: breakout trendline gagal, searah tren
 2026-10-26 02:21 UTC	INJ	SHORT	9.413	9.6954	8.8482	menunggu		deviasi atas gagal bertahan, sweep Monday High lalu reclaim, RSI divergence
-2026-10-26 02:21 UTC	ERA	LONG	0.065	0.06305	0.0689	menunggu		sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence
+2026-10-26 02:21 UTC	ERA	LONG	0.065	0.06305	0.0689	SL	-1	sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence
 2026-10-24 04:00 UTC	QNT	SHORT	204.7	213.93	186.23	SL	-1	sweep Monday High lalu reclaim
-2026-10-24 04:00 UTC	LINK	SHORT	12.267	12.873	11.055	menunggu		sweep Monday High lalu reclaim
+2026-10-24 04:00 UTC	LINK	SHORT	12.267	12.873	11.055	tidak terisi	0	sweep Monday High lalu reclaim
 2026-10-24 04:00 UTC	TRX	SHORT	0.3328	0.34278	0.31283	SL	-1	sweep Monday High lalu reclaim
 2026-10-24 04:00 UTC	UNI	SHORT	7.494	7.8289	6.8241	TP	2	sweep Monday High lalu reclaim
-2026-10-24 04:00 UTC	SPCXB	SHORT	151.1	166.98	119.34	menunggu		sweep Monday High lalu reclaim
-2026-10-24 04:00 UTC	BTC	SHORT	83158	85653	78169	menunggu		sweep Monday High lalu reclaim
+2026-10-24 04:00 UTC	SPCXB	SHORT	151.1	166.98	119.34	kedaluwarsa	0.9	sweep Monday High lalu reclaim
+2026-10-24 04:00 UTC	BTC	SHORT	83158	85653	78169	tidak terisi	0	sweep Monday High lalu reclaim
 2026-10-24 04:00 UTC	BCH	LONG	274.3	266.07	290.76	TP	2	sweep Monday Low lalu reclaim, OBV divergence
-2026-10-24 04:00 UTC	HBAR	SHORT	0.08553	0.088096	0.080398	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	AAVE	SHORT	154.64	161.35	141.21	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
-2026-10-24 04:00 UTC	DOT	SHORT	1.182	1.2175	1.1111	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	AVAX	SHORT	9.841	10.136	9.2505	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	ARB	SHORT	0.2027	0.20878	0.19054	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	ADA	SHORT	0.2229	0.23165	0.20539	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	TAO	SHORT	276	284.28	259.44	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	LTC	SHORT	60.46	62.702	55.976	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	ERA	LONG	0.065	0.06305	0.0689	menunggu		sweep Monday Low lalu reclaim, OBV divergence
-2026-10-24 04:00 UTC	PUMP	SHORT	0.004589	0.0052501	0.0032668	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
+2026-10-24 04:00 UTC	HBAR	SHORT	0.08553	0.088096	0.080398	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	AAVE	SHORT	154.64	161.35	141.21	tidak terisi	0	sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
+2026-10-24 04:00 UTC	DOT	SHORT	1.182	1.2175	1.1111	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	AVAX	SHORT	9.841	10.136	9.2505	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	ARB	SHORT	0.2027	0.20878	0.19054	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	ADA	SHORT	0.2229	0.23165	0.20539	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	TAO	SHORT	276	284.28	259.44	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	LTC	SHORT	60.46	62.702	55.976	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	ERA	LONG	0.065	0.06305	0.0689	SL	-1	sweep Monday Low lalu reclaim, OBV divergence
+2026-10-24 04:00 UTC	PUMP	SHORT	0.004589	0.0052501	0.0032668	kedaluwarsa	0.73	sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
 2026-10-24 04:00 UTC	MUB	SHORT	927.37	955.19	871.73	SL	-1	sweep Monday High lalu reclaim, searah tren
 2026-10-24 04:00 UTC	CRCLB	LONG	81.36	78.919	86.242	SL	-1	sweep Monday Low lalu reclaim, OBV divergence
 2026-10-24 04:00 UTC	DOGE	SHORT	0.08029	0.084219	0.072432	TP	2	sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	SUI	SHORT	1.018	1.0619	0.93023	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	XAUT	SHORT	4075.4	4207.8	3810.7	menunggu		breakdown ber-close, retest, searah tren
+2026-10-24 04:00 UTC	SUI	SHORT	1.018	1.0619	0.93023	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	XAUT	SHORT	4075.4	4207.8	3810.7	kedaluwarsa	1.48	breakdown ber-close, retest, searah tren
 2026-10-24 04:00 UTC	SNDKB	SHORT	1408.2	1450.4	1323.7	TP	2	sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	SOL	SHORT	106.22	109.75	99.168	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	XRP	SHORT	1.322	1.4062	1.1536	menunggu		sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	SOL	SHORT	106.22	109.75	99.168	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	XRP	SHORT	1.322	1.4062	1.1536	kedaluwarsa	0.85	sweep Monday High lalu reclaim, searah tren
 2026-10-24 04:00 UTC	PEPE	SHORT	0.00000499	0.0000051397	0.0000046906	SL	-1	Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, RSI divergence
-2026-10-24 04:00 UTC	NEAR	SHORT	5.141	5.4783	4.4665	menunggu		sweep Monday High lalu reclaim, RSI divergence
-2026-10-24 04:00 UTC	ETH	SHORT	2446.3	2539.3	2260.3	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-24 04:00 UTC	MSTRB	LONG	135.83	131.76	143.98	menunggu		sweep Monday Low lalu reclaim, OBV divergence, searah tren
-2026-10-24 04:00 UTC	AI	SHORT	0.0213	0.021939	0.020022	menunggu		Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, RSI divergence, searah tren
-2026-10-24 04:00 UTC	WLD	SHORT	0.5375	0.60129	0.40992	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
+2026-10-24 04:00 UTC	NEAR	SHORT	5.141	5.4783	4.4665	tidak terisi	0	sweep Monday High lalu reclaim, RSI divergence
+2026-10-24 04:00 UTC	ETH	SHORT	2446.3	2539.3	2260.3	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-24 04:00 UTC	MSTRB	LONG	135.83	131.76	143.98	SL	-1	sweep Monday Low lalu reclaim, OBV divergence, searah tren
+2026-10-24 04:00 UTC	AI	SHORT	0.0213	0.021939	0.020022	tidak terisi	0	Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, RSI divergence, searah tren
+2026-10-24 04:00 UTC	WLD	SHORT	0.5375	0.60129	0.40992	tidak terisi	0	sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
 2026-10-23 02:35 UTC	QNT	SHORT	204.7	213.93	186.23	SL	-1	sweep Monday High lalu reclaim
 2026-10-23 02:35 UTC	LINK	SHORT	12.267	12.873	11.055	TP	2	sweep Monday High lalu reclaim
 2026-10-23 02:35 UTC	TRX	SHORT	0.3328	0.34278	0.31283	SL	-1	sweep Monday High lalu reclaim
 2026-10-23 02:35 UTC	BNB	SHORT	733.64	755.65	689.62	SL	-1	sweep Monday High lalu reclaim
 2026-10-23 02:35 UTC	UNI	SHORT	7.494	7.8289	6.8241	TP	2	sweep Monday High lalu reclaim
-2026-10-23 02:35 UTC	SPCXB	SHORT	151.1	166.98	119.34	menunggu		sweep Monday High lalu reclaim
-2026-10-23 02:35 UTC	BTC	SHORT	83158	85653	78169	menunggu		sweep Monday High lalu reclaim
-2026-10-23 02:35 UTC	HBAR	SHORT	0.08553	0.090219	0.076152	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	RUNE	SHORT	0.671	0.71556	0.58188	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	GTC	SHORT	0.34191	0.38572	0.25429	menunggu		Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, sweep Monday High lalu reclaim
-2026-10-23 02:35 UTC	MSTRB	LONG	135.83	131.76	143.98	menunggu		sweep Monday Low lalu reclaim, searah tren
-2026-10-23 02:35 UTC	AVAX	SHORT	9.841	10.136	9.2505	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	AAVE	SHORT	154.64	161.35	141.21	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
-2026-10-23 02:35 UTC	LTC	SHORT	60.46	62.702	55.976	menunggu		sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	SPCXB	SHORT	151.1	166.98	119.34	kedaluwarsa	0.75	sweep Monday High lalu reclaim
+2026-10-23 02:35 UTC	BTC	SHORT	83158	85653	78169	tidak terisi	0	sweep Monday High lalu reclaim
+2026-10-23 02:35 UTC	HBAR	SHORT	0.08553	0.090219	0.076152	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	RUNE	SHORT	0.671	0.71556	0.58188	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	GTC	SHORT	0.34191	0.38572	0.25429	tidak terisi	0	Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, sweep Monday High lalu reclaim
+2026-10-23 02:35 UTC	MSTRB	LONG	135.83	131.76	143.98	kedaluwarsa	-0.63	sweep Monday Low lalu reclaim, searah tren
+2026-10-23 02:35 UTC	AVAX	SHORT	9.841	10.136	9.2505	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	AAVE	SHORT	154.64	161.35	141.21	tidak terisi	0	sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
+2026-10-23 02:35 UTC	LTC	SHORT	60.46	62.702	55.976	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
 2026-10-23 02:35 UTC	BMT	SHORT	0.026382	0.027702	0.023744	SL	-1	Fib 0.75 tren turun, searah tren
 2026-10-23 02:35 UTC	CRCLB	LONG	81.36	78.919	86.242	SL	-1	sweep Monday Low lalu reclaim, OBV divergence
-2026-10-23 02:35 UTC	ADA	SHORT	0.2229	0.23165	0.20539	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	SUI	SHORT	1.018	1.0619	0.93023	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	TAO	SHORT	276	284.28	259.44	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	PUMP	SHORT	0.004589	0.0052501	0.0032668	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
+2026-10-23 02:35 UTC	ADA	SHORT	0.2229	0.23165	0.20539	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	SUI	SHORT	1.018	1.0619	0.93023	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	TAO	SHORT	276	284.28	259.44	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	PUMP	SHORT	0.004589	0.0052501	0.0032668	kedaluwarsa	1.11	sweep Monday High lalu reclaim, Wolf: breakout trendline gagal
 2026-10-23 02:35 UTC	DOGE	SHORT	0.08029	0.084219	0.072432	TP	2	sweep Monday High lalu reclaim, searah tren
 2026-10-23 02:35 UTC	WLD	SHORT	0.55262	0.58026	0.49736	TP	2	Fib 0.75 tren turun, searah tren
 2026-10-23 02:35 UTC	SNDKB	SHORT	1408.2	1450.4	1323.7	TP	2	sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	XRP	SHORT	1.322	1.4062	1.1536	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	SOL	SHORT	106.22	109.75	99.168	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	XAUT	SHORT	4075.4	4207.8	3810.7	menunggu		breakdown ber-close, retest, searah tren
-2026-10-23 02:35 UTC	ETH	SHORT	2446.3	2539.3	2260.3	menunggu		sweep Monday High lalu reclaim, searah tren
-2026-10-23 02:35 UTC	ARB	SHORT	0.2027	0.20878	0.19054	menunggu		sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
-2026-10-23 02:35 UTC	FIL	SHORT	1.0664	1.0984	1.0024	menunggu		sweep Monday High lalu reclaim, RSI divergence, searah tren
-2026-10-23 02:35 UTC	INJ	SHORT	9.413	9.6954	8.8482	menunggu		deviasi atas gagal bertahan, sweep Monday High lalu reclaim, RSI divergence
-2026-10-23 02:35 UTC	AI	SHORT	0.0213	0.021939	0.020022	menunggu		Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, RSI divergence, searah tren
+2026-10-23 02:35 UTC	XRP	SHORT	1.322	1.4062	1.1536	kedaluwarsa	1.33	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	SOL	SHORT	106.22	109.75	99.168	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	XAUT	SHORT	4075.4	4207.8	3810.7	kedaluwarsa	0.55	breakdown ber-close, retest, searah tren
+2026-10-23 02:35 UTC	ETH	SHORT	2446.3	2539.3	2260.3	tidak terisi	0	sweep Monday High lalu reclaim, searah tren
+2026-10-23 02:35 UTC	ARB	SHORT	0.2027	0.20878	0.19054	tidak terisi	0	sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren
+2026-10-23 02:35 UTC	FIL	SHORT	1.0664	1.0984	1.0024	tidak terisi	0	sweep Monday High lalu reclaim, RSI divergence, searah tren
+2026-10-23 02:35 UTC	INJ	SHORT	9.413	9.6954	8.8482	tidak terisi	0	deviasi atas gagal bertahan, sweep Monday High lalu reclaim, RSI divergence
+2026-10-23 02:35 UTC	AI	SHORT	0.0213	0.021939	0.020022	tidak terisi	0	Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah, RSI divergence, searah tren
 2026-10-23 02:35 UTC	NEAR	LONG	4.865	4.5979	5.3992	SL	-1	sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, searah tren
 2026-10-22 01:06 UTC	ONDO	LONG	0.4283	0.40934	0.46621	SL	-1	sweep Monday Low lalu reclaim
 2026-10-22 01:06 UTC	ADA	LONG	0.2153	0.20884	0.22822	SL	-1	sweep Monday Low lalu reclaim
