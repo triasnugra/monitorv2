@@ -1,0 +1,105 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5702,
+    "meta": {
+      "live": {
+        "cards": 5,
+        "passed": 5,
+        "rejected": 0,
+        "summary": "Selesai: 5 koin punya setup · 36 koin dipindai, 4 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 5
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 5,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-04 00:50 UTC",
+      "t": 1793753400000,
+      "aset": "NVDAB",
+      "arah": "SHORT",
+      "entry": 210.18,
+      "sl": 216.4854,
+      "tp": 197.5692,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-04 00:50 UTC",
+      "t": 1793753400000,
+      "aset": "GOOGLB",
+      "arah": "SHORT",
+      "entry": 280.2,
+      "sl": 288.8068,
+      "tp": 262.9863,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-04 00:50 UTC",
+      "t": 1793753400000,
+      "aset": "SPCXB",
+      "arah": "SHORT",
+      "entry": 142.22,
+      "sl": 146.4866,
+      "tp": 133.6868,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-04 00:50 UTC",
+      "t": 1793753400000,
+      "aset": "XAUT",
+      "arah": "SHORT",
+      "entry": 3958.71,
+      "sl": 4077.471,
+      "tp": 3721.187,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-04 00:50 UTC",
+      "t": 1793753400000,
+      "aset": "SOL",
+      "arah": "SHORT",
+      "entry": 95,
+      "sl": 99.08295,
+      "tp": 86.8341,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
