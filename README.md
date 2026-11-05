@@ -107,3 +107,30 @@ Tidak perlu GitHub Secrets (data publik).
   Sebelumnya membeku di nilai saat pertama terlihat (mis. "menunggu"), sehingga hasil tn terlihat usang.
 - **Timeframe tn** = `1D`. `journal.json` tidak punya field timeframe; nilainya diturunkan dari kode tn
   (sinyal dihitung dari candle harian). Konstanta `TN_TIMEFRAME` di `src/parsers/tn.js`.
+
+## Hanya sinyal milik tiap mesin yang dinilai (lineage)
+tnv2, tnv2c2, dan chatgpt adalah turunan `/tn/` dan memakai rantai jurnal yang sama. Halaman tnv2 menyatakan sendiri bahwa panel
+"Jurnal sinyal"-nya mencatat **v1 (semua sinyal, tanpa gerbang)**; sinyal tnv2 sendiri ("Eliz v2", gerbang kualitas) hanya sebagian kecil
+dan ditandai field `engine` yang berbeda. Karena itu jurnal tnv2 dulu terbaca hampir identik dengan tn.
+
+Aturan per mesin ada di `config/sources.json` (ketujuh mesin wajib punya `inheritedEngineIds`; ada tes yang memeriksanya):
+
+| Mesin | `inheritedEngineIds` | `legacyWithoutEngine` | `tableOnlyRows` | Dasar |
+|---|---|---|---|---|
+| crypto | `[]` | – | – | Kartu DOM, semua milik sendiri |
+| tn | `[]` | – | – | Sumber v1; semua milik sendiri |
+| tnv2 | v1 `0537067ed55fc5be` | inherited | unverified | Terverifikasi: 310 baris v1 + 15 lama = salinan; milik sendiri = engine `cdaa11430a4b55e8` |
+| tnv2c2 | v1 | inherited | unverified | Terverifikasi: 290 baris v1 + 15 lama; milik sendiri = `c7f151a420fb0701` |
+| dseek | v1 | own | own | Terverifikasi: rantai mulai kosong 2026-10-29 (engine `1eea4198621d8ad0`) |
+| grox | v1 | own | unverified | Struktur halaman belum terverifikasi; entri hanya-tabel tidak dicatat |
+| chatgpt | v1 | inherited | unverified | Terverifikasi: 290 baris v1 + 15 lama; milik sendiri = `dcfc14e83216c90f` |
+
+- Entri dengan hash v1, atau (bila `legacyWithoutEngine: inherited`) entri lama tanpa field `engine`, adalah **salinan v1** dan tidak dicatat sebagai analisis mesin turunan.
+- Entri yang hanya ada di tabel tidak bisa diperiksa engine-nya. Bila `tableOnlyRows: unverified`, entri itu tidak dicatat dan muncul peringatan `JOURNAL_LINEAGE_UNVERIFIED`.
+- Record lama diberi tanda `lineage` pada run berikutnya; salinan v1 disembunyikan dari rekap dan riwayat (tidak dihapus dari `jurnal.json`), tidak dievaluasi ulang, dan tidak ditautkan ke tab Setup.
+- Tab Diagnostics menampilkan per scan: jumlah baris milik sendiri / salinan v1 / tak pasti, beserta hash engine milik sendiri yang terlihat. Bila suatu mesin mengubah engine (hash baru), hash itu otomatis dianggap milik sendiri dan terlihat di sini.
+- Bila `grox` atau `dseek` ternyata mewarisi jurnal v1, hash v1 sudah dikecualikan; sesuaikan `legacyWithoutEngine` setelah Discover.
+
+## NO_TRADE
+Hasil jurnal `NO_TRADE` (mis. chatgpt: "FILTER: Target sudah tercapai sebelum entry") berarti filter mesin menolak sinyal itu; tidak pernah menjadi trade.
+Dinilai `CANCELLED` (tampil "Tidak terpakai"), baik pada basis mesin maupun basis candle, dan tidak dievaluasi dari candle.
