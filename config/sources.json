@@ -8,7 +8,9 @@
     "noSetupMarkerText": null,
     "gotoTimeoutMs": 45000,
     "scanTimeoutMs": 120000,
-    "quietMs": 4000
+    "quietMs": 4000,
+    "inheritedEngineIds": [],
+    "lineageNote": "Kartu DOM, bukan jurnal berantai: semua kartu milik mesin ini."
   },
   "tn": {
     "label": "tn",
@@ -26,7 +28,9 @@
       "rejectPattern": "tolak|reject",
       "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
       "requirePassText": null
-    }
+    },
+    "inheritedEngineIds": [],
+    "lineageNote": "tn = sumber v1 (hash engine 0537067ed55fc5be): seluruh jurnalnya milik sendiri, termasuk 15 baris lama tanpa field engine."
   },
   "tnv2": {
     "label": "tnv2 (gerbang v2)",
@@ -41,7 +45,13 @@
       "rejectPattern": "tolak|reject",
       "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
       "requirePassText": null
-    }
+    },
+    "inheritedEngineIds": [
+      "0537067ed55fc5be"
+    ],
+    "legacyWithoutEngine": "inherited",
+    "tableOnlyRows": "unverified",
+    "lineageNote": "TERVERIFIKASI (jurnal.json 30 Okt): 310 baris engine v1 + 15 baris lama tanpa engine = salinan v1; milik sendiri = engine Eliz v2 (cdaa11430a4b55e8). Halaman menyatakan panel jurnal mencatat v1 tanpa gerbang."
   },
   "tnv2c2": {
     "label": "tnv2c2",
@@ -56,7 +66,13 @@
       "rejectPattern": "tolak|reject",
       "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
       "requirePassText": null
-    }
+    },
+    "inheritedEngineIds": [
+      "0537067ed55fc5be"
+    ],
+    "legacyWithoutEngine": "inherited",
+    "tableOnlyRows": "unverified",
+    "lineageNote": "TERVERIFIKASI: 290 baris engine v1 + 15 baris lama = salinan v1; milik sendiri = engine c7f151a420fb0701."
   },
   "dseek": {
     "label": "dseek",
@@ -71,7 +87,13 @@
       "rejectPattern": "tolak|reject",
       "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
       "requirePassText": null
-    }
+    },
+    "inheritedEngineIds": [
+      "0537067ed55fc5be"
+    ],
+    "legacyWithoutEngine": "own",
+    "tableOnlyRows": "own",
+    "lineageNote": "TERVERIFIKASI (Discover): rantai jurnal dseek mulai kosong pada 2026-10-29 (engine 1eea4198621d8ad0, n=0), tanpa warisan v1. Hash v1 tetap dikecualikan bila suatu saat muncul."
   },
   "grox": {
     "label": "grox",
@@ -86,7 +108,13 @@
       "rejectPattern": "tolak|reject",
       "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
       "requirePassText": null
-    }
+    },
+    "inheritedEngineIds": [
+      "0537067ed55fc5be"
+    ],
+    "legacyWithoutEngine": "own",
+    "tableOnlyRows": "unverified",
+    "lineageNote": "BELUM TERVERIFIKASI: struktur halaman grox belum terbaca (NEEDS_SELECTOR_VERIFICATION). Entri hanya-tabel tidak dicatat sampai Discover memastikan jurnal JSON-nya."
   },
   "chatgpt": {
     "label": "chatgpt",
@@ -101,10 +129,17 @@
       "rejectPattern": "tolak|reject",
       "rejectTextPattern": "ditolak|tolak gerbang|gerbang v2 menolak|rejected",
       "requirePassText": null
-    }
+    },
+    "inheritedEngineIds": [
+      "0537067ed55fc5be"
+    ],
+    "legacyWithoutEngine": "inherited",
+    "tableOnlyRows": "unverified",
+    "lineageNote": "TERVERIFIKASI: 290 baris engine v1 + 15 baris lama = salinan v1; milik sendiri = engine dcfc14e83216c90f (27 baris)."
   },
   "view": {
     "url": "https://triasnugra.github.io/view/",
     "note": "Dashboard harga; tidak dipakai sebagai sumber candle."
-  }
+  },
+  "_lineage": "inheritedEngineIds = hash 'engine' v1 yang dikecualikan (salinan sinyal v1). legacyWithoutEngine: entri JSON tanpa field engine dianggap 'inherited' (default) atau 'own'. tableOnlyRows: entri yang hanya ada di tabel (tak bisa dicek engine-nya) 'unverified' (default, tidak dicatat) atau 'own'. Daftar kosong = semua milik sendiri. Lihat src/lineage.js."
 }
