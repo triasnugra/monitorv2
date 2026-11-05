@@ -1,22 +1,22 @@
 {
   "engine": "crypto",
   "flushReason": "engine-done",
-  "elapsedSec": 73.471,
+  "elapsedSec": 73.034,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 323
+      "ms": 478
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 5258
+      "ms": 5756
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 42
+      "ms": 47
     },
     {
       "name": "wait-scan",
@@ -26,7 +26,7 @@
     {
       "name": "inspect",
       "ok": true,
-      "ms": 10
+      "ms": 7
     }
   ]
 }

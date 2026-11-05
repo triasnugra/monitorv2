@@ -12,9 +12,53 @@
       "R",
       "alasan"
     ],
-    "rowCount": 1,
-    "parsedEntries": 1,
+    "rowCount": 5,
+    "parsedEntries": 5,
     "firstRows": [
+      [
+        "2026-11-03 03:53 UTC",
+        "NVDAB",
+        "SHORT",
+        "208.9",
+        "216.54",
+        "193.63",
+        "menunggu",
+        "",
+        "breakdown ber-close, retest, searah tren"
+      ],
+      [
+        "2026-11-03 03:53 UTC",
+        "XAUT",
+        "SHORT",
+        "3976.2",
+        "4095.5",
+        "3737.6",
+        "menunggu",
+        "",
+        "breakdown ber-close, retest, searah tren"
+      ],
+      [
+        "2026-11-03 03:53 UTC",
+        "SPCXB",
+        "SHORT",
+        "138.4",
+        "145.82",
+        "123.57",
+        "menunggu",
+        "",
+        "breakdown ber-close, retest, searah tren"
+      ],
+      [
+        "2026-11-03 03:53 UTC",
+        "ETH",
+        "SHORT",
+        "2282.5",
+        "2391.4",
+        "2064.5",
+        "SL",
+        "-1",
+        "breakdown ber-close, retest, Wolf: breakout trendline gagal, searah tren"
+      ],
       [
         "2026-10-31 03:18 UTC",
         "MUB",
@@ -22,13 +66,14 @@
         "870.85",
         "844.72",
         "923.1",
-        "menunggu",
-        "",
+        "SL",
+        "-1",
         "sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence, RSI divergence"
       ]
     ],
     "hasilCounts": {
-      "menunggu": 1
+      "menunggu": 3,
+      "SL": 2
     }
   }
 ]

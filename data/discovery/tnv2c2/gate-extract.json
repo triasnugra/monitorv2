@@ -1,9 +1,9 @@
 {
   "meta": {
-    "summaryText": "Selesai: 2 setup lolos, 35 koin dipantau, 5 koin dilewati karena data tidak valid.",
-    "summaryCount": 2,
-    "totalCards": 2,
-    "passedCount": 2,
+    "summaryText": "Selesai: 3 setup lolos, 35 koin dipantau, 5 koin dilewati karena data tidak valid.",
+    "summaryCount": 3,
+    "totalCards": 3,
+    "passedCount": 3,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
@@ -11,46 +11,68 @@
   },
   "passed": [
     {
-      "ticker": "UNI",
-      "direction": "LONG",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "6.780"
-        },
-        {
-          "label": "SL 8.2%",
-          "value": "6.223"
-        },
-        {
-          "label": "TP 2R",
-          "value": "7.895"
-        },
-        {
-          "label": "Target range",
-          "value": "10.942"
-        }
-      ]
-    },
-    {
-      "ticker": "SUI",
+      "ticker": "AAVE",
       "direction": "SHORT",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.931"
+          "value": "137.0"
         },
         {
-          "label": "SL 5.8%",
-          "value": "0.985"
+          "label": "SL 7.1%",
+          "value": "146.7"
         },
         {
           "label": "TP 2R",
-          "value": "0.823"
+          "value": "117.6"
         },
         {
           "label": "Target range",
-          "value": "0.673"
+          "value": "113.2"
+        }
+      ]
+    },
+    {
+      "ticker": "ENA",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "0.187"
+        },
+        {
+          "label": "SL 10.9%",
+          "value": "0.207"
+        },
+        {
+          "label": "TP 2R",
+          "value": "0.146"
+        },
+        {
+          "label": "Target range",
+          "value": "0.135"
+        }
+      ]
+    },
+    {
+      "ticker": "AVAX",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "8.740"
+        },
+        {
+          "label": "SL 5.7%",
+          "value": "9.234"
+        },
+        {
+          "label": "TP 2R",
+          "value": "7.752"
+        },
+        {
+          "label": "Target range",
+          "value": "7.041"
         }
       ]
     }
