@@ -7,6 +7,7 @@ import { toIso } from './util/time.js';
  *   menunggu / kosong  -> PENDING
  *   kedaluwarsa        -> EXPIRED
  *   tidak terisi       -> EXPIRED (entry tidak pernah terisi)
+ *   NO_TRADE           -> CANCELLED (ditolak filter mesin; tidak pernah menjadi trade)
  *   batal / cancel     -> CANCELLED
  *   lainnya            -> AMBIGUOUS (teks tidak dikenal, tidak ditebak)
  * Mesin tanpa hasil sumber (crypto) memakai evaluasi candle apa adanya.
@@ -18,6 +19,7 @@ export function mapSourceResult(raw) {
   if (h === '' || /^menunggu|^pending|^aktif/.test(h)) return { result: 'PENDING' };
   if (/tidak\s*terisi/.test(h)) return { result: 'EXPIRED', reasonCode: 'NOT_FILLED_SOURCE' };
   if (/kedaluwarsa|kadaluarsa|expired/.test(h)) return { result: 'EXPIRED', reasonCode: 'SOURCE_EXPIRED' };
+  if (/^no[_\s-]?trade/.test(h)) return { result: 'CANCELLED', reasonCode: 'SOURCE_NO_TRADE' };   // filter mesin menolak sinyal ini: tidak jadi trade
   if (/batal|cancel/.test(h)) return { result: 'CANCELLED', reasonCode: 'SOURCE_CANCELLED' };
   return { result: 'AMBIGUOUS', reasonCode: 'UNKNOWN_SOURCE_RESULT' };
 }

@@ -4,6 +4,8 @@ import { parseCryptoCard } from './parsers/crypto.js';
 import { parseWebJournalEntry } from './parsers/journal.js';
 import { ENGINES, ENGINE_IDS, engineById } from './engines.js';
 import { applyLiveScan } from './live.js';
+import { splitItems, tagLineage, isHidden } from './lineage.js';
+import { mapSourceResult } from './sourceEval.js';
 import { parseJournalEntry } from './parsers/tn.js';
 import { evaluateSetup, FINAL } from './evaluator/evaluate.js';
 import { createBinanceProvider } from './price-data/binance.js';
@@ -30,6 +32,8 @@ export async function collect({ engines = ENGINE_IDS, sources, settings, now = D
   const report = {};
   let setups = store.loadJurnal();   // JURNAL: riwayat semua setup
   const live = store.loadLive();      // SETUP: daftar siap eksekusi saat ini (terpisah)
+  const tagged = tagLineage(setups, sources);
+  if (tagged) console.log(`Lineage: ${tagged} record lama diberi tanda (v1 turunan disembunyikan dari penilaian).`);
   // Migrasi: record lama yang berasal dari KARTU tnv2 (bukan jurnal) dibuang; jurnal kini sumber resmi.
   const before = setups.length;
   setups = setups.filter((x) => x.rawData?.gate !== 'PASSED_V2');
@@ -56,9 +60,17 @@ export async function collect({ engines = ENGINE_IDS, sources, settings, now = D
         r.warnings.push(`SUMMARY_COUNT_MISMATCH: halaman melaporkan ${sc}, terbaca ${res.items.length} lolos dari ${total} kartu`);
       }
 
+      // Mesin turunan /tn/: jurnalnya memuat sinyal v1 (tanpa gerbang) yang sama dengan tn. Hanya sinyal milik mesin ini yang dicatat.
+      let recordItems = res.items;
+      if (engineById(engine)?.kind === 'journal-web') {
+        const sp = splitItems(res.items, sources[engine]);
+        recordItems = sp.own;
+        r.lineage = { own: sp.own.length, inherited: sp.inherited.length, unverified: sp.unverified.length, ownEngineIds: sp.ownEngineIds };
+        if (sp.unverified.length) r.warnings.push(`JOURNAL_LINEAGE_UNVERIFIED: ${sp.unverified.length} baris hanya dari tabel (tanpa field engine) tidak dicatat karena asalnya tidak bisa dipastikan.`);
+      }
       const records = [];
-      for (const item of res.items) {
-        try { records.push(toRecord[engine](item, { scanTimeMs: now, firstRun, sourceUrl: sources[engine].url })); }
+      for (const item of recordItems) {
+        try { const rec = toRecord[engine](item, { scanTimeMs: now, firstRun, sourceUrl: sources[engine].url }); if (sources[engine].inheritedEngineIds?.length) rec.lineage = 'own'; records.push(rec); }
         catch (e) { r.errors.push(`PARSE_ERROR: ${e.message}`.slice(0, 200)); }
       }
       r.parsed = records.length;
@@ -107,12 +119,24 @@ export async function collect({ engines = ENGINE_IDS, sources, settings, now = D
   return report;
 }
 
-export async function evaluateAll({ provider, settings, now = Date.now(), reevalFinal = false }) {
+export async function evaluateAll({ provider, settings, sources = null, now = Date.now(), reevalFinal = false }) {
   const nowIso = toIso(now);
   const setups = store.loadJurnal();
+  if (sources) tagLineage(setups, sources);
   const rep = { checked: 0, changed: 0, errors: [] };
   const audit = [];
   for (const s of setups) {
+    if (isHidden(s)) continue;          // salinan v1 turunan tidak dinilai ulang lewat candle
+    // NO_TRADE = mesin sendiri menolak sinyal ini lewat filternya (mis. target sudah tercapai sebelum entry): bukan trade, jangan dinilai dari candle.
+    if (mapSourceResult(s.sourceResult ?? s.rawData?.hasil).reasonCode === 'SOURCE_NO_TRADE') {
+      if (s.evaluation?.reasonCode !== 'SOURCE_NO_TRADE') {
+        const why = String(s.rawData?.alasan ?? '').split('FILTER:')[1]?.trim();
+        audit.push(...store.applyEvaluation(s, { result: 'CANCELLED', reasonCode: 'SOURCE_NO_TRADE', entryTimeUtc: null, resultTimeUtc: s.analysisTimeUtc, resultTimeSource: 'mesin (NO_TRADE)',
+          rMultiple: null, notes: [`Ditolak filter mesin (NO_TRADE)${why ? `: ${why}` : ''}. Tidak dievaluasi dari candle.`], priceDataError: null, evaluatedAtUtc: nowIso }, nowIso));
+        rep.changed++;
+      }
+      continue;
+    }
     if (!reevalFinal && FINAL.has(s.evaluation?.result)) continue;
     rep.checked++;
     try {
@@ -133,8 +157,10 @@ export async function evaluateAll({ provider, settings, now = Date.now(), reeval
   return rep;
 }
 
-export function build({ settings, now = Date.now(), siteDataDir = 'site/data' }) {
-  const dash = buildDashboard({ jurnal: store.loadJurnal(), live: store.loadLive(), diagnostics: store.loadDiagnostics(), cfg: settings, nowIso: toIso(now) });
+export function build({ settings, sources = null, now = Date.now(), siteDataDir = 'site/data' }) {
+  const jurnal = store.loadJurnal();
+  if (sources) tagLineage(jurnal, sources);
+  const dash = buildDashboard({ jurnal, live: store.loadLive(), diagnostics: store.loadDiagnostics(), cfg: settings, nowIso: toIso(now) });
   store.writeJsonAtomic(`${siteDataDir}/dashboard.json`, dash);
   return dash;
 }
@@ -199,14 +225,14 @@ async function main() {
   if (mode === 'evaluate' || mode === 'all') {
     run.evaluation = await evaluateAll({
       provider: createBinanceProvider({ bases: settings.binanceBaseUrls }),
-      settings,
+      settings, sources,
       reevalFinal: flags.includes('--reeval-final'),
     });
   }
   const diag = store.loadDiagnostics();
   diag.runs.push(run);
   store.saveDiagnostics(diag);
-  const dash = build({ settings });
+  const dash = build({ settings, sources });
   console.log(JSON.stringify({ run, jurnal: dash.counts.jurnal, setupSiap: dash.counts.setupSiap }, null, 2));
   process.exit(0); // kegagalan sudah tercatat di diagnostics; exit 0 agar langkah commit tetap jalan
 }

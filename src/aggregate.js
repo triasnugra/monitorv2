@@ -2,6 +2,7 @@ import { TN_TIMEFRAME } from './parsers/tn.js';
 import { ENGINE_IDS, engineById } from './engines.js';
 import { sourceEvaluation, withSourceEvaluation } from './sourceEval.js';
 import { toWib } from './util/time.js';
+import { isHidden } from './lineage.js';
 import { summarize, groupBy, periodStats, markClusters, compareEngines, pairSetups } from './statistics/stats.js';
 
 const tfOf = (s) => s.timeframe ?? (s.engine === 'tn' ? TN_TIMEFRAME : (engineById(s.engine)?.timeframe ?? null));
@@ -63,7 +64,11 @@ export function jurnalScore(list) {
 }
 
 export function buildDashboard({ jurnal, setups, live = null, diagnostics, cfg, nowIso }) {
-  setups = jurnal ?? setups ?? [];
+  const all = jurnal ?? setups ?? [];
+  // Salinan sinyal v1 pada mesin turunan (lihat lineage.js) tidak dinilai sebagai analisis mesin itu; disembunyikan, tidak dihapus.
+  const hidden = {};
+  for (const s of all) if (isHidden(s)) hidden[s.engine] = (hidden[s.engine] ?? 0) + 1;
+  setups = all.filter((s) => !isHidden(s));
   const clusters = markClusters(setups, cfg.cluster);
   const rows = setups.map((s) => view(s, clusters.get(s.setupId)))
     .sort((a, b) => (a.analysisUtc < b.analysisUtc ? 1 : -1));
@@ -145,7 +150,7 @@ export function buildDashboard({ jurnal, setups, live = null, diagnostics, cfg, 
     sourceDisagreements: rows.filter((r) => r.hasSource && ['TP', 'SL'].includes(r.resultSrc) && ['TP', 'SL'].includes(r.result) && r.resultSrc !== r.result),
     unknownAnalysisTime: rows.filter((r) => r.analysisTimeSource === 'unknown_before_tracking'),
   };
-  return { generatedAtUtc: nowIso, generatedAtWib: toWib(nowIso), counts: { jurnal: rows.length, setupSiap },
+  return { generatedAtUtc: nowIso, generatedAtWib: toWib(nowIso), counts: { jurnal: rows.length, setupSiap, jurnalDisembunyikan: hidden },
     engineIds: ENGINE_IDS, bases: BASES, engines, comparison, pairs, jurnal: rows, jurnalStats, live: liveOut, quality,
     diagnostics: { lastRun, runs: diagnostics.runs.slice(-50) },
     methodology: { source: 'Binance Spot klines', note: 'Basis "menurut mesin" = hasil yang tertampil di website tiap mesin. Basis "candle" = verifikasi ulang dari candle Binance (teoretis, tanpa fee/slippage).' } };

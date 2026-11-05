@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { buildRecord } from './normalize.js';
 import { parseCryptoCard } from './parsers/crypto.js';
 import { parseTnv2Card } from './parsers/tnv2.js';
+import { isHidden } from './lineage.js';
 
 /*
  * SETUP (siap dieksekusi): kartu "Sinyal setup" yang LOLOS filter/gerbang tiap mesin, dibaca dari halaman mesin.
@@ -31,17 +32,18 @@ export function buildLiveRecord(engine, card, ctx) {
   };
 }
 
-const sameLevel = (a, b, tol = 0.0005) => a != null && b != null && (a === b || Math.abs(a - b) <= Math.abs(a) * tol);
+// Kartu menampilkan entry yang dibulatkan, jurnal lebih presisi: toleransi 0,3% (koin+arah yang sama, dipilih yang terbaru).
+const sameLevel = (a, b, tol = 0.003) => a != null && b != null && (a === b || Math.abs(a - b) <= Math.abs(a) * tol);
 
 /**
  * Cari record jurnal yang cocok dengan satu setup siap (mesin keluarga tn: ticker + arah + entry).
  * Dipilih yang analisisnya paling baru. Mengembalikan null bila belum ada di jurnal.
  */
 export function findJournalMatch(jurnal, live) {
-  if (live.journalId) return jurnal.find((j) => j.setupId === live.journalId) ?? null;
+  if (live.journalId) return jurnal.find((j) => j.setupId === live.journalId && !isHidden(j)) ?? null;
   let best = null;
   for (const j of jurnal) {
-    if (j.engine !== live.engine || j.ticker !== live.ticker || j.direction !== live.direction) continue;
+    if (isHidden(j) || j.engine !== live.engine || j.ticker !== live.ticker || j.direction !== live.direction) continue;
     if (!sameLevel(j.entryPrice, live.entryPrice)) continue;
     if (!best || (j.analysisTimeUtc ?? '') > (best.analysisTimeUtc ?? '')) best = j;
   }
