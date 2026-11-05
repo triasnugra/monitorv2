@@ -30,7 +30,8 @@ pemeriksaan), **BELUM** (belum diperiksa).
 | Pembacaan kartu `tn` lewat browser di runner GitHub | **BELUM** | Tes pertama: workflow Collect. Bila gagal, jurnal tn tetap tercatat dan Setup tn ditandai tidak terkonfirmasi. |
 | Chip status kartu (AKTIF/MENUNGGU/JAUH) menandai kesiapan eksekusi | **ASUMSI** | Semua kartu lolos gerbang ditampilkan; status kartu ditampilkan apa adanya dan bisa difilter. |
 | Setup mesin keluarga tn tertaut ke jurnal lewat koin + arah + entry | **ASUMSI** | Kartu tidak membawa ID jurnal. Kartu yang belum ada di jurnal ditampilkan "belum". |
-| Nilai `hasil` = `NO_TRADE` (chatgpt) | **BELUM** | Saat ini dipetakan ke AMBIGUOUS (tampil "Tak ternilai" di Jurnal), tidak ditebak. |
+| Nilai `hasil` = `NO_TRADE` (chatgpt) | TERVERIFIKASI (dari teks `alasan`) | 20 baris chatgpt, semuanya memuat "FILTER: Target sudah tercapai sebelum entry". Dipetakan ke CANCELLED (SOURCE_NO_TRADE). |
+| Jurnal tnv2/tnv2c2/chatgpt memuat salinan sinyal v1 (engine `0537067ed55fc5be`) | TERVERIFIKASI | `data/jurnal.json` per 30 Okt; teks halaman tnv2: "Panel ini mencatat v1 (semua sinyal, tanpa gerbang)". Lihat README bagian lineage. |
 
 ## crypto (cards) — https://triasnugra.github.io/crypto/
 
