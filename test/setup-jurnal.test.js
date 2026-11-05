@@ -7,7 +7,7 @@ import path from 'node:path';
 // Setup (siap eksekusi) dan Jurnal (riwayat lengkap) harus dicatat di berkas terpisah.
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'bench-sj-'));
 process.env.DATA_DIR = path.join(tmp, 'data');
-const { collect, build } = await import('../src/index.js');
+const { collect, build, evaluateAll: evaluateAllImport } = await import('../src/index.js');
 const store = await import('../src/storage/store.js');
 const { execState, accOf, jurnalScore } = await import('../src/aggregate.js');
 const { findJournalMatch } = await import('../src/live.js');
@@ -148,4 +148,107 @@ test('berkas lama data/setups.json tetap terbaca sebagai jurnal bila jurnal.json
   assert.deepEqual(JSON.parse(run()), [['x'], { updatedUtc: null, engines: {} }]);
   fs.writeFileSync(path.join(dir, 'jurnal.json'), JSON.stringify([{ setupId: 'y' }]));   // jurnal.json menang atas berkas lama
   assert.deepEqual(JSON.parse(run())[0], ['y']);
+});
+
+// ---- Lineage: jurnal mesin turunan memuat salinan sinyal v1; hanya sinyal milik mesin yang dinilai ----
+const V1 = '0537067ed55fc5be', V2 = 'cdaa11430a4b55e8';
+const ent = (aset, arah, entry, engine, extra = {}) => ({ waktu: '2026-11-04 03:58 UTC', t: Date.parse('2026-11-04T03:58:10Z'), aset, arah, entry, sl: entry * (arah === 'LONG' ? 0.97 : 1.03), tp: entry * (arah === 'LONG' ? 1.06 : 0.94),
+  hasil: 'TP', R: 2, alasan: 'x', h: `h-${aset}`, ...(engine ? { engine } : {}), _src: 'json+dom', ...extra });
+const mix = [ent('WLDX', 'LONG', 0.3687, V1), ent('ADAX', 'LONG', 0.1875, V1), ent('TAOX', 'LONG', 221, V2), ent('LTCX', 'LONG', 53.6, V2),
+  ent('OLDX', 'LONG', 5, null), ent('TBLX', 'LONG', 7, null, { _src: 'dom' })];
+const lin = { tnv2: { url: 'u', inheritedEngineIds: [V1] }, tnv2c2: { url: 'u', inheritedEngineIds: [V1] } };
+
+test('lineage: classifyItem memisahkan milik sendiri, salinan v1, dan yang tidak bisa dipastikan', async () => {
+  const { classifyItem, splitItems } = await import('../src/lineage.js');
+  assert.equal(classifyItem(ent('A', 'LONG', 1, V1), lin.tnv2), 'inherited_v1');
+  assert.equal(classifyItem(ent('A', 'LONG', 1, V2), lin.tnv2), 'own');
+  assert.equal(classifyItem(ent('A', 'LONG', 1, null), lin.tnv2), 'inherited_v1');                 // entri lama tanpa engine
+  assert.equal(classifyItem(ent('A', 'LONG', 1, null, { _src: 'dom' }), lin.tnv2), 'unverified');  // hanya dari tabel
+  assert.equal(classifyItem(ent('A', 'LONG', 1, V1), { url: 'u' }), 'own');                        // tn/crypto: tanpa konfigurasi
+  const sp = splitItems(mix, lin.tnv2);
+  assert.deepEqual([sp.own.length, sp.inherited.length, sp.unverified.length], [2, 3, 1]);
+  assert.deepEqual(sp.ownEngineIds, [V2]);
+});
+
+test('lineage: collect hanya mencatat sinyal milik tnv2; salinan v1 tidak masuk jurnal', async () => {
+  const meta2 = { trackingStartedUtc: {} };
+  const rep = await collect({ engines: ['tnv2'], sources: lin, settings, now: T1 + 20000e3, meta: meta2,
+    scrapeEngine: async () => ({ status: 'OK', items: structuredClone(mix), liveCards: null, diagnostics: okDiag() }) });
+  assert.deepEqual(rep.tnv2.lineage, { own: 2, inherited: 3, unverified: 1, ownEngineIds: [V2] });
+  assert.ok(rep.tnv2.warnings.some((w) => w.startsWith('JOURNAL_LINEAGE_UNVERIFIED')));
+  const own = store.loadJurnal().filter((s) => s.engine === 'tnv2' && s.lineage === 'own');
+  assert.deepEqual(own.map((s) => s.ticker).sort(), ['LTCX', 'TAOX']);
+  assert.ok(!store.loadJurnal().some((s) => ['WLDX', 'ADAX', 'OLDX', 'TBLX'].includes(s.ticker)));
+});
+
+test('lineage: record lama salinan v1 diberi tanda, disembunyikan dari statistik, tidak dihapus, dan tidak dievaluasi ulang', async () => {
+  const { tagLineage, isHidden } = await import('../src/lineage.js');
+  const { buildRecord } = await import('../src/normalize.js');
+  const old = buildRecord({ engine: 'tnv2c2', ticker: 'ZZZ', direction: 'LONG', entryPrice: 1, takeProfit: [1.2], stopLoss: 0.9, idKey: 'old-v1', sourceResult: 'TP', analysisTimeMs: T1, analysisTimeSource: 'source', rawData: { engine: V1, _src: 'json+dom', journalSource: 'json+dom' } }, { scanTimeMs: T1, firstRun: false, sourceUrl: 'u' });
+  store.saveJurnal([...store.loadJurnal(), { ...old, firstSeenUtc: 'x', lastSeenUtc: 'x', seenCount: 1, evaluation: { result: 'PENDING' } }]);
+  const list = store.loadJurnal();
+  assert.equal(tagLineage(list, lin), 1);
+  assert.ok(isHidden(list.find((s) => s.ticker === 'ZZZ')));
+  assert.equal(tagLineage(list, lin), 0);                       // idempoten
+  store.saveJurnal(list);
+  let calls = 0;
+  await evaluateAllImport({ provider: { getCandles: async () => { calls++; return []; } }, settings, sources: lin, now: T1 + 30000e3 });
+  assert.equal(store.loadJurnal().find((s) => s.ticker === 'ZZZ').evaluation.result, 'PENDING');   // dilewati
+  const d = build({ settings, sources: lin, now: T1 + 30000e3, siteDataDir: path.join(tmp, 'site') });
+  assert.ok(!d.jurnal.some((r) => r.ticker === 'ZZZ'));
+  assert.equal(d.counts.jurnalDisembunyikan.tnv2c2, 1);
+  assert.ok(store.loadJurnal().some((s) => s.ticker === 'ZZZ'), 'data tetap tersimpan');
+});
+
+test('lineage: setup siap tidak ditautkan ke salinan v1 yang disembunyikan', async () => {
+  const { findJournalMatch } = await import('../src/live.js');
+  const j = [{ setupId: 'v1', engine: 'tnv2', ticker: 'WLD', direction: 'LONG', entryPrice: 0.3687, lineage: 'inherited_v1', analysisTimeUtc: '2026-11-04T00:00:00Z' },
+    { setupId: 'own', engine: 'tnv2', ticker: 'WLD', direction: 'LONG', entryPrice: 0.3687, lineage: 'own', analysisTimeUtc: '2026-11-03T00:00:00Z' }];
+  assert.equal(findJournalMatch(j, { engine: 'tnv2', ticker: 'WLD', direction: 'LONG', entryPrice: 0.3687, journalId: null }).setupId, 'own');
+});
+
+test('lineage: config/sources.json mendefinisikan inheritedEngineIds untuk ketujuh mesin', async () => {
+  const { ENGINE_IDS } = await import('../src/engines.js');
+  const { classifyItem } = await import('../src/lineage.js');
+  const cfg = JSON.parse(fs.readFileSync(new URL('../config/sources.json', import.meta.url), 'utf8'));
+  assert.deepEqual(ENGINE_IDS, ['crypto', 'tn', 'tnv2', 'tnv2c2', 'dseek', 'grox', 'chatgpt']);
+  for (const e of ENGINE_IDS) assert.ok(Array.isArray(cfg[e].inheritedEngineIds), `${e}: inheritedEngineIds wajib ada`);
+  // crypto dan tn = sumber v1: semuanya milik sendiri, termasuk entri v1 dan entri lama tanpa engine.
+  for (const e of ['crypto', 'tn']) {
+    assert.equal(classifyItem(ent('A', 'LONG', 1, V1), cfg[e]), 'own');
+    assert.equal(classifyItem(ent('A', 'LONG', 1, null), cfg[e]), 'own');
+  }
+  // turunan terverifikasi: salinan v1 dan entri lama dikecualikan, engine lain milik sendiri, hanya-tabel tidak dipastikan.
+  for (const e of ['tnv2', 'tnv2c2', 'chatgpt']) {
+    assert.equal(classifyItem(ent('A', 'LONG', 1, V1), cfg[e]), 'inherited_v1', e);
+    assert.equal(classifyItem(ent('A', 'LONG', 1, null), cfg[e]), 'inherited_v1', e);
+    assert.equal(classifyItem(ent('A', 'LONG', 1, V2), cfg[e]), 'own', e);
+    assert.equal(classifyItem(ent('A', 'LONG', 1, null, { _src: 'dom' }), cfg[e]), 'unverified', e);
+  }
+  // dseek: rantai bersih sejak awal -> entri tanpa engine dan hanya-tabel milik sendiri; hash v1 tetap dikecualikan.
+  assert.equal(classifyItem(ent('A', 'LONG', 1, null), cfg.dseek), 'own');
+  assert.equal(classifyItem(ent('A', 'LONG', 1, null, { _src: 'dom' }), cfg.dseek), 'own');
+  assert.equal(classifyItem(ent('A', 'LONG', 1, V1), cfg.dseek), 'inherited_v1');
+  // grox: struktur belum terverifikasi -> entri hanya-tabel tidak dicatat.
+  assert.equal(classifyItem(ent('A', 'LONG', 1, null), cfg.grox), 'own');
+  assert.equal(classifyItem(ent('A', 'LONG', 1, null, { _src: 'dom' }), cfg.grox), 'unverified');
+});
+
+test('NO_TRADE: ditolak filter mesin -> CANCELLED (tidak terpakai), tidak dievaluasi dari candle', async () => {
+  const { mapSourceResult, sourceEvaluation } = await import('../src/sourceEval.js');
+  assert.deepEqual(mapSourceResult('NO_TRADE'), { result: 'CANCELLED', reasonCode: 'SOURCE_NO_TRADE' });
+  assert.equal(mapSourceResult('no trade').result, 'CANCELLED');
+  const { buildRecord } = await import('../src/normalize.js');
+  const rec = buildRecord({ engine: 'chatgpt', ticker: 'NTX', direction: 'LONG', entryPrice: 1, takeProfit: [1.2], stopLoss: 0.9, idKey: 'nt', sourceResult: 'NO_TRADE', originalStatus: 'NO_TRADE',
+    analysisTimeMs: T1, analysisTimeSource: 'source', rawData: { alasan: 'x | FILTER: Target sudah tercapai sebelum entry; set', engine: V2, _src: 'json+dom' } }, { scanTimeMs: T1, firstRun: false, sourceUrl: 'u' });
+  store.saveJurnal([...store.loadJurnal(), { ...rec, firstSeenUtc: 'x', lastSeenUtc: 'x', seenCount: 1, evaluation: { result: 'PENDING' } }]);
+  let calls = 0;
+  await evaluateAllImport({ provider: { getCandles: async () => { calls++; return []; } }, settings, now: T1 + 40000e3 });
+  const s = store.loadJurnal().find((x) => x.ticker === 'NTX');
+  assert.equal(s.evaluation.result, 'CANCELLED');
+  assert.equal(s.evaluation.reasonCode, 'SOURCE_NO_TRADE');
+  assert.match(s.evaluation.notes[0], /Target sudah tercapai sebelum entry/);
+  assert.equal(sourceEvaluation(s).result, 'CANCELLED');
+  const { execState } = await import('../src/aggregate.js');
+  assert.equal(execState('CANCELLED'), 'TIDAK_TERPAKAI');
 });
