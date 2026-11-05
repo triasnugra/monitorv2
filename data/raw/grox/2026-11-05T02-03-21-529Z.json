@@ -1,0 +1,77 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5603,
+    "meta": {
+      "live": {
+        "cards": 3,
+        "passed": 3,
+        "rejected": 0,
+        "summary": "Selesai: 3 koin punya setup · 36 koin dipindai, 4 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 3
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 3,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-05 02:04 UTC",
+      "t": 1793844240000,
+      "aset": "AVAX",
+      "arah": "SHORT",
+      "entry": 8.74,
+      "sl": 9.2058,
+      "tp": 7.8084,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-05 02:04 UTC",
+      "t": 1793844240000,
+      "aset": "WLD",
+      "arah": "SHORT",
+      "entry": 0.3933,
+      "sl": 0.41205,
+      "tp": 0.3558,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-05 02:04 UTC",
+      "t": 1793844240000,
+      "aset": "SPCXB",
+      "arah": "SHORT",
+      "entry": 134.78,
+      "sl": 143.5844,
+      "tp": 117.1713,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
