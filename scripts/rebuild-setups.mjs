@@ -37,7 +37,9 @@ const mergeFiles = typeof args.merge === 'string' ? args.merge.split(',').filter
 
 const store = await import('../src/storage/store.js');
 const { TO_RECORD } = await import('../src/index.js');
-const { ENGINE_IDS } = await import('../src/engines.js');
+const { ENGINE_IDS, engineById } = await import('../src/engines.js');
+const { splitItems, tagLineage } = await import('../src/lineage.js');
+const sourcesCfg = JSON.parse(fs.readFileSync(new URL('../config/sources.json', import.meta.url), 'utf8'));
 const settings = JSON.parse(fs.readFileSync(new URL('../config/settings.json', import.meta.url), 'utf8'));
 
 const readJson = (f, fb) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return fb; } };
@@ -97,8 +99,11 @@ for (const engine of ENGINE_IDS) {
     if (payload.status !== 'OK' && payload.status !== 'OK_NO_SETUPS') continue; // jangan percaya scan gagal
     const firstRun = ts <= started;
     const records = [];
-    for (const item of payload.items) {
-      try { records.push(TO_RECORD[engine](item, { scanTimeMs: ts, firstRun, sourceUrl: '' })); } catch { /* lewati kartu rusak */ }
+    // Mesin turunan: hanya sinyal milik mesin itu (bukan salinan v1) yang dibangun ulang; lihat src/lineage.js.
+    const items = engineById(engine)?.kind === 'journal-web' ? splitItems(payload.items, sourcesCfg[engine]).own : payload.items;
+    const turunan = !!sourcesCfg[engine]?.inheritedEngineIds?.length;
+    for (const item of items) {
+      try { const rec = TO_RECORD[engine](item, { scanTimeMs: ts, firstRun, sourceUrl: '' }); if (turunan) rec.lineage = 'own'; records.push(rec); } catch { /* lewati kartu rusak */ }
     }
     const up = store.upsertSetups(state, records, tsIso, settings.cancelPatterns);
     state = up.setups;
@@ -139,6 +144,7 @@ for (const r of replay) {
 }
 
 const result = [...byId.values()].sort((a, b) => (a.analysisTimeUtc < b.analysisTimeUtc ? -1 : a.analysisTimeUtc > b.analysisTimeUtc ? 1 : a.setupId.localeCompare(b.setupId)));
+tagLineage(result, sourcesCfg);
 const countBy = (list, f) => list.reduce((m, s) => ((m[f(s)] = (m[f(s)] || 0) + 1), m), {});
 
 // ---------- 4) laporan ----------
