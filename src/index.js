@@ -137,7 +137,9 @@ export async function evaluateAll({ provider, settings, sources = null, now = Da
       }
       continue;
     }
-    if (!reevalFinal && FINAL.has(s.evaluation?.result)) continue;
+    // TP/SL tanpa waktu hasil = evaluasi rusak (mis. hasil merge/pemulihan): nilai ulang dari candle, bukan dilewati sebagai final.
+    const malformed = ['TP', 'SL'].includes(s.evaluation?.result) && !s.evaluation?.resultTimeUtc;
+    if (!reevalFinal && !malformed && FINAL.has(s.evaluation?.result)) continue;
     rep.checked++;
     try {
       const ev = await evaluateSetup(s, provider, { now, cfg: settings });
@@ -160,7 +162,7 @@ export async function evaluateAll({ provider, settings, sources = null, now = Da
 export function build({ settings, sources = null, now = Date.now(), siteDataDir = 'site/data' }) {
   const jurnal = store.loadJurnal();
   if (sources) tagLineage(jurnal, sources);
-  const dash = buildDashboard({ jurnal, live: store.loadLive(), diagnostics: store.loadDiagnostics(), cfg: settings, nowIso: toIso(now) });
+  const dash = buildDashboard({ jurnal, live: store.loadLive(), diagnostics: store.loadDiagnostics(), cfg: settings, nowIso: toIso(now), sources });
   store.writeJsonAtomic(`${siteDataDir}/dashboard.json`, dash);
   return dash;
 }

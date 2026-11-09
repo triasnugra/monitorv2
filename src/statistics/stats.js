@@ -3,6 +3,9 @@ import { toWib, MIN } from '../util/time.js';
 export const STATUSES = ['PENDING', 'TP', 'SL', 'CANCELLED', 'EXPIRED', 'INVALID', 'AMBIGUOUS'];
 const mean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : null);
 const ev = (s) => s.evaluation || { result: 'PENDING' };
+// Waktu hasil untuk pengurutan/periode. Evaluasi TP/SL yang kehilangan resultTimeUtc (data rusak) tidak boleh menghentikan
+// seluruh build dashboard (itu membekukan dashboard); pakai waktu evaluasi lalu waktu analisis sebagai cadangan.
+const resultMs = (s) => { const e = ev(s); const v = Date.parse(e.resultTimeUtc ?? e.evaluatedAtUtc ?? s.analysisTimeUtc); return Number.isNaN(v) ? 0 : v; };
 
 export function wilson(w, n, z = 1.96) {
   if (!n) return null;
@@ -22,7 +25,7 @@ export function summarize(list) {
   const counts = Object.fromEntries(STATUSES.map((k) => [k, 0]));
   list.forEach((s) => { counts[ev(s).result] = (counts[ev(s).result] || 0) + 1; });
   const resolved = list.filter((s) => ['TP', 'SL'].includes(ev(s).result))
-    .sort((a, b) => Date.parse(ev(a).resultTimeUtc) - Date.parse(ev(b).resultTimeUtc));
+    .sort((a, b) => resultMs(a) - resultMs(b));
   const rs = resolved.map((s) => ev(s).rMultiple);
   const n = resolved.length;
   const triggered = list.filter((s) => ev(s).entryTimeUtc);
@@ -33,7 +36,7 @@ export function summarize(list) {
     expectancyR: n ? total / n : null, avgR: n ? total / n : null, totalR: n ? total : 0,
     maxDrawdownR: maxDrawdownR(rs),
     avgMinutesToEntry: mean(triggered.map((s) => (Date.parse(ev(s).entryTimeUtc) - Date.parse(s.analysisTimeUtc)) / MIN)),
-    avgMinutesToResult: mean(resolved.map((s) => (Date.parse(ev(s).resultTimeUtc) - Date.parse(s.analysisTimeUtc)) / MIN)),
+    avgMinutesToResult: mean(resolved.map((s) => (resultMs(s) - Date.parse(s.analysisTimeUtc)) / MIN)),
   };
 }
 
@@ -52,7 +55,7 @@ function isoWeek(dateStr) {
 /** Periode berdasarkan tanggal HASIL dalam WIB. */
 export function periodStats(list, kind) {
   const resolved = list.filter((s) => ['TP', 'SL'].includes(ev(s).result));
-  const key = (s) => { const d = toWib(ev(s).resultTimeUtc).slice(0, 10);
+  const key = (s) => { const d = (toWib(resultMs(s)) ?? '1970-01-01').slice(0, 10);
     return kind === 'weekly' ? isoWeek(d) : kind === 'monthly' ? d.slice(0, 7) : d; };
   const g = new Map();
   for (const s of resolved) (g.get(key(s)) || g.set(key(s), []).get(key(s))).push(s);

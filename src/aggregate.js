@@ -63,7 +63,7 @@ export function jurnalScore(list) {
     tingkatEksekusi: done ? c.terpakai / done : null };             // terpakai / (terpakai + tidak terpakai), hanya yang sudah final
 }
 
-export function buildDashboard({ jurnal, setups, live = null, diagnostics, cfg, nowIso }) {
+export function buildDashboard({ jurnal, setups, live = null, diagnostics, cfg, nowIso, sources = null }) {
   const all = jurnal ?? setups ?? [];
   // Salinan sinyal v1 pada mesin turunan (lihat lineage.js) tidak dinilai sebagai analisis mesin itu; disembunyikan, tidak dihapus.
   const hidden = {};
@@ -141,6 +141,16 @@ export function buildDashboard({ jurnal, setups, live = null, diagnostics, cfg, 
   }
 
   const lastRun = diagnostics.runs.at(-1) ?? null;
+  // Sumber jurnal publik tiap mesin, dipakai dashboard (site/live-overlay.js) untuk menampilkan hasil mesin terbaru
+  // tanpa menunggu run terjadwal. Urutan: journalUrl di config, JSON yang terakhir tertangkap scan, lalu <url>/data/journal.json.
+  const liveSources = {};
+  for (const e of ENGINE_IDS) {
+    const c = sources?.[e], kind = engineById(e)?.kind;
+    if (!c || kind === 'cards') continue;
+    let url = c.journalUrl ?? lastRun?.engines?.[e]?.journal?.jsonUrl ?? null;
+    if (!url && c.url) { try { url = new URL('data/journal.json', c.url).href; } catch { /* url tidak valid */ } }
+    if (url) liveSources[e] = { url: url.replace(/([?&])_=\d+&?/, '$1').replace(/[?&]$/, ''), inheritedEngineIds: c.inheritedEngineIds ?? [], legacyWithoutEngine: c.legacyWithoutEngine ?? 'inherited' };
+  }
   const quality = {
     invalid: rows.filter((r) => r.result === 'INVALID'), ambiguous: rows.filter((r) => r.result === 'AMBIGUOUS'),
     unverified: rows.filter((r) => r.priceDataError),
@@ -151,7 +161,7 @@ export function buildDashboard({ jurnal, setups, live = null, diagnostics, cfg, 
     unknownAnalysisTime: rows.filter((r) => r.analysisTimeSource === 'unknown_before_tracking'),
   };
   return { generatedAtUtc: nowIso, generatedAtWib: toWib(nowIso), counts: { jurnal: rows.length, setupSiap, jurnalDisembunyikan: hidden },
-    engineIds: ENGINE_IDS, bases: BASES, engines, comparison, pairs, jurnal: rows, jurnalStats, live: liveOut, quality,
+    engineIds: ENGINE_IDS, bases: BASES, liveSources, engines, comparison, pairs, jurnal: rows, jurnalStats, live: liveOut, quality,
     diagnostics: { lastRun, runs: diagnostics.runs.slice(-50) },
     methodology: { source: 'Binance Spot klines', note: 'Basis "menurut mesin" = hasil yang tertampil di website tiap mesin. Basis "candle" = verifikasi ulang dari candle Binance (teoretis, tanpa fee/slippage).' } };
 }

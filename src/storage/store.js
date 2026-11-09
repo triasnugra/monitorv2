@@ -69,6 +69,9 @@ export function upsertSetups(existing, incoming, nowIso, cancelPatterns = []) {
       added++;
     } else {
       cur.lastSeenUtc = nowIso; cur.seenCount += 1; cur.latestOriginalStatus = s.originalStatus;
+      // Baris v1 dan v2 yang sinyalnya sama memakai ID yang sama (menit+aset+arah+entry). Bila record ini dulu terbaca sebagai
+      // salinan v1 (tersembunyi) tetapi scan kini membacanya sebagai milik mesin, naikkan ke 'own' agar hasilnya tampil.
+      if (s.lineage === 'own' && cur.lineage && cur.lineage !== 'own') cur.lineage = 'own';
       // Hasil versi SUMBER diperbarui tiap scan (tn mengubah "menunggu" -> TP/SL/kedaluwarsa).
       // Nilai saat pertama terlihat disimpan di firstSourceResult supaya tidak hilang.
       if (cur.firstSourceResult === undefined) cur.firstSourceResult = cur.sourceResult ?? null;
