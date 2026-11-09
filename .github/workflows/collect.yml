@@ -1,6 +1,8 @@
 name: Collect, evaluate, deploy
 on:
-  schedule: [{ cron: '*/30 * * * *' }]   # best-effort: GitHub dapat menunda/melewati run terjadwal
+  # Best-effort: GitHub menunda/melewati run terjadwal, terutama di menit 00 dan 30 (paling padat). Data nyata menunjukkan
+  # jeda rata-rata 4,9 jam (maks 53 jam) dengan '*/30'. Karena itu: tiap 15 menit di menit yang tidak padat. Satu run hanya ~1 menit koleksi.
+  schedule: [{ cron: '4,19,34,49 * * * *' }]
   workflow_dispatch:
 permissions:
   contents: write
