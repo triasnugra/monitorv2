@@ -10286,6 +10286,289 @@
       "engines": {},
       "evaluation": null,
       "fatal": null
+    },
+    {
+      "runAtUtc": "2026-11-09T22:15:07.197Z",
+      "engines": {
+        "crypto": {
+          "status": "OK",
+          "cards": 26,
+          "parsed": 26,
+          "added": 24,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 11728,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": null,
+          "live": null,
+          "setup": {
+            "count": 26,
+            "stale": false,
+            "rejected": null
+          }
+        },
+        "tn": {
+          "status": "OK",
+          "cards": 587,
+          "parsed": 587,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 305,
+          "forward": {
+            "ready": false,
+            "locked": true,
+            "counts": {
+              "tercatat_sesuai_protokol": 223,
+              "selesai": 186,
+              "menunggu": 37,
+              "terisi": 124,
+              "minggu_berbeda": 5,
+              "diabaikan_mesin_lain": 0,
+              "dilewati_dedupe": 349
+            },
+            "dibuat": "2026-11-09T12:21:10.426Z"
+          },
+          "trackingStarted": false,
+          "journal": null,
+          "live": {
+            "cards": 30,
+            "passed": 30,
+            "rejected": 0
+          },
+          "setup": {
+            "count": 30,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "tnv2": {
+          "status": "OK",
+          "cards": 567,
+          "parsed": 9,
+          "added": 0,
+          "errors": [],
+          "warnings": [
+            "JOURNAL_COUNT_DIFF: JSON 567 baris, tabel 558 baris (tabel bisa membatasi tampilan)."
+          ],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8981,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 567,
+            "domRows": 558,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/tnv2/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 30,
+            "passed": 0,
+            "rejected": 30,
+            "summary": "Selesai: 30 setup, 37 koin dipantau."
+          },
+          "lineage": {
+            "own": 9,
+            "inherited": 558,
+            "unverified": 0,
+            "ownEngineIds": [
+              "cdaa11430a4b55e8"
+            ]
+          },
+          "setup": {
+            "count": 0,
+            "stale": false,
+            "rejected": 30
+          }
+        },
+        "tnv2c2": {
+          "status": "OK",
+          "cards": 316,
+          "parsed": 11,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9346,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 316,
+            "domRows": 316,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/tnv2c2/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 1,
+            "passed": 1,
+            "rejected": 0,
+            "summary": "Selesai: 1 setup lolos, 37 koin dipantau, 3 koin dilewati karena data tidak valid."
+          },
+          "lineage": {
+            "own": 11,
+            "inherited": 305,
+            "unverified": 0,
+            "ownEngineIds": [
+              "c7f151a420fb0701"
+            ]
+          },
+          "setup": {
+            "count": 1,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "dseek": {
+          "status": "OK",
+          "cards": 6,
+          "parsed": 6,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 9177,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 6,
+            "domRows": 6,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/dseek/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 1,
+            "passed": 1,
+            "rejected": 0,
+            "summary": "Selesai: 1 setup, 37 koin dipantau."
+          },
+          "lineage": {
+            "own": 6,
+            "inherited": 0,
+            "unverified": 0,
+            "ownEngineIds": [
+              "1eea4198621d8ad0"
+            ]
+          },
+          "setup": {
+            "count": 1,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "grox": {
+          "status": "OK_NO_SETUPS",
+          "cards": 0,
+          "parsed": 0,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": "NO_SETUPS",
+          "httpStatus": 200,
+          "durationMs": 6037,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 0,
+            "domRows": 0,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": null,
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 0,
+            "passed": 0,
+            "rejected": 0,
+            "summary": "Selesai: 0 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+          },
+          "lineage": {
+            "own": 0,
+            "inherited": 0,
+            "unverified": 0,
+            "ownEngineIds": []
+          },
+          "setup": {
+            "count": 0,
+            "stale": false,
+            "rejected": 0
+          }
+        },
+        "chatgpt": {
+          "status": "OK",
+          "cards": 539,
+          "parsed": 234,
+          "added": 0,
+          "errors": [],
+          "warnings": [],
+          "emptyKind": null,
+          "httpStatus": 200,
+          "durationMs": 8763,
+          "forward": null,
+          "trackingStarted": false,
+          "journal": {
+            "jsonRows": 539,
+            "domRows": 539,
+            "domOnly": 0,
+            "jsonOnly": 0,
+            "hasilOverridden": 0,
+            "jsonUrl": "https://triasnugra.github.io/chatgpt/data/journal.json",
+            "tableId": "jt",
+            "tableSeen": true,
+            "tables": 1
+          },
+          "live": {
+            "cards": 27,
+            "passed": 27,
+            "rejected": 0,
+            "summary": "Selesai: 27 setup, 37 koin dipantau."
+          },
+          "lineage": {
+            "own": 234,
+            "inherited": 305,
+            "unverified": 0,
+            "ownEngineIds": [
+              "dcfc14e83216c90f"
+            ]
+          },
+          "setup": {
+            "count": 27,
+            "stale": false,
+            "rejected": 0
+          }
+        }
+      },
+      "evaluation": {
+        "checked": 149,
+        "changed": 14,
+        "errors": []
+      },
+      "fatal": null
     }
   ]
 }
