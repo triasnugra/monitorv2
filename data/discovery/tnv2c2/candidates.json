@@ -3,17 +3,15 @@
     "selectorPath": "div.c > div",
     "count": 2,
     "samples": [
-      "range high 87395.7\nrange low 74968.0\nMonday low 76705.0\nMonday high 78878.0\nentry 76705.0\nSL 74403.8\nTP 81307.3",
-      "tidak ada pemicu\n19\nharga terlalu jauh dari entry\n9\nskor kualitas di bawah minimum\n5\ndata kline tidak valid\n5\nharga sudah mencapai TP sejak pemicu\n3\nSL melebihi batas\n1\nruang menuju target range sempit\n1\nmelewati batas sinyal per hari\n1"
+      "range high 87395.7\nrange low 74968.0\nMonday low 76705.0\nMonday high 78878.0\nentry 78878.0\nSL 81602.0\nTP 73430.0",
+      "harga terlalu jauh dari entry\n25\npemicu sudah terlalu lama\n24\nharga sudah mencapai TP sejak pemicu\n14\nlikuiditas terlalu rendah\n13\nskor kualitas di bawah minimum\n13\ntidak ada pemicu\n10\nruang menuju target range sempit\n2\nmelawan tren BTC (weekly dan daily)\n2\ndata kline tidak valid\n2\nSL sudah tertembus sejak pemicu\n1\nSL melebihi batas\n1"
     ]
   },
   {
     "selectorPath": "div > div.c > div.g4",
-    "count": 3,
+    "count": 1,
     "samples": [
-      "Entry limit\n137.0\nSL 7.1%\n146.7\nTP 2R\n117.6\nTarget range\n113.2",
-      "Entry limit\n0.187\nSL 10.9%\n0.207\nTP 2R\n0.146\nTarget range\n0.135",
-      "Entry limit\n8.740\nSL 5.7%\n9.234\nTP 2R\n7.752\nTarget range\n7.041"
+      "Entry limit\n0.168\nSL 7.4%\n0.181\nTP 2R\n0.143\nTarget range\n0.129"
     ]
   }
 ]

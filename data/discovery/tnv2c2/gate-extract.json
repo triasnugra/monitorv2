@@ -1,9 +1,9 @@
 {
   "meta": {
-    "summaryText": "Selesai: 3 setup lolos, 35 koin dipantau, 5 koin dilewati karena data tidak valid.",
-    "summaryCount": 3,
-    "totalCards": 3,
-    "passedCount": 3,
+    "summaryText": "Selesai: 1 setup lolos, 38 koin dipantau, 2 koin dilewati karena data tidak valid.",
+    "summaryCount": 1,
+    "totalCards": 1,
+    "passedCount": 1,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
@@ -11,68 +11,24 @@
   },
   "passed": [
     {
-      "ticker": "AAVE",
+      "ticker": "ARB",
       "direction": "SHORT",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "137.0"
+          "value": "0.168"
         },
         {
-          "label": "SL 7.1%",
-          "value": "146.7"
-        },
-        {
-          "label": "TP 2R",
-          "value": "117.6"
-        },
-        {
-          "label": "Target range",
-          "value": "113.2"
-        }
-      ]
-    },
-    {
-      "ticker": "ENA",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "0.187"
-        },
-        {
-          "label": "SL 10.9%",
-          "value": "0.207"
+          "label": "SL 7.4%",
+          "value": "0.181"
         },
         {
           "label": "TP 2R",
-          "value": "0.146"
+          "value": "0.143"
         },
         {
           "label": "Target range",
-          "value": "0.135"
-        }
-      ]
-    },
-    {
-      "ticker": "AVAX",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "8.740"
-        },
-        {
-          "label": "SL 5.7%",
-          "value": "9.234"
-        },
-        {
-          "label": "TP 2R",
-          "value": "7.752"
-        },
-        {
-          "label": "Target range",
-          "value": "7.041"
+          "value": "0.129"
         }
       ]
     }

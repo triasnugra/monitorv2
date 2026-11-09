@@ -1,27 +1,27 @@
 {
   "engine": "grox",
   "flushReason": "engine-done",
-  "elapsedSec": 73.037,
+  "elapsedSec": 76.84,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 293
+      "ms": 267
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 3010
+      "ms": 3003
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 40
+      "ms": 42
     },
     {
       "name": "wait-scan",
       "ok": true,
-      "ms": 5251
+      "ms": 5502
     },
     {
       "name": "inspect",
@@ -36,7 +36,7 @@
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 2
+      "ms": 1
     }
   ]
 }

@@ -1,37 +1,37 @@
 {
   "engine": "tn",
   "flushReason": "engine-done",
-  "elapsedSec": 73.035,
+  "elapsedSec": 76.838,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 195
+      "ms": 178
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 4754
+      "ms": 5005
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 76
+      "ms": 88
     },
     {
       "name": "wait-scan",
       "ok": true,
-      "ms": 5503
+      "ms": 6007
     },
     {
       "name": "inspect",
       "ok": true,
-      "ms": 32
+      "ms": 45
     },
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 11
+      "ms": 16
     }
   ]
 }

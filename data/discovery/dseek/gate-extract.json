@@ -1,13 +1,36 @@
 {
   "meta": {
-    "summaryText": "Selesai: 0 setup, 35 koin dipantau.",
-    "summaryCount": 0,
-    "totalCards": 0,
-    "passedCount": 0,
+    "summaryText": "Selesai: 1 setup, 38 koin dipantau.",
+    "summaryCount": 1,
+    "totalCards": 1,
+    "passedCount": 1,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
-    "confirmedEmpty": true
+    "confirmedEmpty": false
   },
-  "passed": []
+  "passed": [
+    {
+      "ticker": "ARB",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "0.168"
+        },
+        {
+          "label": "SL 3.1%",
+          "value": "0.173"
+        },
+        {
+          "label": "TP 2R",
+          "value": "0.158"
+        },
+        {
+          "label": "Target range",
+          "value": "0.129"
+        }
+      ]
+    }
+  ]
 }
