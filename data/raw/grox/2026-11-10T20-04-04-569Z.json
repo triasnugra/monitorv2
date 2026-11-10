@@ -1,0 +1,77 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 6036,
+    "meta": {
+      "live": {
+        "cards": 3,
+        "passed": 3,
+        "rejected": 0,
+        "summary": "Selesai: 3 koin punya setup · 38 koin dipindai, 2 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 3
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 3,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-10 20:04 UTC",
+      "t": 1794341040000,
+      "aset": "ADA",
+      "arah": "SHORT",
+      "entry": 0.182,
+      "sl": 0.200598,
+      "tp": 0.144804,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-10 20:04 UTC",
+      "t": 1794341040000,
+      "aset": "DOGE",
+      "arah": "SHORT",
+      "entry": 0.0722,
+      "sl": 0.0778473,
+      "tp": 0.0609054,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-10 20:04 UTC",
+      "t": 1794341040000,
+      "aset": "ETH",
+      "arah": "SHORT",
+      "entry": 2174.08,
+      "sl": 2449.285,
+      "tp": 1623.669,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
