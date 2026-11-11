@@ -1,0 +1,147 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5686,
+    "meta": {
+      "live": {
+        "cards": 8,
+        "passed": 8,
+        "rejected": 0,
+        "summary": "Selesai: 8 koin punya setup · 36 koin dipindai, 4 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 8
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 8,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "MSTRB",
+      "arah": "SHORT",
+      "entry": 123.46,
+      "sl": 132.7906,
+      "tp": 104.7987,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "ADA",
+      "arah": "SHORT",
+      "entry": 0.1777,
+      "sl": 0.1906485,
+      "tp": 0.151803,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "ARB",
+      "arah": "SHORT",
+      "entry": 0.1664,
+      "sl": 0.18894,
+      "tp": 0.12132,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "TRX",
+      "arah": "SHORT",
+      "entry": 0.3195,
+      "sl": 0.329085,
+      "tp": 0.30033,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, OBV divergence",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "ENA",
+      "arah": "SHORT",
+      "entry": 0.1578,
+      "sl": 0.172659,
+      "tp": 0.128082,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "BNB",
+      "arah": "SHORT",
+      "entry": 691.81,
+      "sl": 712.5643,
+      "tp": 650.3014,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "NVDAB",
+      "arah": "SHORT",
+      "entry": 183,
+      "sl": 196.0654,
+      "tp": 156.8691,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-11 22:14 UTC",
+      "t": 1794435240000,
+      "aset": "BTC",
+      "arah": "SHORT",
+      "entry": 74967.97,
+      "sl": 77217.01,
+      "tp": 70469.89,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
