@@ -40,7 +40,11 @@ const sameLevel = (a, b, tol = 0.003) => a != null && b != null && (a === b || M
  * Dipilih yang analisisnya paling baru. Mengembalikan null bila belum ada di jurnal.
  */
 export function findJournalMatch(jurnal, live) {
-  if (live.journalId) return jurnal.find((j) => j.setupId === live.journalId && !isHidden(j)) ?? null;
+  if (live.journalId) {
+    const exact = jurnal.find((j) => j.setupId === live.journalId && !isHidden(j));
+    if (exact || live.engine !== 'crypto') return exact ?? null;
+    // crypto: id kartu tidak sama dengan id jurnal (jurnal kini dari journal.json), cocokkan lewat koin+arah+entry.
+  }
   let best = null;
   for (const j of jurnal) {
     if (isHidden(j) || j.engine !== live.engine || j.ticker !== live.ticker || j.direction !== live.direction) continue;

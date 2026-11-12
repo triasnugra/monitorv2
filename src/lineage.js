@@ -17,7 +17,7 @@
  *   inherited_v1  salinan v1 -> tidak dicatat (data lama diberi tanda dan disembunyikan, tidak dihapus)
  *   unverified    asal tak bisa dipastikan -> tidak dicatat
  */
-export const OWN = 'own', INHERITED = 'inherited_v1', UNVERIFIED = 'unverified';
+export const OWN = 'own', INHERITED = 'inherited_v1', UNVERIFIED = 'unverified', DOM_LAMA = 'dom_lama';
 
 /** item: entri jurnal mentah ({engine?, _src?}) atau rawData sebuah record ({engine?, journalSource?}). */
 export function classifyItem(item, cfg) {
@@ -40,17 +40,21 @@ export function splitItems(items, cfg) {
   return out;
 }
 
-export const isHidden = (s) => s.lineage === INHERITED || s.lineage === UNVERIFIED;
+export const isHidden = (s) => s.lineage === INHERITED || s.lineage === UNVERIFIED || s.lineage === DOM_LAMA;
 
 /** Beri tanda lineage pada record lama (idempoten, tidak menghapus apa pun). Mengembalikan jumlah record yang diberi tanda baru. */
 export function tagLineage(jurnal, sources) {
   let n = 0;
   for (const s of jurnal) {
-    if (s.lineage !== undefined) continue;
     const cfg = sources?.[s.engine];
+    // crypto: record dari kartu DOM digantikan record dari journal.json. Disembunyikan, tidak dihapus.
+    // Termasuk 4 record berlabel crypto yang sebenarnya baris jurnal mesin lain (rawData._src), bukan dari journal.json crypto.
+    if (s.engine === 'crypto' && cfg?.journalUrl && s.lineage !== DOM_LAMA && (Array.isArray(s.rawData?.chips) || s.rawData?._src)) { s.lineage = DOM_LAMA; n++; continue; }
     if (!cfg?.inheritedEngineIds?.length) continue;
-    s.lineage = classifyItem(s.rawData ?? {}, cfg);
-    n++;
+    const c = classifyItem(s.rawData ?? {}, cfg);
+    if (s.lineage === undefined) { s.lineage = c; n++; }
+    // Koreksi: record yang sudah terlanjur berlabel own/unverified, padahal hash engine-nya jelas salinan v1.
+    else if (c === INHERITED && s.rawData?.engine && s.lineage !== INHERITED) { s.lineage = INHERITED; n++; }
   }
   return n;
 }

@@ -7,6 +7,7 @@ import { applyLiveScan } from './live.js';
 import { splitItems, tagLineage, isHidden } from './lineage.js';
 import { mapSourceResult } from './sourceEval.js';
 import { parseJournalEntry } from './parsers/tn.js';
+import { parseCryptoJournalEntry, fetchCryptoJournal } from './parsers/cryptoJournal.js';
 import { evaluateSetup, FINAL } from './evaluator/evaluate.js';
 import { createBinanceProvider } from './price-data/binance.js';
 import { buildDashboard } from './aggregate.js';
@@ -16,6 +17,7 @@ import { toIso } from './util/time.js';
 export const TO_RECORD = {
   crypto: (item, ctx) => buildRecord(parseCryptoCard(item), ctx),
   tn: (item, ctx) => buildRecord(parseJournalEntry(item), ctx),
+  cryptoJournal: (item, ctx) => buildRecord(parseCryptoJournalEntry(item), ctx),
   // Mesin journal-web: sumber = jurnal yang tampil di halaman. ID dari menit+aset+arah+entry (stabil antar sumber).
   ...Object.fromEntries(ENGINES.filter((e) => e.kind === 'journal-web')
     .map((e) => [e.id, (item, ctx) => buildRecord(parseWebJournalEntry(item, e.id, e.timeframe), ctx)])),
@@ -68,9 +70,16 @@ export async function collect({ engines = ENGINE_IDS, sources, settings, now = D
         r.lineage = { own: sp.own.length, inherited: sp.inherited.length, unverified: sp.unverified.length, ownEngineIds: sp.ownEngineIds };
         if (sp.unverified.length) r.warnings.push(`JOURNAL_LINEAGE_UNVERIFIED: ${sp.unverified.length} baris hanya dari tabel (tanpa field engine) tidak dicatat karena asalnya tidak bisa dipastikan.`);
       }
+      // crypto: jurnal diambil dari journal.json (waktu analisis asli, 1 sinyal = 1 record); kartu DOM hanya untuk daftar SETUP siap.
+      let rowFn = toRecord[engine];
+      if (engine === 'crypto' && sources[engine]?.journalUrl && toRecord.cryptoJournal) {
+        const jr = await (sources[engine].fetchJournal ?? fetchCryptoJournal)(sources[engine]);
+        if (jr.ok) { recordItems = jr.items; rowFn = toRecord.cryptoJournal; r.cards = res.items.length; r.journal = { ...(r.journal ?? {}), jsonRows: jr.items.length, domRows: res.items.length }; }
+        else { recordItems = []; r.warnings.push(`CRYPTO_JOURNAL_UNAVAILABLE: ${jr.error}. Jurnal crypto tidak diperbarui pada run ini.`); }
+      }
       const records = [];
       for (const item of recordItems) {
-        try { const rec = toRecord[engine](item, { scanTimeMs: now, firstRun, sourceUrl: sources[engine].url }); if (sources[engine].inheritedEngineIds?.length) rec.lineage = 'own'; records.push(rec); }
+        try { const rec = rowFn(item, { scanTimeMs: now, firstRun, sourceUrl: sources[engine].url }); if (sources[engine].inheritedEngineIds?.length) rec.lineage = 'own'; records.push(rec); }
         catch (e) { r.errors.push(`PARSE_ERROR: ${e.message}`.slice(0, 200)); }
       }
       r.parsed = records.length;
