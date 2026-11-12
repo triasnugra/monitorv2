@@ -1,9 +1,17 @@
 [
   {
-    "selectorPath": "div > div.c > div.g4",
+    "selectorPath": "div.c > div",
     "count": 1,
     "samples": [
-      "Entry limit\n0.168\nSL 3.1%\n0.173\nTP 2R\n0.158\nTarget range\n0.129"
+      "range high 87395.7\nrange low 74888.0\nMonday low 73750.0\nMonday high 75599.2\nentry 74888.0\nSL 77134.6\nTP 70394.7"
+    ]
+  },
+  {
+    "selectorPath": "div > div.c > div.g4",
+    "count": 2,
+    "samples": [
+      "Entry limit\n10.273\nSL 7.3%\n11.020\nTP 2R\n8.779\nTarget range\n10.273",
+      "Entry limit\n74888.0\nSL 3.0%\n77134.6\nTP 2R\n70394.7\nTarget range\n74888.0"
     ]
   }
 ]

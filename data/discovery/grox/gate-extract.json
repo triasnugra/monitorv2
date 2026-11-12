@@ -1,13 +1,124 @@
 {
   "meta": {
-    "summaryText": "Selesai: 0 koin punya setup · 38 koin dipindai, 2 dilewati (riwayat kurang dari 120 hari).",
-    "summaryCount": 0,
-    "totalCards": 0,
-    "passedCount": 0,
+    "summaryText": "Selesai: 5 koin punya setup · 36 koin dipindai, 4 dilewati (riwayat kurang dari 120 hari).",
+    "summaryCount": 5,
+    "totalCards": 5,
+    "passedCount": 5,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
-    "confirmedEmpty": true
+    "confirmedEmpty": false
   },
-  "passed": []
+  "passed": [
+    {
+      "ticker": "BNB",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "680"
+        },
+        {
+          "label": "SL 3.8%",
+          "value": "705.51"
+        },
+        {
+          "label": "TP 2R",
+          "value": "628.98"
+        },
+        {
+          "label": "Jarak",
+          "value": "0.0%"
+        }
+      ]
+    },
+    {
+      "ticker": "LINK",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "10.273"
+        },
+        {
+          "label": "SL 7.3%",
+          "value": "11.01982"
+        },
+        {
+          "label": "TP 2R",
+          "value": "8.77935"
+        },
+        {
+          "label": "Jarak",
+          "value": "0.8%"
+        }
+      ]
+    },
+    {
+      "ticker": "AAVE",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "121.79"
+        },
+        {
+          "label": "SL 11.2%",
+          "value": "135.3735"
+        },
+        {
+          "label": "TP 2R",
+          "value": "94.623"
+        },
+        {
+          "label": "Jarak",
+          "value": "0.9%"
+        }
+      ]
+    },
+    {
+      "ticker": "BTC",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "74888"
+        },
+        {
+          "label": "SL 3.0%",
+          "value": "77134.64"
+        },
+        {
+          "label": "TP 2R",
+          "value": "70394.72"
+        },
+        {
+          "label": "Jarak",
+          "value": "1.2%"
+        }
+      ]
+    },
+    {
+      "ticker": "ARB",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "0.1655286"
+        },
+        {
+          "label": "SL 14.1%",
+          "value": "0.18894"
+        },
+        {
+          "label": "TP 2R",
+          "value": "0.1187057"
+        },
+        {
+          "label": "Jarak",
+          "value": "9.0%"
+        }
+      ]
+    }
+  ]
 }

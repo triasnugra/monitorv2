@@ -7,32 +7,32 @@ Penolakan
 Pantauan
 Jurnal
 Strategi
-Senin: Monday range sedang terbentuk, harga cenderung kotor. Tunggu. Monday Low/High jadi level kunci minggu ini. Dari video dan tweet
+Tidak ada alert tanggal hari ini.
 Gerbang uang nyata
 BELUM LAYAK UANG NYATA: 3 syarat belum terpenuhi (Trade terisi >= 150; Minggu berbeda >= 20; Kinerja setelah biaya).
-✓Integritas jurnal (rantai hash) 301 baris tersegel utuh
-✗Trade terisi >= 150 5 dari 150
-✗Minggu berbeda >= 20 2 dari 20
+✓Integritas jurnal (rantai hash) 303 baris tersegel utuh
+✗Trade terisi >= 150 8 dari 150
+✗Minggu berbeda >= 20 3 dari 20
 ✗Kinerja setelah biaya belum dinilai: syarat sampel belum terpenuhi (angka sengaja disembunyikan)
 Sampai semua syarat terpenuhi, pakai sinyal ini hanya untuk belajar dan paper trading. Win rate historis yang rendah (26,2% pada 65 trade) belum cukup sebagai bukti arah mana pun: selang kepercayaannya 17–38%.
 BTC door
 Harga BTC
-74851.4
+74015.2
 Tren weekly
 turun
 Tren daily
 turun
 Posisi range
--1%
+-7%
 Tren turun: utamakan short atau diam, long hanya dengan deviasi. Tren weekly baru berbalik dalam 3 minggu terakhir.
 Level weekly (26 minggu): support 57800.2 · resistance 87395.7. Eliz: selama BTC bertahan di atas support weekly, koreksi dilihat sebagai peluang beli, dan invalidasi hanya bila breakdown ber-close di bawahnya. Fokus ke level, bukan sentimen. (Level ini hitungan otomatis, bukan garis manual Eliz.)
 range high 87395.7
-range low 74968.0
-Monday low 76705.0
-Monday high 78878.0
-entry 78878.0
-SL 81602.0
-TP 73430.0
+range low 74888.0
+Monday low 73750.0
+Monday high 75599.2
+entry 74888.0
+SL 77331.3
+TP 70001.4
 Dominasi BTC dan musim altcoin
 Dominasi BTC
 n/a
@@ -41,7 +41,7 @@ n/a
 ETH/BTC (W / D)
 turun / turun
 Altcoin > BTC (30 hari)
-22%
+26%
 BTC dominan: altcoin tertinggal dari BTC. Pilih altcoin hanya dengan setup kuat. (kesimpulan ini interpretasi)
 Riwayat dominasi terkumpul harian lewat GitHub Actions. Skenario Eliz: dominasi BTC ditolak di zona tinggi (ia menyebut 57–58% pada 2024) bersamaan BTC ditolak, lalu ETH naik, lalu altcoin.
 Sinyal setup
@@ -52,113 +52,117 @@ Long
 Short
 Scan ulang
 
-Selesai: 1 setup lolos, 38 koin dipantau, 2 koin dilewati karena data tidak valid.
+Selesai: 1 setup lolos, 36 koin dipantau, 4 koin dilewati karena data tidak valid.
 
-ARB
-SHORT Skor 65 · B AKTIF
+PROTEKSI RISIKO: WASPADA · 3 SL berturut-turut. Ukuran posisi dipotong setengah.
+GOOGLB
+SHORT Skor 70 · B AKTIF
 Entry limit
-0.168
-SL 7.4%
-0.181
+296.4
+SL 3.2%
+306.0
 TP 2R
-0.143
+277.2
 Target range
-0.129
-Harga 0.166 · jarak ke entry 1.2% · swing · pemicu umur 3 hari · ruang target 3.2R
-4H/12H: BATAL: harga sudah menembus SL hari ini
-Tren W turun · D turun · Wolf: breakout trendline gagal · searah tren
+273.2
+Harga 293.5 · jarak ke entry 1.0% · scalping · pemicu umur 1 hari · ruang target 2.4R
+4H/12H: Retest tertahan di 4H
+Tren W n/a · D turun · sweep Monday High lalu reclaim · searah tren
 volume tipis, OBV tidak andal
-Risiko $10: qty 803 ARB (≈$135)
+Risiko $5 (dipotong 50% oleh proteksi): qty 0.522 GOOGLB (≈$155)
 Grafik 90 hari
 Kenapa setup ditolak
-38 koin dipindai · 28 punya pemicu · 1 lolos semua gerbang dan batas portofolio (v2.0, skor minimum 60).
-harga terlalu jauh dari entry
-25
-pemicu sudah terlalu lama
-24
-harga sudah mencapai TP sejak pemicu
-14
-likuiditas terlalu rendah
-13
-skor kualitas di bawah minimum
-13
+36 koin dipindai · 17 punya pemicu · 1 lolos semua gerbang dan batas portofolio (v2.0, skor minimum 60).
 tidak ada pemicu
-10
+19
+harga terlalu jauh dari entry
+8
 ruang menuju target range sempit
-2
+6
+skor kualitas di bawah minimum
+6
+data kline tidak valid
+4
 melawan tren BTC (weekly dan daily)
 2
-data kline tidak valid
+pemicu sudah terlalu lama
 2
+SL melebihi batas
+2
+harga sudah mencapai TP sejak pemicu
+1
+likuiditas terlalu rendah
+1
 SL sudah tertembus sejak pemicu
 1
-SL melebihi batas
+entry sudah tersentuh dan harga sudah berjalan 1R
 1
+Hampir setup (bukan sinyal, tidak dicatat jurnal): ENA SHORT bila harga ke 0.158 (jarak 8.4%, skor 60) · SPCXB SHORT bila harga ke 143.3 (jarak 4.1%, skor 83) · INJ SHORT bila harga ke 8.315 (jarak 10.6%, skor 60)
 Pantauan 40 koin
 Koin	Weekly	Daily	Range	Pola	Status
-NVDAB	n/a	turun	-52%	Sweep Monday High, Wolf bearish	ditolak: pemicu sudah terlalu lama
-MUB	n/a	turun	-48%	-	dekat range low: tunggu deviasi/retest
-SNDKB	n/a	turun	-30%	-	dekat range low: tunggu deviasi/retest
-SOXLB	n/a	turun	-23%	-	dekat range low: tunggu deviasi/retest
-XRP	turun	turun	-19%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-WLD	turun	turun	-17%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-CRCLB	n/a	turun	-15%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-SOL	turun	turun	-13%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-GRAM	n/a	turun	-13%	-	dekat range low: tunggu deviasi/retest
-ASTER	turun	turun	-10%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-DOGE	turun	turun	-10%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-FET	turun	turun	-8%	Sweep Monday High, Wolf bearish	ditolak: pemicu sudah terlalu lama
-ETH	turun	turun	-7%	Breakout-retest, Sweep Monday High	ditolak: pemicu sudah terlalu lama
-ADA	turun	turun	-7%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-BTC	turun	turun	-1%	Breakout-retest, Sweep Monday High	ditolak: pemicu sudah terlalu lama
-LTC	turun	turun	0%	Breakout-retest, Sweep Monday High	ditolak: pemicu sudah terlalu lama
-SPCXB	n/a	turun	0%	Deviasi bawah, Sweep Monday High	ditolak: pemicu sudah terlalu lama
-MSTRB	n/a	turun	2%	Three Tap, Sweep Monday High	ditolak: pemicu sudah terlalu lama
-LINK	turun	turun	3%	Deviasi bawah, Sweep Monday High, Wolf bearish	ditolak: pemicu sudah terlalu lama
-TAO	turun	turun	3%	Deviasi bawah, Sweep Monday High, Wolf bearish	ditolak: pemicu sudah terlalu lama
-PUMP	netral	turun	4%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-BNB	turun	turun	4%	Deviasi bawah, Sweep Monday High, Wolf bearish, Wolf bullish	ditolak: pemicu sudah terlalu lama
-ENA	turun	turun	9%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-AVAX	turun	turun	16%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-AAVE	turun	turun	17%	Sweep Monday High, Wolf bearish	ditolak: pemicu sudah terlalu lama
-UNI	naik	turun	19%	Sweep Monday High, Wolf bullish	dekat range low: tunggu deviasi/retest
-ONE	turun	netral	24%	Sweep Monday Low	belum ada pemicu
-SUI	turun	turun	24%	Sweep Monday High	ditolak: pemicu sudah terlalu lama
-RSR	turun	netral	25%	-	belum ada pemicu
-TRX	naik	turun	28%	Sweep Monday High	ditolak: skor kualitas di bawah minimum
-INJ	netral	naik	71%	Sweep Monday Low	ditolak: pemicu sudah terlalu lama
-ARB	turun	turun	29%	Sweep Monday Low, Wolf bearish	SETUP
-PEPE	netral	naik	71%	Double Deviation, Sweep Monday High, Wolf bearish	ditolak: SL sudah tertembus sejak pemicu
-ZEC	naik	netral	31%	Sweep Monday Low, Sweep Monday High	ditolak: pemicu sudah terlalu lama
-XAUT	n/a	turun	31%	-	mid-range, hindari
-HOT	turun	naik	37%	Sweep Monday Low, Sweep Monday High	ditolak: SL melebihi batas
-NEAR	naik	netral	37%	Wolf bearish	mid-range, hindari
-QNT	naik	naik	43%	Sweep Monday Low, Sweep Monday High	mid-range, hindari
+NVDAB	n/a	turun	-29%	Sweep Monday High	ditolak: harga sudah mencapai TP sejak pemicu
+XRP	turun	turun	-25%	-	dekat range low: tunggu deviasi/retest
+ETH	turun	turun	-19%	-	dekat range low: tunggu deviasi/retest
+SOL	turun	turun	-14%	-	dekat range low: tunggu deviasi/retest
+ZEC	naik	turun	-12%	-	dekat range low: tunggu deviasi/retest
+WLD	turun	turun	-8%	-	dekat range low: tunggu deviasi/retest
+DOGE	turun	turun	-8%	-	dekat range low: tunggu deviasi/retest
+BTC	turun	turun	-7%	Breakout-retest, Sweep Monday Low	ditolak: ruang menuju target range sempit
+ADA	turun	turun	-3%	Breakout-retest, Double Deviation, Sweep Monday Low	dekat range low: tunggu deviasi/retest
+LINK	turun	turun	-2%	Breakout-retest	ditolak: ruang menuju target range sempit
+BNB	turun	turun	0%	Breakout-retest, Sweep Monday Low, Sweep Monday High	ditolak: ruang menuju target range sempit
+LTC	turun	turun	0%	Deviasi bawah, Sweep Monday Low	ditolak: melawan tren BTC (weekly dan daily)
+TAO	turun	turun	3%	Deviasi bawah, Sweep Monday High	ditolak: ruang menuju target range sempit
+ENA	turun	turun	7%	Sweep Monday High	hampir setup: tunggu harga ke entry
+UNI	naik	turun	8%	Sweep Monday High	dekat range low: tunggu deviasi/retest
+AAVE	turun	turun	10%	Wolf bearish	ditolak: pemicu sudah terlalu lama
+INTCB	n/a	turun	13%	-	dekat range low: tunggu deviasi/retest
+GRAM	n/a	turun	14%	Deviasi bawah	dekat range low: tunggu deviasi/retest
+SNDKB	n/a	turun	14%	Deviasi bawah	dekat range low: tunggu deviasi/retest
+ARB	turun	turun	16%	Wolf bearish	ditolak: pemicu sudah terlalu lama
+XAUT	n/a	turun	17%	-	dekat range low: tunggu deviasi/retest
+SOXLB	n/a	turun	18%	-	dekat range low: tunggu deviasi/retest
+ONE	turun	turun	18%	Sweep Monday Low, Sweep Monday High	ditolak: SL melebihi batas
+GOOGLB	n/a	turun	22%	Sweep Monday High	SETUP
+SKHYB	n/a	turun	23%	-	belum ada pemicu
+TRX	netral	turun	24%	Sweep Monday High	ditolak: skor kualitas di bawah minimum
+SUI	turun	turun	24%	Sweep Monday Low	ditolak: melawan tren BTC (weekly dan daily)
+AVAX	turun	turun	28%	-	belum ada pemicu
+SPCXB	n/a	turun	31%	Sweep Monday High	hampir setup: tunggu harga ke entry
+MUB	n/a	turun	31%	-	mid-range, hindari
+OPG	n/a	naik	65%	Deviasi atas	mid-range, hindari
+NEAR	naik	turun	36%	Sweep Monday High	mid-range, hindari
+INIT	turun	netral	36%	Deviasi atas, Sweep Monday High	ditolak: SL melebihi batas
+ERA	turun	naik	56%	Sweep Monday Low, Wolf bearish	mid-range, hindari
+INJ	netral	netral	55%	Sweep Monday High	hampir setup: tunggu harga ke entry
+PEPE	turun	naik	53%	Double Deviation, Sweep Monday High, Wolf bearish	ditolak: SL sudah tertembus sejak pemicu
 
 Ketuk baris koin untuk melihat grafiknya.
 
 Jurnal sinyal Asgra
 Sinyal
 
-316
+318
 Win rate
 
 26%
 Rata-rata R
 
-0.00
+-0.01
 Total R
 
-0.6
+-2.4
 
-Angka ini mencampur 305 baris arsip mesin v1 (dengan pengulangan harian dan tanpa gerbang) dan 11 baris mesin v2. Keputusan memakai uji forward di atas, bukan panel ini.
+Angka ini mencampur 305 baris arsip mesin v1 (dengan pengulangan harian dan tanpa gerbang) dan 13 baris mesin v2. Keputusan memakai uji forward di atas, bukan panel ini.
 
 Forward test (uji bersih, mulai 2026-10-29)
-Trade terisi 5/150 · minggu 2/20 · menunggu 4
+Trade terisi 8/150 · minggu 3/20 · menunggu 3
 Angka kinerja forward test disembunyikan sampai syarat terpenuhi, agar aturan tidak diubah di tengah jalan.
 waktu	aset	arah	entry	sl	tp	hasil	R	skor	grade	alasan
+2026-11-11 01:47 UTC	MUB	SHORT	744.77	803	628.31	SL	-1		B	sweep Monday High lalu reclaim, searah tren
+2026-11-11 01:47 UTC	SNDKB	SHORT	904.83	1008.8	696.87	SL	-1		B	sweep Monday High lalu reclaim, searah tren
 2026-11-07 03:29 UTC	SUI	SHORT	0.9088	0.96439	0.79763	menunggu			A	sweep Monday High lalu reclaim, searah tren
-2026-11-07 03:29 UTC	ARB	SHORT	0.1652	0.17768	0.14024	menunggu			A	sweep Monday High lalu reclaim, searah tren
+2026-11-07 03:29 UTC	ARB	SHORT	0.1652	0.17768	0.14024	SL	-1		A	sweep Monday High lalu reclaim, searah tren
 2026-11-06 03:38 UTC	TRX	SHORT	0.3197	0.33088	0.29734	menunggu			B	sweep Monday High lalu reclaim, OBV divergence
 2026-11-05 01:44 UTC	QQQB	LONG	685.29	664.73	726.41	SL	-1		B	deviasi bawah lalu recovery, sweep Monday Low lalu reclaim, RSI divergence
 2026-11-05 01:44 UTC	AVAX	SHORT	8.74	9.234	7.752	menunggu			B	sweep Monday High lalu reclaim, searah tren

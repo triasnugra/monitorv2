@@ -1,9 +1,9 @@
 {
   "meta": {
-    "summaryText": "Selesai: 30 setup, 38 koin dipantau.",
-    "summaryCount": 30,
-    "totalCards": 30,
-    "passedCount": 30,
+    "summaryText": "Selesai: 21 setup, 36 koin dipantau.",
+    "summaryCount": 21,
+    "totalCards": 21,
+    "passedCount": 21,
     "rejectedCount": 0,
     "rejected": [],
     "rejectMarkerUnmatched": true,
@@ -16,19 +16,41 @@
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.00000503"
+          "value": "0.00000538"
         },
         {
           "label": "SL 3.0%",
-          "value": "0.00000518"
+          "value": "0.00000554"
         },
         {
           "label": "TP 2R",
-          "value": "0.00000473"
+          "value": "0.00000506"
         },
         {
           "label": "Target range",
           "value": "0.00000320"
+        }
+      ]
+    },
+    {
+      "ticker": "LTC",
+      "direction": "LONG",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "50.200"
+        },
+        {
+          "label": "SL 3.0%",
+          "value": "48.694"
+        },
+        {
+          "label": "TP 2R",
+          "value": "53.212"
+        },
+        {
+          "label": "Target range",
+          "value": "75.000"
         }
       ]
     },
@@ -38,15 +60,15 @@
       "rows": [
         {
           "label": "Entry limit",
-          "value": "716.0"
+          "value": "691.8"
         },
         {
           "label": "SL 3.0%",
-          "value": "737.5"
+          "value": "712.6"
         },
         {
           "label": "TP 2R",
-          "value": "673.0"
+          "value": "650.3"
         },
         {
           "label": "Target range",
@@ -55,200 +77,24 @@
       ]
     },
     {
-      "ticker": "BTC",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "78878.0"
-        },
-        {
-          "label": "SL 3.5%",
-          "value": "81602.0"
-        },
-        {
-          "label": "TP 2R",
-          "value": "73430.0"
-        },
-        {
-          "label": "Target range",
-          "value": "74968.0"
-        }
-      ]
-    },
-    {
-      "ticker": "ZEC",
+      "ticker": "ADA",
       "direction": "LONG",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "1126.3"
+          "value": "0.174"
         },
         {
           "label": "SL 3.0%",
-          "value": "1092.5"
+          "value": "0.169"
         },
         {
           "label": "TP 2R",
-          "value": "1193.8"
+          "value": "0.184"
         },
         {
           "label": "Target range",
-          "value": "1698.0"
-        }
-      ]
-    },
-    {
-      "ticker": "TAO",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "234.8"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "241.8"
-        },
-        {
-          "label": "TP 2R",
-          "value": "220.7"
-        },
-        {
-          "label": "Target range",
-          "value": "213.4"
-        }
-      ]
-    },
-    {
-      "ticker": "AAVE",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "137.0"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "141.1"
-        },
-        {
-          "label": "TP 2R",
-          "value": "128.8"
-        },
-        {
-          "label": "Target range",
-          "value": "113.2"
-        }
-      ]
-    },
-    {
-      "ticker": "ETH",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "2317.8"
-        },
-        {
-          "label": "SL 6.2%",
-          "value": "2462.2"
-        },
-        {
-          "label": "TP 2R",
-          "value": "2029.0"
-        },
-        {
-          "label": "Target range",
-          "value": "2174.1"
-        }
-      ]
-    },
-    {
-      "ticker": "LINK",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "11.443"
-        },
-        {
-          "label": "SL 3.6%",
-          "value": "11.855"
-        },
-        {
-          "label": "TP 2R",
-          "value": "10.619"
-        },
-        {
-          "label": "Target range",
-          "value": "10.273"
-        }
-      ]
-    },
-    {
-      "ticker": "LTC",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "56.220"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "57.907"
-        },
-        {
-          "label": "TP 2R",
-          "value": "52.847"
-        },
-        {
-          "label": "Target range",
-          "value": "50.200"
-        }
-      ]
-    },
-    {
-      "ticker": "NVDAB",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "210.2"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "216.5"
-        },
-        {
-          "label": "TP 2R",
-          "value": "197.6"
-        },
-        {
-          "label": "Target range",
-          "value": "201.3"
-        }
-      ]
-    },
-    {
-      "ticker": "FET",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "0.163"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "0.168"
-        },
-        {
-          "label": "TP 2R",
-          "value": "0.153"
-        },
-        {
-          "label": "Target range",
-          "value": "0.148"
+          "value": "0.282"
         }
       ]
     },
@@ -266,7 +112,7 @@
         },
         {
           "label": "TP 2R",
-          "value": "0.301"
+          "value": "0.300"
         },
         {
           "label": "Target range",
@@ -275,24 +121,112 @@
       ]
     },
     {
-      "ticker": "ARB",
+      "ticker": "LINK",
       "direction": "SHORT",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.168"
+          "value": "10.273"
         },
         {
-          "label": "SL 3.1%",
-          "value": "0.173"
+          "label": "SL 7.3%",
+          "value": "11.020"
         },
         {
           "label": "TP 2R",
-          "value": "0.158"
+          "value": "8.779"
         },
         {
           "label": "Target range",
-          "value": "0.129"
+          "value": "10.273"
+        }
+      ]
+    },
+    {
+      "ticker": "AAVE",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "121.8"
+        },
+        {
+          "label": "SL 11.2%",
+          "value": "135.4"
+        },
+        {
+          "label": "TP 2R",
+          "value": "94.623"
+        },
+        {
+          "label": "Target range",
+          "value": "113.2"
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGLB",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "296.4"
+        },
+        {
+          "label": "SL 3.0%",
+          "value": "305.3"
+        },
+        {
+          "label": "TP 2R",
+          "value": "278.6"
+        },
+        {
+          "label": "Target range",
+          "value": "273.2"
+        }
+      ]
+    },
+    {
+      "ticker": "BTC",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "74888.0"
+        },
+        {
+          "label": "SL 3.0%",
+          "value": "77134.6"
+        },
+        {
+          "label": "TP 2R",
+          "value": "70394.7"
+        },
+        {
+          "label": "Target range",
+          "value": "74888.0"
+        }
+      ]
+    },
+    {
+      "ticker": "SUI",
+      "direction": "LONG",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "0.806"
+        },
+        {
+          "label": "SL 3.0%",
+          "value": "0.782"
+        },
+        {
+          "label": "TP 2R",
+          "value": "0.854"
+        },
+        {
+          "label": "Target range",
+          "value": "1.295"
         }
       ]
     },
@@ -302,239 +236,41 @@
       "rows": [
         {
           "label": "Entry limit",
-          "value": "142.2"
+          "value": "143.3"
+        },
+        {
+          "label": "SL 4.1%",
+          "value": "149.2"
+        },
+        {
+          "label": "TP 2R",
+          "value": "131.7"
+        },
+        {
+          "label": "Target range",
+          "value": "120.5"
+        }
+      ]
+    },
+    {
+      "ticker": "TAO",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "225.9"
         },
         {
           "label": "SL 3.0%",
-          "value": "146.5"
+          "value": "232.7"
         },
         {
           "label": "TP 2R",
-          "value": "133.7"
+          "value": "212.3"
         },
         {
           "label": "Target range",
-          "value": "134.8"
-        }
-      ]
-    },
-    {
-      "ticker": "AVAX",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "8.740"
-        },
-        {
-          "label": "SL 5.3%",
-          "value": "9.206"
-        },
-        {
-          "label": "TP 2R",
-          "value": "7.808"
-        },
-        {
-          "label": "Target range",
-          "value": "7.169"
-        }
-      ]
-    },
-    {
-      "ticker": "ASTER",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "0.703"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "0.724"
-        },
-        {
-          "label": "TP 2R",
-          "value": "0.661"
-        },
-        {
-          "label": "Target range",
-          "value": "0.658"
-        }
-      ]
-    },
-    {
-      "ticker": "MSTRB",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "137.5"
-        },
-        {
-          "label": "SL 6.9%",
-          "value": "146.9"
-        },
-        {
-          "label": "TP 2R",
-          "value": "118.6"
-        },
-        {
-          "label": "Target range",
-          "value": "123.5"
-        }
-      ]
-    },
-    {
-      "ticker": "SUI",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "0.909"
-        },
-        {
-          "label": "SL 5.8%",
-          "value": "0.961"
-        },
-        {
-          "label": "TP 2R",
-          "value": "0.804"
-        },
-        {
-          "label": "Target range",
-          "value": "0.673"
-        }
-      ]
-    },
-    {
-      "ticker": "DOGE",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "0.0763"
-        },
-        {
-          "label": "SL 3.1%",
-          "value": "0.0787"
-        },
-        {
-          "label": "TP 2R",
-          "value": "0.0716"
-        },
-        {
-          "label": "Target range",
-          "value": "0.0722"
-        }
-      ]
-    },
-    {
-      "ticker": "SOL",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "95.950"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "98.829"
-        },
-        {
-          "label": "TP 2R",
-          "value": "90.193"
-        },
-        {
-          "label": "Target range",
-          "value": "90.870"
-        }
-      ]
-    },
-    {
-      "ticker": "ADA",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "0.195"
-        },
-        {
-          "label": "SL 3.9%",
-          "value": "0.203"
-        },
-        {
-          "label": "TP 2R",
-          "value": "0.180"
-        },
-        {
-          "label": "Target range",
-          "value": "0.182"
-        }
-      ]
-    },
-    {
-      "ticker": "XRP",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "1.265"
-        },
-        {
-          "label": "SL 6.6%",
-          "value": "1.348"
-        },
-        {
-          "label": "TP 2R",
-          "value": "1.098"
-        },
-        {
-          "label": "Target range",
-          "value": "1.200"
-        }
-      ]
-    },
-    {
-      "ticker": "INJ",
-      "direction": "LONG",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "6.889"
-        },
-        {
-          "label": "SL 3.0%",
-          "value": "6.682"
-        },
-        {
-          "label": "TP 2R",
-          "value": "7.302"
-        },
-        {
-          "label": "Target range",
-          "value": "9.417"
-        }
-      ]
-    },
-    {
-      "ticker": "CRCLB",
-      "direction": "SHORT",
-      "rows": [
-        {
-          "label": "Entry limit",
-          "value": "75.930"
-        },
-        {
-          "label": "SL 3.2%",
-          "value": "78.390"
-        },
-        {
-          "label": "TP 2R",
-          "value": "71.010"
-        },
-        {
-          "label": "Target range",
-          "value": "71.130"
+          "value": "212.1"
         }
       ]
     },
@@ -544,15 +280,15 @@
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.187"
+          "value": "0.158"
         },
         {
-          "label": "SL 3.0%",
-          "value": "0.193"
+          "label": "SL 5.3%",
+          "value": "0.166"
         },
         {
           "label": "TP 2R",
-          "value": "0.176"
+          "value": "0.141"
         },
         {
           "label": "Target range",
@@ -561,46 +297,112 @@
       ]
     },
     {
-      "ticker": "WLD",
+      "ticker": "ARB",
       "direction": "SHORT",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.393"
+          "value": "0.166"
         },
         {
-          "label": "SL 3.0%",
-          "value": "0.405"
+          "label": "SL 14.1%",
+          "value": "0.189"
         },
         {
           "label": "TP 2R",
-          "value": "0.370"
+          "value": "0.119"
         },
         {
           "label": "Target range",
-          "value": "0.356"
+          "value": "0.131"
         }
       ]
     },
     {
-      "ticker": "QNT",
+      "ticker": "NVDAB",
       "direction": "SHORT",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "205.5"
+          "value": "183.0"
         },
         {
-          "label": "SL 3.2%",
-          "value": "212.0"
+          "label": "SL 3.8%",
+          "value": "190.0"
         },
         {
           "label": "TP 2R",
-          "value": "192.6"
+          "value": "168.9"
         },
         {
           "label": "Target range",
-          "value": "58.750"
+          "value": "179.0"
+        }
+      ]
+    },
+    {
+      "ticker": "NEAR",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "3.680"
+        },
+        {
+          "label": "SL 4.2%",
+          "value": "3.834"
+        },
+        {
+          "label": "TP 2R",
+          "value": "3.372"
+        },
+        {
+          "label": "Target range",
+          "value": "2.243"
+        }
+      ]
+    },
+    {
+      "ticker": "GRAM",
+      "direction": "LONG",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "1.081"
+        },
+        {
+          "label": "SL 8.7%",
+          "value": "0.987"
+        },
+        {
+          "label": "TP 2R",
+          "value": "1.269"
+        },
+        {
+          "label": "Target range",
+          "value": "1.740"
+        }
+      ]
+    },
+    {
+      "ticker": "INJ",
+      "direction": "SHORT",
+      "rows": [
+        {
+          "label": "Entry limit",
+          "value": "8.315"
+        },
+        {
+          "label": "SL 3.0%",
+          "value": "8.564"
+        },
+        {
+          "label": "TP 2R",
+          "value": "7.816"
+        },
+        {
+          "label": "Target range",
+          "value": "5.151"
         }
       ]
     },
@@ -610,15 +412,15 @@
       "rows": [
         {
           "label": "Entry limit",
-          "value": "7.351"
+          "value": "7.110"
         },
         {
-          "label": "SL 6.9%",
-          "value": "7.859"
+          "label": "SL 3.0%",
+          "value": "7.323"
         },
         {
           "label": "TP 2R",
-          "value": "6.335"
+          "value": "6.683"
         },
         {
           "label": "Target range",
@@ -627,46 +429,46 @@
       ]
     },
     {
-      "ticker": "PUMP",
+      "ticker": "OPG",
       "direction": "SHORT",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.00426"
+          "value": "0.156"
         },
         {
-          "label": "SL 7.5%",
-          "value": "0.00458"
+          "label": "SL 5.5%",
+          "value": "0.165"
         },
         {
           "label": "TP 2R",
-          "value": "0.00362"
+          "value": "0.139"
         },
         {
           "label": "Target range",
-          "value": "0.00339"
+          "value": "0.0946"
         }
       ]
     },
     {
-      "ticker": "ONE",
+      "ticker": "SNDKB",
       "direction": "LONG",
       "rows": [
         {
           "label": "Entry limit",
-          "value": "0.00108"
+          "value": "794.0"
         },
         {
-          "label": "SL 5.2%",
-          "value": "0.00102"
+          "label": "SL 3.0%",
+          "value": "770.2"
         },
         {
           "label": "TP 2R",
-          "value": "0.00119"
+          "value": "841.7"
         },
         {
           "label": "Target range",
-          "value": "0.00519"
+          "value": "1908.5"
         }
       ]
     }

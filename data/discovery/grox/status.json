@@ -1,42 +1,42 @@
 {
   "engine": "grox",
   "flushReason": "engine-done",
-  "elapsedSec": 76.84,
+  "elapsedSec": 79.327,
   "steps": [
     {
       "name": "goto",
       "ok": true,
-      "ms": 267
+      "ms": 191
     },
     {
       "name": "wait-initial",
       "ok": true,
-      "ms": 3003
+      "ms": 3005
     },
     {
       "name": "click-scan",
       "ok": true,
-      "ms": 42
+      "ms": 48
     },
     {
       "name": "wait-scan",
       "ok": true,
-      "ms": 5502
+      "ms": 5752
     },
     {
       "name": "inspect",
       "ok": true,
-      "ms": 4
+      "ms": 5
     },
     {
       "name": "journal-tables",
       "ok": true,
-      "ms": 1
+      "ms": 5
     },
     {
       "name": "gate-extract",
       "ok": true,
-      "ms": 1
+      "ms": 4
     }
   ]
 }

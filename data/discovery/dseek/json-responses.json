@@ -1,22 +1,22 @@
 [
   {
+    "url": "https://triasnugra.github.io/dseek/data/forward-report.json",
+    "status": 200,
+    "bodySample": "{\n \"dibuat\": \"2026-11-11T23:38:27.087Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 9,\n  \"head\": \"a78d76e7f055a8215b6b\",\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-29T10:29:21.715Z\",\n  \"engine\": \"1eea4198621d8ad0\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 9,\n  \"selesai\": 6,\n  \"menunggu\": 3,\n  \"terisi\": 6,\n  \"minggu_berbeda\": 3,\n  \"diabaikan_mesin_lain\": 0,\n  \"dilewati_dedupe\": 0\n },\n \"progress\": {\n  \"trade_terisi\": [\n   6,\n   150\n  ],\n  \"minggu\": [\n   3,\n   20\n  ]\n }\n}"
+  },
+  {
     "url": "https://triasnugra.github.io/dseek/data/journal.json",
     "status": 200,
     "bodySample": "[\n {\n  \"id\": \"2026-10-31|Aturan Eliz|MUB\",\n  \"waktu\": \"2026-10-31 03:18 UTC\",\n  \"t\": 1793416709240,\n  \"due\": 1794021509240,\n  \"agen\": \"Aturan Eliz\",\n  \"aset\": \"MUB\",\n  \"arah\": \"LONG\",\n  \"entry\": 870.85,\n  \"sl\": 844.72,\n  \"tp\": 923.1,\n  \"harga_awal\": 890.93,\n  \"keyakinan\": \"\",\n  \"alasan\": \"sweep Monday Low lalu reclaim, Wolf bullish: breakdown trendline gagal, OBV divergence, RSI divergence\",\n  \"alert\": \"Hari terakhir bulan. Penutupan bulanan 00:00 UTC.\",\n  \"hasil\": \"SL\",\n  \"R\": -1,\n  \"engine\": \"1eea4198621d8ad0\",\n  \"fwd\": 1,\n  \"seq\": 1,\n  \"prev\": \"GENESIS\",\n  \"h\": \"0247f1a477573ec9d577\",\n  \"tx"
   },
   {
-    "url": "https://triasnugra.github.io/dseek/data/forward-report.json",
+    "url": "https://triasnugra.github.io/dseek/data/dominance.json",
     "status": 200,
-    "bodySample": "{\n \"dibuat\": \"2026-11-09T05:42:05.252Z\",\n \"chain\": {\n  \"ok\": true,\n  \"n\": 6,\n  \"head\": \"8a12bb9445a1a7eff138\",\n  \"errors\": []\n },\n \"protocol\": {\n  \"mulai\": \"2026-10-29T10:29:21.715Z\",\n  \"engine\": \"1eea4198621d8ad0\",\n  \"agen\": \"Aturan Eliz\"\n },\n \"ready\": false,\n \"locked\": true,\n \"peek\": false,\n \"counts\": {\n  \"tercatat_sesuai_protokol\": 6,\n  \"selesai\": 6,\n  \"menunggu\": 0,\n  \"terisi\": 6,\n  \"minggu_berbeda\": 3,\n  \"diabaikan_mesin_lain\": 0,\n  \"dilewati_dedupe\": 0\n },\n \"progress\": {\n  \"trade_terisi\": [\n   6,\n   150\n  ],\n  \"minggu\": [\n   3,\n   20\n  ]\n }\n}"
+    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3},{\"d\":\"2026-10-31\",\"btc\":59.18,\"eth\":10.4},{\"d\":\"2026-11-01\",\"btc\":59.23,\"eth\":10.46},{\"d\":\"2026-11-02\",\"btc\":60.07,\"eth\":10.58},{\"d\":\"2026-11-03\",\"btc\":59.3,\"eth\":10.55},{\"d\":\"2026-11-04\",\"btc\":59.27,\"eth\":10.59},{\"d\":\"2026-11-05\",\"btc\":59.58,\"eth\":10.89},{\"d\":\"2026-11-06\",\"btc\":59.19,\"eth\":10.58},{\"d\":\"2026-11-07\",\"btc\":59.28,\"eth\":10.65},{\"d\":\"2026-11-08\",\"btc\":59.29,\"eth\":10.63},{\"d\":\"2026-11-09\",\"btc\":60.24,\"eth\":10.43},{\"d\":\"2026-11-10\",\"btc\":59.74,\"eth\":10.28},{\"d\":\"2026-11-11\",\"btc\":59.75,\"eth\":10.12}]"
   },
   {
     "url": "https://triasnugra.github.io/dseek/data/dominance.json",
     "status": 200,
-    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3},{\"d\":\"2026-10-31\",\"btc\":59.18,\"eth\":10.4},{\"d\":\"2026-11-01\",\"btc\":59.23,\"eth\":10.46},{\"d\":\"2026-11-02\",\"btc\":60.07,\"eth\":10.58},{\"d\":\"2026-11-03\",\"btc\":59.3,\"eth\":10.55},{\"d\":\"2026-11-04\",\"btc\":59.27,\"eth\":10.59},{\"d\":\"2026-11-05\",\"btc\":59.58,\"eth\":10.89},{\"d\":\"2026-11-06\",\"btc\":59.19,\"eth\":10.58},{\"d\":\"2026-11-07\",\"btc\":59.28,\"eth\":10.65},{\"d\":\"2026-11-08\",\"btc\":59.29,\"eth\":10.63},{\"d\":\"2026-11-09\",\"btc\":60.24,\"eth\":10.43}]"
-  },
-  {
-    "url": "https://triasnugra.github.io/dseek/data/dominance.json",
-    "status": 200,
-    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3},{\"d\":\"2026-10-31\",\"btc\":59.18,\"eth\":10.4},{\"d\":\"2026-11-01\",\"btc\":59.23,\"eth\":10.46},{\"d\":\"2026-11-02\",\"btc\":60.07,\"eth\":10.58},{\"d\":\"2026-11-03\",\"btc\":59.3,\"eth\":10.55},{\"d\":\"2026-11-04\",\"btc\":59.27,\"eth\":10.59},{\"d\":\"2026-11-05\",\"btc\":59.58,\"eth\":10.89},{\"d\":\"2026-11-06\",\"btc\":59.19,\"eth\":10.58},{\"d\":\"2026-11-07\",\"btc\":59.28,\"eth\":10.65},{\"d\":\"2026-11-08\",\"btc\":59.29,\"eth\":10.63},{\"d\":\"2026-11-09\",\"btc\":60.24,\"eth\":10.43}]"
+    "bodySample": "[{\"d\":\"2026-10-29\",\"btc\":59.5,\"eth\":10.46},{\"d\":\"2026-10-30\",\"btc\":59.27,\"eth\":10.3},{\"d\":\"2026-10-31\",\"btc\":59.18,\"eth\":10.4},{\"d\":\"2026-11-01\",\"btc\":59.23,\"eth\":10.46},{\"d\":\"2026-11-02\",\"btc\":60.07,\"eth\":10.58},{\"d\":\"2026-11-03\",\"btc\":59.3,\"eth\":10.55},{\"d\":\"2026-11-04\",\"btc\":59.27,\"eth\":10.59},{\"d\":\"2026-11-05\",\"btc\":59.58,\"eth\":10.89},{\"d\":\"2026-11-06\",\"btc\":59.19,\"eth\":10.58},{\"d\":\"2026-11-07\",\"btc\":59.28,\"eth\":10.65},{\"d\":\"2026-11-08\",\"btc\":59.29,\"eth\":10.63},{\"d\":\"2026-11-09\",\"btc\":60.24,\"eth\":10.43},{\"d\":\"2026-11-10\",\"btc\":59.74,\"eth\":10.28},{\"d\":\"2026-11-11\",\"btc\":59.75,\"eth\":10.12}]"
   }
 ]
