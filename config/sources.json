@@ -10,7 +10,10 @@
     "scanTimeoutMs": 120000,
     "quietMs": 4000,
     "inheritedEngineIds": [],
-    "lineageNote": "Kartu DOM, bukan jurnal berantai: semua kartu milik mesin ini."
+    "lineageNote": "Jurnal = data/journal.json crypto (t = waktu analisis asli, h = id unik). Kartu DOM hanya untuk daftar SETUP siap. Record kartu lama ditandai dom_lama dan disembunyikan.",
+    "journalUrl": "https://triasnugra.github.io/crypto/data/journal.json",
+    "fetchTimeoutMs": 30000,
+    "retries": 3
   },
   "tn": {
     "label": "tn",
