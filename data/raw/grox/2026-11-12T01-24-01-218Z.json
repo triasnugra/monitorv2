@@ -1,0 +1,119 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 6052,
+    "meta": {
+      "live": {
+        "cards": 6,
+        "passed": 6,
+        "rejected": 0,
+        "summary": "Selesai: 6 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 6
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 6,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-12 01:24 UTC",
+      "t": 1794446640000,
+      "aset": "AAVE",
+      "arah": "SHORT",
+      "entry": 121.79,
+      "sl": 135.3735,
+      "tp": 94.623,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-12 01:24 UTC",
+      "t": 1794446640000,
+      "aset": "MSTRB",
+      "arah": "SHORT",
+      "entry": 123.46,
+      "sl": 130.4088,
+      "tp": 109.5624,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-12 01:24 UTC",
+      "t": 1794446640000,
+      "aset": "ARB",
+      "arah": "SHORT",
+      "entry": 0.1655286,
+      "sl": 0.18894,
+      "tp": 0.1187057,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-12 01:24 UTC",
+      "t": 1794446640000,
+      "aset": "LINK",
+      "arah": "SHORT",
+      "entry": 10.273,
+      "sl": 11.01982,
+      "tp": 8.77935,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-12 01:24 UTC",
+      "t": 1794446640000,
+      "aset": "BNB",
+      "arah": "SHORT",
+      "entry": 680,
+      "sl": 705.51,
+      "tp": 628.98,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-12 01:24 UTC",
+      "t": 1794446640000,
+      "aset": "BTC",
+      "arah": "SHORT",
+      "entry": 74888,
+      "sl": 77134.64,
+      "tp": 70394.72,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
