@@ -1,0 +1,105 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5851,
+    "meta": {
+      "live": {
+        "cards": 5,
+        "passed": 5,
+        "rejected": 0,
+        "summary": "Selesai: 5 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 5
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 5,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-13 15:30 UTC",
+      "t": 1794583800000,
+      "aset": "CRCLB",
+      "arah": "SHORT",
+      "entry": 65,
+      "sl": 70.15905,
+      "tp": 54.6819,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-13 15:30 UTC",
+      "t": 1794583800000,
+      "aset": "TAO",
+      "arah": "SHORT",
+      "entry": 212.1,
+      "sl": 228.0345,
+      "tp": 180.231,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-13 15:30 UTC",
+      "t": 1794583800000,
+      "aset": "LTC",
+      "arah": "SHORT",
+      "entry": 50.2,
+      "sl": 52.6017,
+      "tp": 45.3966,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-13 15:30 UTC",
+      "t": 1794583800000,
+      "aset": "LINK",
+      "arah": "SHORT",
+      "entry": 10.273,
+      "sl": 10.89118,
+      "tp": 9.03663,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-13 15:30 UTC",
+      "t": 1794583800000,
+      "aset": "BNB",
+      "arah": "SHORT",
+      "entry": 673.56,
+      "sl": 705.51,
+      "tp": 609.66,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
