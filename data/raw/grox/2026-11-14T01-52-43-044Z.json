@@ -1,0 +1,91 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5787,
+    "meta": {
+      "live": {
+        "cards": 4,
+        "passed": 4,
+        "rejected": 0,
+        "summary": "Selesai: 4 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 4
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 4,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-14 01:53 UTC",
+      "t": 1794621180000,
+      "aset": "WLD",
+      "arah": "SHORT",
+      "entry": 0.3033,
+      "sl": 0.328635,
+      "tp": 0.25263,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-14 01:53 UTC",
+      "t": 1794621180000,
+      "aset": "ADA",
+      "arah": "SHORT",
+      "entry": 0.1714,
+      "sl": 0.1842165,
+      "tp": 0.145767,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-14 01:53 UTC",
+      "t": 1794621180000,
+      "aset": "LINK",
+      "arah": "SHORT",
+      "entry": 10.13,
+      "sl": 10.88415,
+      "tp": 8.6217,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-14 01:53 UTC",
+      "t": 1794621180000,
+      "aset": "SNDKB",
+      "arah": "SHORT",
+      "entry": 904.83,
+      "sl": 1016.196,
+      "tp": 682.0986,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
