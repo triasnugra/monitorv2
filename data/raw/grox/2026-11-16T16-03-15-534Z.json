@@ -1,0 +1,17 @@
+{
+  "status": "FAILED",
+  "diagnostics": {
+    "httpStatus": null,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [
+      "GOTO_TIMEOUT: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://triasnugra.github.io/grox/\", waiting until \"domcontentloaded\"\n"
+    ],
+    "warnings": [],
+    "stable": null,
+    "durationMs": 45000,
+    "meta": null,
+    "journal": null
+  },
+  "items": []
+}
