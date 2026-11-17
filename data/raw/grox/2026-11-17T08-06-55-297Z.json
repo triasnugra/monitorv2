@@ -1,0 +1,63 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5677,
+    "meta": {
+      "live": {
+        "cards": 2,
+        "passed": 2,
+        "rejected": 0,
+        "summary": "Selesai: 2 koin punya setup · 36 koin dipindai, 4 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 2
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 2,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-17 08:07 UTC",
+      "t": 1794902820000,
+      "aset": "XAUT",
+      "arah": "SHORT",
+      "entry": 3873.76,
+      "sl": 4014.794,
+      "tp": 3591.692,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-17 08:07 UTC",
+      "t": 1794902820000,
+      "aset": "MUB",
+      "arah": "SHORT",
+      "entry": 769.85,
+      "sl": 825.7683,
+      "tp": 658.0134,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
