@@ -1,0 +1,91 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5604,
+    "meta": {
+      "live": {
+        "cards": 4,
+        "passed": 4,
+        "rejected": 0,
+        "summary": "Selesai: 4 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 4
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 4,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-18 07:12 UTC",
+      "t": 1794985920000,
+      "aset": "ADA",
+      "arah": "SHORT",
+      "entry": 0.1558,
+      "sl": 0.1765785,
+      "tp": 0.114243,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 07:12 UTC",
+      "t": 1794985920000,
+      "aset": "XAUT",
+      "arah": "SHORT",
+      "entry": 3850.48,
+      "sl": 3965.994,
+      "tp": 3619.451,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 07:12 UTC",
+      "t": 1794985920000,
+      "aset": "LINK",
+      "arah": "SHORT",
+      "entry": 9.362,
+      "sl": 10.30125,
+      "tp": 7.4835,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 07:12 UTC",
+      "t": 1794985920000,
+      "aset": "BNB",
+      "arah": "SHORT",
+      "entry": 597.91,
+      "sl": 661.9432,
+      "tp": 469.8435,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
