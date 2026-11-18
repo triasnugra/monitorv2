@@ -1,0 +1,119 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 6010,
+    "meta": {
+      "live": {
+        "cards": 6,
+        "passed": 6,
+        "rejected": 0,
+        "summary": "Selesai: 6 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 6
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 6,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-18 16:33 UTC",
+      "t": 1795019580000,
+      "aset": "ZRO",
+      "arah": "SHORT",
+      "entry": 1.484,
+      "sl": 1.6482,
+      "tp": 1.1556,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 16:33 UTC",
+      "t": 1795019580000,
+      "aset": "LINK",
+      "arah": "SHORT",
+      "entry": 9.362,
+      "sl": 10.30125,
+      "tp": 7.4835,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 16:33 UTC",
+      "t": 1795019580000,
+      "aset": "ZKC",
+      "arah": "SHORT",
+      "entry": 0.0243,
+      "sl": 0.026934,
+      "tp": 0.019032,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 16:33 UTC",
+      "t": 1795019580000,
+      "aset": "ADA",
+      "arah": "SHORT",
+      "entry": 0.1558,
+      "sl": 0.1765785,
+      "tp": 0.114243,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 16:33 UTC",
+      "t": 1795019580000,
+      "aset": "XAUT",
+      "arah": "SHORT",
+      "entry": 3850.48,
+      "sl": 3965.994,
+      "tp": 3619.451,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-18 16:33 UTC",
+      "t": 1795019580000,
+      "aset": "BNB",
+      "arah": "SHORT",
+      "entry": 597.91,
+      "sl": 661.9432,
+      "tp": 469.8435,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "sweep Monday High lalu reclaim, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
