@@ -1,0 +1,105 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 6154,
+    "meta": {
+      "live": {
+        "cards": 5,
+        "passed": 5,
+        "rejected": 0,
+        "summary": "Selesai: 5 koin punya setup · 38 koin dipindai, 2 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 5
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 5,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-22 16:42 UTC",
+      "t": 1795365720000,
+      "aset": "TRUMP",
+      "arah": "SHORT",
+      "entry": 0.891,
+      "sl": 0.99495,
+      "tp": 0.6831,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-22 16:42 UTC",
+      "t": 1795365720000,
+      "aset": "AVAX",
+      "arah": "SHORT",
+      "entry": 6.743,
+      "sl": 7.35459,
+      "tp": 5.51982,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-22 16:42 UTC",
+      "t": 1795365720000,
+      "aset": "DOGE",
+      "arah": "SHORT",
+      "entry": 0.05543,
+      "sl": 0.06075225,
+      "tp": 0.0447855,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-22 16:42 UTC",
+      "t": 1795365720000,
+      "aset": "ETH",
+      "arah": "SHORT",
+      "entry": 1711.08,
+      "sl": 1852.707,
+      "tp": 1427.825,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-22 16:42 UTC",
+      "t": 1795365720000,
+      "aset": "BTC",
+      "arah": "SHORT",
+      "entry": 62006,
+      "sl": 65774.23,
+      "tp": 54469.53,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}

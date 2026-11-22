@@ -1,8 +1,8 @@
 {
-  "updatedUtc": "2026-11-22T08:44:12.522Z",
+  "updatedUtc": "2026-11-22T16:41:43.880Z",
   "engines": {
     "crypto": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
       "rejected": null,
       "errors": [],
@@ -28,13 +28,13 @@
           "reason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah",
           "price": 221,
           "distToEntryPct": null,
-          "confirmation": "Retest tertahan di 4H",
+          "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 11.1,
           "tpLabel": "TP2",
           "journalId": "crypto-a744640290b0",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "crypto-live-169b5e257e19",
@@ -51,47 +51,47 @@
           "stopLoss": 202.6,
           "riskReward": 4.17,
           "riskAmountUsd": 10,
-          "quantity": 1.38,
+          "quantity": 1.39,
           "timeframe": "4H",
           "cardStatus": "Menunggu retest",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 1901,
+          "price": 1912,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3.7,
           "tpLabel": "TP2",
           "journalId": "crypto-f546dd3fe6b3",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
-          "liveId": "crypto-live-8da3ac413f7f",
+          "liveId": "crypto-live-47d0579eabc1",
           "engine": "crypto",
-          "ticker": "INJ",
-          "symbol": "INJUSDT",
-          "direction": "LONG",
+          "ticker": "SOL",
+          "symbol": "SOLUSDT",
+          "direction": "SHORT",
           "entryType": "limit",
-          "entryPrice": 5.905,
+          "entryPrice": 72.92,
           "entryRange": null,
           "takeProfit": [
-            7.216
+            64.87
           ],
-          "stopLoss": 5.686,
-          "riskReward": 5.99,
+          "stopLoss": 76.308,
+          "riskReward": 2.38,
           "riskAmountUsd": 10,
-          "quantity": 45.7,
+          "quantity": 2.95,
           "timeframe": "4H",
           "cardStatus": "Menunggu retest",
-          "reason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah",
-          "price": 6081,
+          "reason": "Sweep Monday High, lalu kembali masuk",
+          "price": 70630,
           "distToEntryPct": null,
-          "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 3.7,
-          "tpLabel": "TP1",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "confirmation": "Di sisi benar level, belum retest",
+          "slDistancePct": 4.6,
+          "tpLabel": "TP2",
+          "journalId": "crypto-44921a441893",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
@@ -113,44 +113,15 @@
           "timeframe": "1D",
           "cardStatus": "Menunggu retest",
           "reason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah",
-          "price": 502,
+          "price": 508,
           "distToEntryPct": null,
           "confirmation": "Retest tertahan di 4H",
           "slDistancePct": 10.7,
           "tpLabel": "TP1",
           "journalId": "crypto-60a606ff244e",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "crypto-live-150572f289e7",
-          "engine": "crypto",
-          "ticker": "SOL",
-          "symbol": "SOLUSDT",
-          "direction": "SHORT",
-          "entryType": "limit",
-          "entryPrice": 72.92,
-          "entryRange": null,
-          "takeProfit": [
-            64.87
-          ],
-          "stopLoss": 76.301,
-          "riskReward": 2.38,
-          "riskAmountUsd": 10,
-          "quantity": 2.96,
-          "timeframe": "4H",
-          "cardStatus": "Menunggu retest",
-          "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 69910,
-          "distToEntryPct": null,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 4.6,
-          "tpLabel": "TP2",
-          "journalId": "crypto-44921a441893",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "crypto-live-99520235b67b",
@@ -171,18 +142,76 @@
           "timeframe": "4H",
           "cardStatus": "Menunggu retest",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 928,
+          "price": 930,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3.9,
           "tpLabel": "TP2",
           "journalId": "crypto-048eecd6615c",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
+        },
+        {
+          "liveId": "crypto-live-5178c5ccd94e",
+          "engine": "crypto",
+          "ticker": "INJ",
+          "symbol": "INJUSDT",
+          "direction": "LONG",
+          "entryType": "limit",
+          "entryPrice": 5.905,
+          "entryRange": null,
+          "takeProfit": [
+            7.216
+          ],
+          "stopLoss": 5.68,
+          "riskReward": 5.83,
+          "riskAmountUsd": 10,
+          "quantity": 44.5,
+          "timeframe": "4H",
+          "cardStatus": "Menunggu retest",
+          "reason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah",
+          "price": 6255,
+          "distToEntryPct": null,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 3.8,
+          "tpLabel": "TP1",
+          "journalId": "crypto-f8b837646972",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
-          "liveId": "crypto-live-f5b47519f278",
+          "liveId": "crypto-live-e217d09497fd",
+          "engine": "crypto",
+          "ticker": "LINK",
+          "symbol": "LINKUSDT",
+          "direction": "SHORT",
+          "entryType": "limit",
+          "entryPrice": 9.362,
+          "entryRange": null,
+          "takeProfit": [
+            7.972
+          ],
+          "stopLoss": 9.573,
+          "riskReward": 6.59,
+          "riskAmountUsd": 10,
+          "quantity": 47.4,
+          "timeframe": "4H",
+          "cardStatus": "Menunggu retest",
+          "reason": "Sweep Monday High, lalu kembali masuk",
+          "price": 8848,
+          "distToEntryPct": null,
+          "confirmation": "Di sisi benar level, belum retest",
+          "slDistancePct": 2.3,
+          "tpLabel": "TP2",
+          "journalId": "crypto-409c4fcfbd10",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
+        },
+        {
+          "liveId": "crypto-live-2c6bf5e3c059",
           "engine": "crypto",
           "ticker": "SOXLB",
           "symbol": "SOXLBUSDT",
@@ -193,21 +222,50 @@
           "takeProfit": [
             56.37
           ],
-          "stopLoss": 29.478,
-          "riskReward": 12.57,
+          "stopLoss": 29.629,
+          "riskReward": 13.6,
           "riskAmountUsd": 10,
-          "quantity": 5.04,
+          "quantity": 5.46,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan jual melemah",
-          "price": 33470,
+          "price": 33640,
           "distToEntryPct": null,
           "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 6.3,
+          "slDistancePct": 5.8,
           "tpLabel": "TP1",
           "journalId": "crypto-eae5eff71844",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
+        },
+        {
+          "liveId": "crypto-live-2fc2a01352e1",
+          "engine": "crypto",
+          "ticker": "BNB",
+          "symbol": "BNBUSDT",
+          "direction": "SHORT",
+          "entryType": "limit",
+          "entryPrice": 597.9,
+          "entryRange": null,
+          "takeProfit": [
+            503.8
+          ],
+          "stopLoss": 609.7,
+          "riskReward": 7.97,
+          "riskAmountUsd": 10,
+          "quantity": 0.846,
+          "timeframe": "4H",
+          "cardStatus": "Jauh",
+          "reason": "Sweep Monday High, lalu kembali masuk",
+          "price": 5597,
+          "distToEntryPct": null,
+          "confirmation": "Di sisi benar level, belum retest",
+          "slDistancePct": 2,
+          "tpLabel": "TP2",
+          "journalId": "crypto-ffe0ca4d8ac5",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
@@ -225,48 +283,19 @@
           "stopLoss": 0.16,
           "riskReward": 5.75,
           "riskAmountUsd": 10,
-          "quantity": 2628,
+          "quantity": 2636,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 144,
+          "price": 146,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 2.4,
           "tpLabel": "TP2",
           "journalId": "crypto-b507eb583727",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "crypto-live-f8182a2f077e",
-          "engine": "crypto",
-          "ticker": "LINK",
-          "symbol": "LINKUSDT",
-          "direction": "SHORT",
-          "entryType": "limit",
-          "entryPrice": 9.362,
-          "entryRange": null,
-          "takeProfit": [
-            7.972
-          ],
-          "stopLoss": 9.572,
-          "riskReward": 6.62,
-          "riskAmountUsd": 10,
-          "quantity": 47.6,
-          "timeframe": "4H",
-          "cardStatus": "Jauh",
-          "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 8665,
-          "distToEntryPct": null,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 2.2,
-          "tpLabel": "TP2",
-          "journalId": "crypto-409c4fcfbd10",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "crypto-live-49e4e7a9cc3a",
@@ -283,48 +312,19 @@
           "stopLoss": 0.0614,
           "riskReward": 6.57,
           "riskAmountUsd": 10,
-          "quantity": 7184,
+          "quantity": 7157,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 549,
+          "price": 555,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 2.3,
           "tpLabel": "TP2",
           "journalId": "crypto-b35502c90fe2",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "crypto-live-d49b80f1b177",
-          "engine": "crypto",
-          "ticker": "BNB",
-          "symbol": "BNBUSDT",
-          "direction": "SHORT",
-          "entryType": "limit",
-          "entryPrice": 597.9,
-          "entryRange": null,
-          "takeProfit": [
-            503.8
-          ],
-          "stopLoss": 609.6,
-          "riskReward": 8.04,
-          "riskAmountUsd": 10,
-          "quantity": 0.855,
-          "timeframe": "4H",
-          "cardStatus": "Jauh",
-          "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 5465,
-          "distToEntryPct": null,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 2,
-          "tpLabel": "TP2",
-          "journalId": "crypto-ffe0ca4d8ac5",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "crypto-live-f1a2472883a1",
@@ -341,19 +341,19 @@
           "stopLoss": 3.509,
           "riskReward": 2.91,
           "riskAmountUsd": 10,
-          "quantity": 40.8,
+          "quantity": 40.9,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 2923,
+          "price": 2994,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 7.5,
           "tpLabel": "TP2",
           "journalId": "crypto-e8ac7b8caae0",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "crypto-live-80e58e5e2394",
@@ -370,19 +370,19 @@
           "stopLoss": 0.757,
           "riskReward": 7.89,
           "riskAmountUsd": 10,
-          "quantity": 533,
+          "quantity": 527,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 651,
+          "price": 661,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 2.5,
+          "slDistancePct": 2.6,
           "tpLabel": "TP2",
           "journalId": "crypto-cd2344f91556",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "crypto-live-662bfd967470",
@@ -403,18 +403,76 @@
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 97420,
+          "price": 98990,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 3.9,
+          "slDistancePct": 4,
           "tpLabel": "TP2",
           "journalId": "crypto-2dd0fceb77fb",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
+        },
+        {
+          "liveId": "crypto-live-6b20a4f45c06",
+          "engine": "crypto",
+          "ticker": "AIGENSYN",
+          "symbol": "AIGENSYNUSDT",
+          "direction": "SHORT",
+          "entryType": "limit",
+          "entryPrice": 0.017,
+          "entryRange": null,
+          "takeProfit": [
+            0.0143
+          ],
+          "stopLoss": 0.0184,
+          "riskReward": 1.93,
+          "riskAmountUsd": 10,
+          "quantity": 6912,
+          "timeframe": "4H",
+          "cardStatus": "Jauh",
+          "reason": "Three Top: 2 sentuhan, lalu sweep dan reclaim",
+          "price": 150,
+          "distToEntryPct": null,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 8.5,
+          "tpLabel": "TP1",
+          "journalId": "crypto-5328189a2d9f",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
-          "liveId": "crypto-live-252c6667cdab",
+          "liveId": "crypto-live-caa1d5526114",
+          "engine": "crypto",
+          "ticker": "NIGHT",
+          "symbol": "NIGHTUSDT",
+          "direction": "LONG",
+          "entryType": "limit",
+          "entryPrice": 0.0429,
+          "entryRange": null,
+          "takeProfit": [
+            0.0513
+          ],
+          "stopLoss": 0.0384,
+          "riskReward": 1.87,
+          "riskAmountUsd": 10,
+          "quantity": 2185,
+          "timeframe": "4H",
+          "cardStatus": "Jauh",
+          "reason": "Sweep Monday Low, lalu reclaim",
+          "price": 497,
+          "distToEntryPct": null,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 10.7,
+          "tpLabel": "TP2",
+          "journalId": null,
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
+        },
+        {
+          "liveId": "crypto-live-066731bac499",
           "engine": "crypto",
           "ticker": "ZEC",
           "symbol": "ZECUSDT",
@@ -425,83 +483,25 @@
           "takeProfit": [
             679.5
           ],
-          "stopLoss": 984.4,
-          "riskReward": 3.52,
+          "stopLoss": 984.2,
+          "riskReward": 3.53,
           "riskAmountUsd": 10,
-          "quantity": 0.148,
+          "quantity": 0.149,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 7951,
+          "price": 7943,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 7.4,
+          "slDistancePct": 7.3,
           "tpLabel": "TP2",
           "journalId": "crypto-27cde8b703fd",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
-          "liveId": "crypto-live-9c683949aa8a",
-          "engine": "crypto",
-          "ticker": "DODO",
-          "symbol": "DODOUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 0.031,
-          "entryRange": null,
-          "takeProfit": [
-            0.0358
-          ],
-          "stopLoss": 0.0288,
-          "riskReward": 2.18,
-          "riskAmountUsd": 10,
-          "quantity": 4588,
-          "timeframe": "4H",
-          "cardStatus": "Jauh",
-          "reason": "Sweep Monday Low, lalu reclaim",
-          "price": 373,
-          "distToEntryPct": null,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 7,
-          "tpLabel": "TP2",
-          "journalId": "crypto-f0fcf78d439f",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "crypto-live-d645ab3e6584",
-          "engine": "crypto",
-          "ticker": "RARE",
-          "symbol": "RAREUSDT",
-          "direction": "SHORT",
-          "entryType": "limit",
-          "entryPrice": 0.0162,
-          "entryRange": null,
-          "takeProfit": [
-            0.0133
-          ],
-          "stopLoss": 0.0177,
-          "riskReward": 1.93,
-          "riskAmountUsd": 10,
-          "quantity": 6863,
-          "timeframe": "4H",
-          "cardStatus": "Jauh",
-          "reason": "Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah",
-          "price": 138,
-          "distToEntryPct": null,
-          "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 9,
-          "tpLabel": "TP1",
-          "journalId": "crypto-5cfb21417ee3",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "crypto-live-17abb8014193",
+          "liveId": "crypto-live-ddad0adabe66",
           "engine": "crypto",
           "ticker": "FET",
           "symbol": "FETUSDT",
@@ -512,80 +512,51 @@
           "takeProfit": [
             0.104
           ],
-          "stopLoss": 0.137,
-          "riskReward": 10,
+          "stopLoss": 0.138,
+          "riskReward": 7.5,
           "riskAmountUsd": 10,
-          "quantity": 2986,
+          "quantity": 2917,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 108,
+          "price": 109,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 2.5,
+          "slDistancePct": 2.6,
           "tpLabel": "TP2",
           "journalId": "crypto-0f2f70d552c8",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
-          "liveId": "crypto-live-423820b00924",
+          "liveId": "crypto-live-7959d986269b",
           "engine": "crypto",
-          "ticker": "GOOGLB",
-          "symbol": "GOOGLBUSDT",
-          "direction": "LONG",
+          "ticker": "PROM",
+          "symbol": "PROMUSDT",
+          "direction": "SHORT",
           "entryType": "limit",
-          "entryPrice": 273.2,
+          "entryPrice": 5.408,
           "entryRange": null,
           "takeProfit": [
-            328.9
+            4.335
           ],
-          "stopLoss": 261.3,
-          "riskReward": 4.68,
+          "stopLoss": 6.038,
+          "riskReward": 1.7,
           "riskAmountUsd": 10,
-          "quantity": 0.846,
-          "timeframe": "1D",
-          "cardStatus": "Menunggu retest",
-          "reason": "Three Tap: 2 sentuhan, lalu sweep dan reclaim",
-          "price": 2740,
-          "distToEntryPct": null,
-          "confirmation": "Tunggu close 4H di atas level",
-          "slDistancePct": 4.3,
-          "tpLabel": "TP1",
-          "journalId": "crypto-34ae6be67ffe",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "crypto-live-96e9994412ab",
-          "engine": "crypto",
-          "ticker": "TRX",
-          "symbol": "TRXUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 0.302,
-          "entryRange": null,
-          "takeProfit": [
-            0.334
-          ],
-          "stopLoss": 0.298,
-          "riskReward": 8,
-          "riskAmountUsd": 10,
-          "quantity": 2226,
-          "timeframe": "1D",
-          "cardStatus": "Aktif",
-          "reason": "Three Tap: 2 sentuhan, lalu sweep dan reclaim",
-          "price": 304,
+          "quantity": 15.9,
+          "timeframe": "4H",
+          "cardStatus": "Jauh",
+          "reason": "Sweep Monday High, lalu kembali masuk",
+          "price": 4198,
           "distToEntryPct": null,
           "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 1.5,
-          "tpLabel": "TP1",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-21T21:14:46.233Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 3
+          "slDistancePct": 11.6,
+          "tpLabel": "TP2",
+          "journalId": "crypto-5861c1a5b186",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
           "liveId": "crypto-live-8a24e6e52644",
@@ -606,15 +577,44 @@
           "timeframe": "1D",
           "cardStatus": "Menunggu retest",
           "reason": "Breakdown, retest gagal (failed reclaim)",
-          "price": 598086,
+          "price": 613170,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 6.1,
           "tpLabel": "TP1",
           "journalId": "crypto-866ed42000c4",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
+        },
+        {
+          "liveId": "crypto-live-96e9994412ab",
+          "engine": "crypto",
+          "ticker": "TRX",
+          "symbol": "TRXUSDT",
+          "direction": "LONG",
+          "entryType": "limit",
+          "entryPrice": 0.302,
+          "entryRange": null,
+          "takeProfit": [
+            0.334
+          ],
+          "stopLoss": 0.298,
+          "riskReward": 8,
+          "riskAmountUsd": 10,
+          "quantity": 2226,
+          "timeframe": "1D",
+          "cardStatus": "Aktif",
+          "reason": "Three Tap: 2 sentuhan, lalu sweep dan reclaim",
+          "price": 305,
+          "distToEntryPct": null,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 1.5,
+          "tpLabel": "TP1",
+          "journalId": null,
+          "firstSeenUtc": "2026-11-21T21:14:46.233Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 4
         },
         {
           "liveId": "crypto-live-6831bb1ab632",
@@ -631,18 +631,47 @@
           "stopLoss": 1,
           "riskReward": 3.26,
           "riskAmountUsd": 10,
-          "quantity": 214,
+          "quantity": 215,
           "timeframe": "4H",
-          "cardStatus": "Jauh",
+          "cardStatus": "Menunggu retest",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 895,
+          "price": 901,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 4.9,
           "tpLabel": "TP2",
-          "journalId": null,
+          "journalId": "crypto-9d654369af89",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
+        },
+        {
+          "liveId": "crypto-live-25f320cc6f1d",
+          "engine": "crypto",
+          "ticker": "MSTRB",
+          "symbol": "MSTRBUSDT",
+          "direction": "SHORT",
+          "entryType": "limit",
+          "entryPrice": 89.44,
+          "entryRange": null,
+          "takeProfit": [
+            68.56
+          ],
+          "stopLoss": 102.7,
+          "riskReward": 1.57,
+          "riskAmountUsd": 10,
+          "quantity": 0.756,
+          "timeframe": "1D",
+          "cardStatus": "Jauh",
+          "reason": "Breakdown, retest gagal (failed reclaim)",
+          "price": 83360,
+          "distToEntryPct": null,
+          "confirmation": "Di sisi benar level, belum retest",
+          "slDistancePct": 14.8,
+          "tpLabel": "TP1",
+          "journalId": null,
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
@@ -664,18 +693,18 @@
           "timeframe": "1D",
           "cardStatus": "Jauh",
           "reason": "Three Tap: 2 sentuhan, lalu sweep dan reclaim",
-          "price": 6609,
+          "price": 6703,
           "distToEntryPct": null,
-          "confirmation": "Retest tertahan di 4H",
+          "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 8.1,
           "tpLabel": "TP1",
           "journalId": "crypto-8a9996204715",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
-          "liveId": "crypto-live-326a493c24cc",
+          "liveId": "crypto-live-b18a69700a1a",
           "engine": "crypto",
           "ticker": "UNI",
           "symbol": "UNIUSDT",
@@ -686,25 +715,25 @@
           "takeProfit": [
             4.188
           ],
-          "stopLoss": 5.504,
-          "riskReward": 4.33,
+          "stopLoss": 5.503,
+          "riskReward": 4.35,
           "riskAmountUsd": 10,
-          "quantity": 40.5,
+          "quantity": 40.7,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 4665,
+          "price": 4729,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 4.7,
           "tpLabel": "TP2",
           "journalId": "crypto-343f935e8c68",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
-          "liveId": "crypto-live-c4e71694dbc5",
+          "liveId": "crypto-live-38333cf0b599",
           "engine": "crypto",
           "ticker": "PEPE",
           "symbol": "PEPEUSDT",
@@ -715,21 +744,21 @@
           "takeProfit": [
             0.00000317
           ],
-          "stopLoss": 0.00000409,
-          "riskReward": 5.57,
+          "stopLoss": 0.00000408,
+          "riskReward": 6,
           "riskAmountUsd": 10,
-          "quantity": 73781291,
+          "quantity": 75167785,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 338,
+          "price": 345,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3.4,
           "tpLabel": "TP2",
-          "journalId": "crypto-9059fc2c6611",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "journalId": "crypto-7580094dcc76",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         },
         {
@@ -747,84 +776,84 @@
           "stopLoss": 0.279,
           "riskReward": 9,
           "riskAmountUsd": 10,
-          "quantity": 1332,
+          "quantity": 1339,
           "timeframe": "4H",
           "cardStatus": "Jauh",
           "reason": "Sweep Monday High, lalu kembali masuk",
-          "price": 229,
+          "price": 235,
           "distToEntryPct": null,
           "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 2.8,
+          "slDistancePct": 2.7,
           "tpLabel": "TP2",
           "journalId": "crypto-55459d0d7ae6",
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
-          "liveId": "crypto-live-df41df8c45e8",
+          "liveId": "crypto-live-f2b7b20350ee",
           "engine": "crypto",
           "ticker": "ETH",
           "symbol": "ETHUSDT",
           "direction": "SHORT",
           "entryType": "limit",
-          "entryPrice": 1711.1,
+          "entryPrice": 1722.7,
           "entryRange": null,
           "takeProfit": [
             1437
           ],
           "stopLoss": 1857.4,
-          "riskReward": 1.87,
+          "riskReward": 2.12,
           "riskAmountUsd": 10,
-          "quantity": 0.0683,
+          "quantity": 0.0742,
           "timeframe": "1D",
           "cardStatus": "Aktif",
           "reason": "Breakdown, retest gagal (failed reclaim)",
-          "price": 16864,
+          "price": 17227,
           "distToEntryPct": null,
           "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 8.6,
+          "slDistancePct": 7.8,
           "tpLabel": "TP1",
-          "journalId": "crypto-0d09fad3bba4",
-          "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "journalId": null,
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
-          "liveId": "crypto-live-80f9cbd11e64",
+          "liveId": "crypto-live-a111260a056e",
           "engine": "crypto",
-          "ticker": "ORCA",
-          "symbol": "ORCAUSDT",
+          "ticker": "INTCB",
+          "symbol": "INTCBUSDT",
           "direction": "LONG",
           "entryType": "limit",
-          "entryPrice": 1.16,
+          "entryPrice": 52.72,
           "entryRange": null,
           "takeProfit": [
-            1.301
+            58.705
           ],
-          "stopLoss": 1.025,
-          "riskReward": 1.04,
+          "stopLoss": 50.721,
+          "riskReward": 2.99,
           "riskAmountUsd": 10,
-          "quantity": 74,
+          "quantity": 5,
           "timeframe": "4H",
-          "cardStatus": "Jauh",
+          "cardStatus": "Menunggu retest",
           "reason": "Sweep Monday Low, lalu reclaim",
-          "price": 1259,
+          "price": 53640,
           "distToEntryPct": null,
           "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 11.7,
+          "slDistancePct": 3.8,
           "tpLabel": "TP1",
-          "journalId": "crypto-fb95145efc36",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
+          "journalId": "crypto-17e44f4ec6f7",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
           "seenCount": 1
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     },
     "tn": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
       "rejected": 0,
       "errors": [],
@@ -853,10 +882,39 @@
           "confirmation": "Retest tertahan di 4H",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-f41d16292f4e",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
+        },
+        {
+          "liveId": "tn-live-26a31097e71e",
+          "engine": "tn",
+          "ticker": "NIGHT",
+          "symbol": "NIGHTUSDT",
+          "direction": "LONG",
+          "entryType": "limit",
+          "entryPrice": 0.0429,
+          "entryRange": null,
+          "takeProfit": [
+            0.0513
+          ],
+          "stopLoss": 0.0388,
+          "riskReward": 2.05,
+          "riskAmountUsd": 10,
+          "quantity": 2395,
+          "timeframe": "1D",
+          "cardStatus": "MENUNGGU RETEST",
+          "reason": "Tren W n/a · D naik · sweep Monday Low lalu reclaim · Wolf bullish: breakdown trendline gagal · searah tren",
+          "price": 0.0443,
+          "distToEntryPct": 3.2,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 9.7,
+          "tpLabel": "TP 2R",
+          "journalId": null,
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
           "liveId": "tn-live-85a50db364d6",
@@ -884,8 +942,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "tn-live-7b191fc78802",
@@ -911,10 +969,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-563d1b65f7b8",
+          "journalId": "tn-84b4eaded095",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-f8c74d04ba96",
@@ -940,10 +998,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3.6,
           "tpLabel": "TP 2R",
-          "journalId": "tn-bb8899c47f30",
+          "journalId": "tn-320dec1e681d",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-5c67271bd0ed",
@@ -969,10 +1027,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-351ebe03c4ce",
+          "journalId": "tn-60c70be49b64",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "tn-live-5ee82376c8c5",
@@ -998,10 +1056,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 6.7,
           "tpLabel": "TP 2R",
-          "journalId": "tn-1948981b429e",
+          "journalId": "tn-ebf7458ed32e",
           "firstSeenUtc": "2026-11-19T04:16:06.729Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 12
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 13
         },
         {
           "liveId": "tn-live-b21aff7b03b1",
@@ -1029,37 +1087,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "tn-live-5d5bcad19cad",
-          "engine": "tn",
-          "ticker": "GOOGLB",
-          "symbol": "GOOGLBUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 273.2,
-          "entryRange": null,
-          "takeProfit": [
-            293.8
-          ],
-          "stopLoss": 262.9,
-          "riskReward": 2,
-          "riskAmountUsd": 10,
-          "quantity": 0.971,
-          "timeframe": "1D",
-          "cardStatus": "AKTIF",
-          "reason": "Tren W n/a · D turun · Three Tap: 2 sentuhan lalu manipulasi di bawah · RSI divergence",
-          "price": 274.7,
-          "distToEntryPct": 0.6,
-          "confirmation": "Tunggu close 4H di atas level",
-          "slDistancePct": 3.8,
-          "tpLabel": "TP 2R",
-          "journalId": "tn-8ba37a9dcba0",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "tn-live-1c51f3134d63",
@@ -1082,13 +1111,13 @@
           "reason": "Tren W turun · D turun · breakdown ber-close, retest · searah tren",
           "price": 1685.6,
           "distToEntryPct": 1.5,
-          "confirmation": "Retest tertahan di 4H",
+          "confirmation": "Tunggu close 4H di bawah level",
           "slDistancePct": 8.3,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-13c5649290ff",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tn-live-a3c6b7b66427",
@@ -1111,13 +1140,13 @@
           "reason": "Tren W turun · D turun · breakdown ber-close, retest · searah tren",
           "price": 6.583,
           "distToEntryPct": 2.4,
-          "confirmation": "Di sisi benar level, belum retest",
+          "confirmation": "Retest tertahan di 4H",
           "slDistancePct": 9.1,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-90af908ab3fb",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tn-live-c293aa6e7502",
@@ -1143,10 +1172,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 6.1,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-b3aec03c92a5",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tn-live-72efb76bb3c7",
@@ -1172,10 +1201,10 @@
           "confirmation": "Retest tertahan di 4H",
           "slDistancePct": 4.2,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-c2e327e23971",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tn-live-b6ca85b42290",
@@ -1201,10 +1230,10 @@
           "confirmation": "Retest tertahan di 4H",
           "slDistancePct": 7.3,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-7773c854d7f7",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tn-live-8c770675c7ab",
@@ -1230,10 +1259,39 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3.7,
           "tpLabel": "TP 2R",
-          "journalId": "tn-be6b07fb92c5",
+          "journalId": "tn-3f483fada23f",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
+        },
+        {
+          "liveId": "tn-live-7828ec29318a",
+          "engine": "tn",
+          "ticker": "PROM",
+          "symbol": "PROMUSDT",
+          "direction": "SHORT",
+          "entryType": "limit",
+          "entryPrice": 5.408,
+          "entryRange": null,
+          "takeProfit": [
+            4.307
+          ],
+          "stopLoss": 5.959,
+          "riskReward": 2,
+          "riskAmountUsd": 10,
+          "quantity": 18.2,
+          "timeframe": "1D",
+          "cardStatus": "JAUH",
+          "reason": "Tren W naik · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal",
+          "price": 5.027,
+          "distToEntryPct": 7.6,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 10.2,
+          "tpLabel": "TP 2R",
+          "journalId": "tn-474205d05c88",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
           "liveId": "tn-live-ba436b431e2b",
@@ -1259,10 +1317,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-2a5fef365864",
+          "journalId": "tn-ba510c9cffc1",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "tn-live-b34546615b65",
@@ -1288,10 +1346,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-040a8f8fc297",
+          "journalId": "tn-e78626d4a546",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-4cbc2bf4efa8",
@@ -1317,39 +1375,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-865763099678",
+          "journalId": "tn-ea55fd93020e",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
-        },
-        {
-          "liveId": "tn-live-1c529d49988a",
-          "engine": "tn",
-          "ticker": "ORCA",
-          "symbol": "ORCAUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 1.091,
-          "entryRange": null,
-          "takeProfit": [
-            1.201
-          ],
-          "stopLoss": 1.036,
-          "riskReward": 2,
-          "riskAmountUsd": 10,
-          "quantity": 181,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Tren W turun · D turun · deviasi bawah lalu recovery · sweep Monday Low lalu reclaim",
-          "price": 1.202,
-          "distToEntryPct": 9.2,
-          "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 5.1,
-          "tpLabel": "TP 2R",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-095ca1e13a6e",
@@ -1375,10 +1404,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 7.1,
           "tpLabel": "TP 2R",
-          "journalId": "tn-d00306ba3db3",
+          "journalId": "tn-05bff8ba1416",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-598f218591c9",
@@ -1404,10 +1433,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-3ab0557bfe41",
+          "journalId": "tn-ff58d22af78d",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-9ca385da7172",
@@ -1433,39 +1462,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 11.2,
           "tpLabel": "TP 2R",
-          "journalId": "tn-16d3b1ee7a3b",
+          "journalId": "tn-702df466df9e",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
-        },
-        {
-          "liveId": "tn-live-73edf5b51c16",
-          "engine": "tn",
-          "ticker": "MUB",
-          "symbol": "MUBUSDT",
-          "direction": "SHORT",
-          "entryType": "limit",
-          "entryPrice": 721.5,
-          "entryRange": null,
-          "takeProfit": [
-            636.2
-          ],
-          "stopLoss": 764.1,
-          "riskReward": 2,
-          "riskAmountUsd": 10,
-          "quantity": 0.235,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Tren W n/a · D turun · Wolf: breakout trendline gagal · searah tren",
-          "price": 612,
-          "distToEntryPct": 17.9,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 5.9,
-          "tpLabel": "TP 2R",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "tn-live-7efcc09b1790",
@@ -1491,10 +1491,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 4.5,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-2ca4b97f20b8",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tn-live-f34d270ab83a",
@@ -1520,39 +1520,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-4b445a6d161e",
+          "journalId": "tn-618f173f1310",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
-        },
-        {
-          "liveId": "tn-live-b151937fb1e0",
-          "engine": "tn",
-          "ticker": "RARE",
-          "symbol": "RAREUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 0.0114,
-          "entryRange": null,
-          "takeProfit": [
-            0.0125
-          ],
-          "stopLoss": 0.0108,
-          "riskReward": 1.83,
-          "riskAmountUsd": 10,
-          "quantity": 18367,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Tren W turun · D netral · sweep Monday Low lalu reclaim · OBV divergence",
-          "price": 0.0143,
-          "distToEntryPct": 20.1,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 4.8,
-          "tpLabel": "TP 2R",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-21T21:14:46.233Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 3
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-7ae97bde3ff3",
@@ -1578,10 +1549,39 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-88508b4a5177",
+          "journalId": "tn-19c3096038ca",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
+        },
+        {
+          "liveId": "tn-live-aeda727659e7",
+          "engine": "tn",
+          "ticker": "INTCB",
+          "symbol": "INTCBUSDT",
+          "direction": "LONG",
+          "entryType": "limit",
+          "entryPrice": 52.72,
+          "entryRange": null,
+          "takeProfit": [
+            56.551
+          ],
+          "stopLoss": 50.805,
+          "riskReward": 2,
+          "riskAmountUsd": 10,
+          "quantity": 5.22,
+          "timeframe": "1D",
+          "cardStatus": "AKTIF",
+          "reason": "Tren W n/a · D turun · sweep Monday Low lalu reclaim",
+          "price": 53.42,
+          "distToEntryPct": 1.3,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 3.6,
+          "tpLabel": "TP 2R",
+          "journalId": "tn-0d92e46925ab",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
           "liveId": "tn-live-c28dfc1c02dd",
@@ -1607,39 +1607,10 @@
           "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 4.3,
           "tpLabel": "TP 2R",
-          "journalId": "tn-e4e14d7f7005",
+          "journalId": "tn-b152a8286d20",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
-        },
-        {
-          "liveId": "tn-live-6222dc8f30ca",
-          "engine": "tn",
-          "ticker": "DODO",
-          "symbol": "DODOUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 0.031,
-          "entryRange": null,
-          "takeProfit": [
-            0.0339
-          ],
-          "stopLoss": 0.0295,
-          "riskReward": 1.93,
-          "riskAmountUsd": 10,
-          "quantity": 6858,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Tren W netral · D naik · sweep Monday Low lalu reclaim",
-          "price": 0.0396,
-          "distToEntryPct": 21.8,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 4.7,
-          "tpLabel": "TP 2R",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "tn-live-e310cc18e67b",
@@ -1662,22 +1633,22 @@
           "reason": "Tren W n/a · D naik · Double Deviation: sweep ke-2 lebih dangkal, tekanan beli melemah",
           "price": 0.21,
           "distToEntryPct": 27.2,
-          "confirmation": "Retest tertahan di 4H",
+          "confirmation": "Di sisi benar level, belum retest",
           "slDistancePct": 4.6,
           "tpLabel": "TP 2R",
-          "journalId": null,
+          "journalId": "tn-2092d26797db",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     },
     "tnv2": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
-      "rejected": 27,
+      "rejected": 25,
       "errors": [],
       "items": [
         {
@@ -1701,13 +1672,13 @@
           "reason": "Tren W turun · D turun · breakdown ber-close, retest · searah tren",
           "price": 1685.6,
           "distToEntryPct": 1.5,
-          "confirmation": "Retest tertahan di 4H",
+          "confirmation": "Tunggu close 4H di bawah level",
           "slDistancePct": 8.3,
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "tnv2-live-a95bc0a9a5f6",
@@ -1735,15 +1706,15 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     },
     "tnv2c2": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
       "rejected": 0,
       "errors": [],
@@ -1774,15 +1745,15 @@
           "tpLabel": "TP 2R",
           "journalId": "tnv2c2-246318b23a88",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     },
     "dseek": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
       "rejected": 0,
       "errors": [],
@@ -1813,8 +1784,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "dseek-live-29c31645fb07",
@@ -1842,15 +1813,15 @@
           "tpLabel": "TP 2R",
           "journalId": "dseek-033ad8197055",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     },
     "grox": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
       "rejected": 0,
       "errors": [],
@@ -1881,8 +1852,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "grox-live-a9953894c2a2",
@@ -1910,8 +1881,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "grox-live-396c671c3dbd",
@@ -1939,8 +1910,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "grox-live-4c1edea4851d",
@@ -1968,8 +1939,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "grox-live-06c01d3e951a",
@@ -1997,15 +1968,15 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     },
     "chatgpt": {
-      "scanUtc": "2026-11-22T08:44:12.522Z",
+      "scanUtc": "2026-11-22T16:41:43.880Z",
       "scanStatus": "OK",
       "rejected": 0,
       "errors": [],
@@ -2036,8 +2007,37 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-62229adc2dfc",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
+        },
+        {
+          "liveId": "chatgpt-live-7a67a8401658",
+          "engine": "chatgpt",
+          "ticker": "NIGHT",
+          "symbol": "NIGHTUSDT",
+          "direction": "LONG",
+          "entryType": "limit",
+          "entryPrice": 0.0429,
+          "entryRange": null,
+          "takeProfit": [
+            0.0513
+          ],
+          "stopLoss": 0.0388,
+          "riskReward": 2.05,
+          "riskAmountUsd": 10,
+          "quantity": 2395,
+          "timeframe": "1D",
+          "cardStatus": "MENUNGGU RETEST",
+          "reason": "Skor konfirmasi 3 · Tren W n/a · D naik · sweep Monday Low lalu reclaim · Wolf bullish: breakdown trendline gagal · searah tren",
+          "price": 0.0443,
+          "distToEntryPct": 3.2,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 9.7,
+          "tpLabel": "TP 2R",
+          "journalId": null,
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
           "liveId": "chatgpt-live-5880cde3d445",
@@ -2065,8 +2065,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "chatgpt-live-ba1837a69049",
@@ -2094,8 +2094,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-4d2118f91785",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "chatgpt-live-6f34a355b82e",
@@ -2123,8 +2123,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-c491aee70393",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "chatgpt-live-e170584f50ef",
@@ -2152,8 +2152,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-59816ad6c914",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "chatgpt-live-502faffeb747",
@@ -2181,8 +2181,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-ec4daaa53c5c",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "chatgpt-live-faa286a432ff",
@@ -2210,37 +2210,8 @@
           "tpLabel": "TP 2R",
           "journalId": null,
           "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
-        },
-        {
-          "liveId": "chatgpt-live-e08409461ffd",
-          "engine": "chatgpt",
-          "ticker": "GOOGLB",
-          "symbol": "GOOGLBUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 273.2,
-          "entryRange": null,
-          "takeProfit": [
-            293.8
-          ],
-          "stopLoss": 262.9,
-          "riskReward": 2,
-          "riskAmountUsd": 10,
-          "quantity": 0.971,
-          "timeframe": "1D",
-          "cardStatus": "AKTIF",
-          "reason": "Skor konfirmasi 2 · Tren W n/a · D turun · Three Tap: 2 sentuhan lalu manipulasi di bawah · RSI divergence",
-          "price": 274.7,
-          "distToEntryPct": 0.6,
-          "confirmation": "Tunggu close 4H di atas level",
-          "slDistancePct": 3.8,
-          "tpLabel": "TP 2R",
-          "journalId": "chatgpt-6e4f68f44cbb",
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 2
         },
         {
           "liveId": "chatgpt-live-a09485ce41e5",
@@ -2263,13 +2234,13 @@
           "reason": "Skor konfirmasi 2 · Tren W turun · D turun · breakdown ber-close, retest · searah tren",
           "price": 1685.6,
           "distToEntryPct": 1.5,
-          "confirmation": "Retest tertahan di 4H",
+          "confirmation": "Tunggu close 4H di bawah level",
           "slDistancePct": 8.3,
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-3d2a0b4c2c28",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "chatgpt-live-95c441488c60",
@@ -2292,13 +2263,13 @@
           "reason": "Skor konfirmasi 2 · Tren W turun · D turun · breakdown ber-close, retest · searah tren",
           "price": 6.583,
           "distToEntryPct": 2.4,
-          "confirmation": "Di sisi benar level, belum retest",
+          "confirmation": "Retest tertahan di 4H",
           "slDistancePct": 9.1,
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-084ab854e92f",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "chatgpt-live-3930e685a78c",
@@ -2326,8 +2297,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-91868ba4ec2b",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "chatgpt-live-3f1d9330c796",
@@ -2355,8 +2326,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-fbab322e2732",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "chatgpt-live-ed9697f21a85",
@@ -2384,8 +2355,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-d79a09b8a649",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "chatgpt-live-bcf5e4985fa1",
@@ -2413,8 +2384,37 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-69b103836d7e",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
+        },
+        {
+          "liveId": "chatgpt-live-6c29e9d277ee",
+          "engine": "chatgpt",
+          "ticker": "PROM",
+          "symbol": "PROMUSDT",
+          "direction": "SHORT",
+          "entryType": "limit",
+          "entryPrice": 5.408,
+          "entryRange": null,
+          "takeProfit": [
+            4.307
+          ],
+          "stopLoss": 5.959,
+          "riskReward": 2,
+          "riskAmountUsd": 10,
+          "quantity": 18.2,
+          "timeframe": "1D",
+          "cardStatus": "JAUH",
+          "reason": "Skor konfirmasi 2 · Tren W naik · D turun · sweep Monday High lalu reclaim · Wolf: breakout trendline gagal",
+          "price": 5.027,
+          "distToEntryPct": 7.6,
+          "confirmation": "Retest tertahan di 4H",
+          "slDistancePct": 10.2,
+          "tpLabel": "TP 2R",
+          "journalId": "chatgpt-a3a62b2438f4",
+          "firstSeenUtc": "2026-11-22T16:41:43.880Z",
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 1
         },
         {
           "liveId": "chatgpt-live-21d33c3cf5ef",
@@ -2442,8 +2442,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-3dcc4c9136bb",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "chatgpt-live-c5d09cae9034",
@@ -2471,8 +2471,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-f823f3443936",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "chatgpt-live-e614becb3005",
@@ -2500,37 +2500,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-b575b46df9fa",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
-        },
-        {
-          "liveId": "chatgpt-live-4e66229682ec",
-          "engine": "chatgpt",
-          "ticker": "ORCA",
-          "symbol": "ORCAUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 1.091,
-          "entryRange": null,
-          "takeProfit": [
-            1.201
-          ],
-          "stopLoss": 1.036,
-          "riskReward": 2,
-          "riskAmountUsd": 10,
-          "quantity": 181,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Skor konfirmasi 2 · Tren W turun · D turun · deviasi bawah lalu recovery · sweep Monday Low lalu reclaim",
-          "price": 1.202,
-          "distToEntryPct": 9.2,
-          "confirmation": "Retest tertahan di 4H",
-          "slDistancePct": 5.1,
-          "tpLabel": "TP 2R",
-          "journalId": null,
-          "firstSeenUtc": "2026-11-22T08:44:12.522Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 1
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "chatgpt-live-03f7c21589b6",
@@ -2558,8 +2529,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-bbd8ad3ad60b",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "chatgpt-live-3ecd858a9de2",
@@ -2587,8 +2558,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-a26b6931a076",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "chatgpt-live-a0a9a53b6190",
@@ -2616,37 +2587,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-21e06315f115",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
-        },
-        {
-          "liveId": "chatgpt-live-1dd417744f29",
-          "engine": "chatgpt",
-          "ticker": "MUB",
-          "symbol": "MUBUSDT",
-          "direction": "SHORT",
-          "entryType": "limit",
-          "entryPrice": 721.5,
-          "entryRange": null,
-          "takeProfit": [
-            636.2
-          ],
-          "stopLoss": 764.1,
-          "riskReward": 2,
-          "riskAmountUsd": 10,
-          "quantity": 0.235,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Skor konfirmasi 2 · Tren W n/a · D turun · Wolf: breakout trendline gagal · searah tren",
-          "price": 612,
-          "distToEntryPct": 17.9,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 5.9,
-          "tpLabel": "TP 2R",
-          "journalId": "chatgpt-9124f80f67a6",
-          "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         },
         {
           "liveId": "chatgpt-live-f9f2f8574ba4",
@@ -2674,8 +2616,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-9ae240a951c2",
           "firstSeenUtc": "2026-11-22T01:25:36.102Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 2
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 3
         },
         {
           "liveId": "chatgpt-live-5735e5135c25",
@@ -2703,37 +2645,8 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-d655445da06f",
           "firstSeenUtc": "2026-11-20T02:43:03.392Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 9
-        },
-        {
-          "liveId": "chatgpt-live-a550c273833b",
-          "engine": "chatgpt",
-          "ticker": "RARE",
-          "symbol": "RAREUSDT",
-          "direction": "LONG",
-          "entryType": "limit",
-          "entryPrice": 0.0114,
-          "entryRange": null,
-          "takeProfit": [
-            0.0125
-          ],
-          "stopLoss": 0.0108,
-          "riskReward": 1.83,
-          "riskAmountUsd": 10,
-          "quantity": 18367,
-          "timeframe": "1D",
-          "cardStatus": "JAUH",
-          "reason": "Skor konfirmasi 2 · Tren W turun · D netral · sweep Monday Low lalu reclaim · OBV divergence",
-          "price": 0.0143,
-          "distToEntryPct": 20.1,
-          "confirmation": "Di sisi benar level, belum retest",
-          "slDistancePct": 4.8,
-          "tpLabel": "TP 2R",
-          "journalId": "chatgpt-c04836309027",
-          "firstSeenUtc": "2026-11-21T21:14:46.233Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 3
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 10
         },
         {
           "liveId": "chatgpt-live-48c3c2728612",
@@ -2761,12 +2674,12 @@
           "tpLabel": "TP 2R",
           "journalId": "chatgpt-60a8914ae990",
           "firstSeenUtc": "2026-11-21T00:46:11.410Z",
-          "lastSeenUtc": "2026-11-22T08:44:12.522Z",
-          "seenCount": 6
+          "lastSeenUtc": "2026-11-22T16:41:43.880Z",
+          "seenCount": 7
         }
       ],
       "stale": false,
-      "lastAttemptUtc": "2026-11-22T08:44:12.522Z"
+      "lastAttemptUtc": "2026-11-22T16:41:43.880Z"
     }
   }
 }
