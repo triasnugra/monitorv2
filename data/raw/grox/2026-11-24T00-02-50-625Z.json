@@ -1,0 +1,119 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 5658,
+    "meta": {
+      "live": {
+        "cards": 6,
+        "passed": 6,
+        "rejected": 0,
+        "summary": "Selesai: 6 koin punya setup · 36 koin dipindai, 4 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 6
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 6,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-24 00:03 UTC",
+      "t": 1795478580000,
+      "aset": "NBISB",
+      "arah": "SHORT",
+      "entry": 101.07,
+      "sl": 115.786,
+      "tp": 71.6379,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-24 00:03 UTC",
+      "t": 1795478580000,
+      "aset": "WLD",
+      "arah": "SHORT",
+      "entry": 0.243,
+      "sl": 0.2700435,
+      "tp": 0.188913,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-24 00:03 UTC",
+      "t": 1795478580000,
+      "aset": "CRCLB",
+      "arah": "SHORT",
+      "entry": 52.88,
+      "sl": 57.01365,
+      "tp": 44.6127,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-24 00:03 UTC",
+      "t": 1795478580000,
+      "aset": "XAUT",
+      "arah": "SHORT",
+      "entry": 3716.36,
+      "sl": 3827.851,
+      "tp": 3493.378,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-24 00:03 UTC",
+      "t": 1795478580000,
+      "aset": "SUI",
+      "arah": "SHORT",
+      "entry": 0.6755,
+      "sl": 0.737871,
+      "tp": 0.550758,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-24 00:03 UTC",
+      "t": 1795478580000,
+      "aset": "ETH",
+      "arah": "SHORT",
+      "entry": 1711.08,
+      "sl": 1854.295,
+      "tp": 1424.649,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "breakdown ber-close, retest, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
