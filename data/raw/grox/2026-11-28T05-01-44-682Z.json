@@ -1,0 +1,63 @@
+{
+  "status": "OK",
+  "diagnostics": {
+    "httpStatus": 200,
+    "jsErrors": [],
+    "failedRequests": [],
+    "errors": [],
+    "warnings": [],
+    "stable": true,
+    "durationMs": 6037,
+    "meta": {
+      "live": {
+        "cards": 2,
+        "passed": 2,
+        "rejected": 0,
+        "summary": "Selesai: 2 koin punya setup · 37 koin dipindai, 3 dilewati (riwayat kurang dari 120 hari)."
+      },
+      "summaryCount": null,
+      "totalCards": 2
+    },
+    "journal": {
+      "jsonRows": 0,
+      "domRows": 2,
+      "domOnly": 0,
+      "jsonOnly": 0,
+      "hasilOverridden": 0,
+      "jsonUrl": null,
+      "tableId": "jt",
+      "tableSeen": true,
+      "tables": 1
+    }
+  },
+  "items": [
+    {
+      "waktu": "2026-11-28 05:02 UTC",
+      "t": 1795842120000,
+      "aset": "BTC",
+      "arah": "SHORT",
+      "entry": 60236.57,
+      "sl": 64926.14,
+      "tp": 50857.44,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    },
+    {
+      "waktu": "2026-11-28 05:02 UTC",
+      "t": 1795842120000,
+      "aset": "ETH",
+      "arah": "SHORT",
+      "entry": 1685.878,
+      "sl": 1854.295,
+      "tp": 1349.043,
+      "hasil": "menunggu",
+      "R": null,
+      "alasan": "Wolf: breakout trendline gagal, searah tren",
+      "h": null,
+      "_src": "dom"
+    }
+  ]
+}
